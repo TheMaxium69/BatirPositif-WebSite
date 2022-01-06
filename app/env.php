@@ -7,4 +7,13 @@ $APP_ENV = "PROD";
 //Variable Share
 
 $env_urlFile = "./extension/";
-$env_urlLogo = "https://getbootstrap.com/docs/4.6/assets/img/favicons/favicon-32x32.png";
+$env_urlLogo = "https://tyrolium.fr/Contenu/Image/Client/batirpositif.png";
+
+$env_page = array(
+    //404
+    0 => "404 | Exemple",
+    //Page
+    1 => "Home Page",
+    3 => "Home Page",
+);
+

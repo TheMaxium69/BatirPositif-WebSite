@@ -2,16 +2,13 @@
 
 function head($page)
 {
-
-    //Page
-    if ($page == 1) {
-        $title = "Exemple";
-    } else {
-        $title = "404 | Exemple";
-    }
-
-
     include "env.php";
+
+    if (!empty($env_page[$page])) {
+        $title = $env_page[$page];
+    } else {
+        $title = $env_page[0];
+    }
 
     echo '<!doctype html> <html lang="fr"> <head>';
     require_once "composant/meta.phtml";
