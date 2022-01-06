@@ -1,3 +1,3 @@
-# MySiteTemplate
+# BatirPositif-WebSite
 
-Mon template de site web
+Repository du site de BatirPositif
