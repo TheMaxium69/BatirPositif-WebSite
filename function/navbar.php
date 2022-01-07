@@ -1,11 +1,8 @@
 <?php
 function navbar($page)
 {
-
-    echo "<function-navbar>";
+    include "./app/env.php";
     require_once "./composant/navbar.phtml";
-    echo "</function-navbar>";
-
 }
 ?>
 

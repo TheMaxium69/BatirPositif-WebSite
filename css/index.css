@@ -1,8 +1,51 @@
-#page1-list .card{
-    background-color: black;
-    color: white;
+/*************************
+       ALL PAGE1
+ *************************/
+:root {
+    --color-page1-green: #008000FF;
+    --color-page1-green-hover: #00bf00;
 }
 
-#page1-list .card p{
+/*************************
+       PAGE1 LIST
+ *************************/
+#page1-list #card{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+#page1-list .cards{
     text-align: center;
+    padding: 40px 35px;
+    border-right: solid #959595;
+}
+
+#page1-list .cards:last-child{
+    border-right: unset;
+}
+
+
+#page1-list .cards i{
+    color: var(--color-page1-green);
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#page1-list .cards h2{
+    margin-bottom: 20px;
+}
+
+#page1-list .cards p{
+    margin-bottom: 20px;
+}
+
+#page1-list .cards a{
+    color: var(--color-page1-green);
+}
+
+#page1-list .cards a:hover{
+    color: var(--color-page1-green-hover);
+    text-decoration: underline;
 }
