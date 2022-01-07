@@ -7,7 +7,12 @@ $APP_ENV = "PROD";
 //Variable Share
 
 $env_urlFile = "./extension/";
-$env_urlLogo = "https://tyrolium.fr/Contenu/Image/Client/batirpositif.png";
+
+$env_logo = "assets/LogoBatirPositif.png";
+$env_logoUrl = "assets/IconeBatirPositif.png";
+$env_logoTransp = "assets/LogoBatirPositifT.png";
+
+
 $env_navImg = "https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg";
 
 $env_page = array(

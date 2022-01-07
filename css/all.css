@@ -54,8 +54,12 @@ header h1 {
     background-color: white;
     padding: 0 1rem;
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    width: 50%;
+    margin-top: 133px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 header h1 img{
