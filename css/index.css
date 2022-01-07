@@ -1,0 +1,8 @@
+#page1-list .card{
+    background-color: black;
+    color: white;
+}
+
+#page1-list .card p{
+    text-align: center;
+}
