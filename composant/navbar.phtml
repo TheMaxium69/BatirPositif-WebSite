@@ -1,14 +1,25 @@
 <header>
-    <div class="header-banner" style="background-image: url('<?php echo $env_navImg; ?>');">
-        <h1><img src="<?php echo $env_logoTransp; ?>"></h1>
-    </div>
+    <!--<div class="header-banner" style="background-image: url('<?php /*echo $env_navImg; */?>');">
+        <h1><img src="<?php /*echo $env_logoTransp; */?>"></h1>
+    </div>-->
     <div class="clear"></div>
     <nav>
         <div class="site-title"><img src="<?php echo $env_logoTransp; ?>"></div>
-        <ul>
-            <li><a href="/test">page1</a></li>
-            <li><a href="/test">page2</a></li>
-            <li><a href="/test">page3</a></li>
+        <ul class="center-ul">
+            <?php
+
+            $nbPage = count($env_page);
+
+            for ($i = 1; $i <= $nbPage-1; $i++) {
+
+                echo '<li';
+                if ($page == $i){
+                    echo ' class="nav-active"';
+                }
+                echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
+            }
+            ?>
         </ul>
     </nav>
 </header>

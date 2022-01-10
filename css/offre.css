@@ -1,0 +1,39 @@
+/*************************
+       ALL OFFRE
+ *************************/
+:root {
+    --color-blog-green: #008000FF;
+}
+
+hr.offre{
+    height: 1px;
+    background: #b9b7b7;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+/*************************
+       OFFRE TITLE
+ *************************/
+
+#offre-title{
+    text-align: center;
+}
+
+/*************************
+       OFFRE TOUS
+ *************************/
+
+#offre-tous{
+    margin-bottom: 120px;
+}
+
+
+#offre-tous h2.art{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#offre-tous p.art{
+    padding-bottom: 30px;
+}

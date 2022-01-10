@@ -19,7 +19,26 @@ $env_page = array(
     //404
     0 => "404 | Exemple",
     //Page
-    1 => "Home Page",
-    3 => "Home Page",
+    1 => array(
+        "title" => "Accueil | Bâtir Positif",
+        "name" => "Accueil",
+        "file" => "index",
+    ),
+    2 => array(
+        "title" => "Nos Offres | Bâtir Positif",
+        "name" => "Nos offres",
+        "file" => "offre",
+    ),
+
+    3 => array(
+        "title" => "Home Page",
+        "name" => "Qui sommes-nous ?",
+        "file" => "index",
+    ),
+    4 => array(
+        "title" => "Blog",
+        "name" => "Blog",
+        "file" => "blog",
+    ),
 );
 

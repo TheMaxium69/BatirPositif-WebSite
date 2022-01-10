@@ -5,9 +5,9 @@ function head($page)
     include "env.php";
 
     if (!empty($env_page[$page])) {
-        $title = $env_page[$page];
+        $title = $env_page[$page]["title"];
     } else {
-        $title = $env_page[0];
+        $title = $env_page[0]["title"];
     }
 
     echo '<!doctype html> <html lang="fr"> <head>';
