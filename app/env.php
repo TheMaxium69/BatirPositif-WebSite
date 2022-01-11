@@ -33,7 +33,7 @@ $env_page = array(
     3 => array(
         "title" => "Home Page",
         "name" => "Qui sommes-nous ?",
-        "file" => "index",
+        "file" => "about",
     ),
     4 => array(
         "title" => "Blog",

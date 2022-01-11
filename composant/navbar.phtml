@@ -2,24 +2,48 @@
     <!--<div class="header-banner" style="background-image: url('<?php /*echo $env_navImg; */?>');">
         <h1><img src="<?php /*echo $env_logoTransp; */?>"></h1>
     </div>-->
-    <div class="clear"></div>
-    <nav>
-        <div class="site-title"><img src="<?php echo $env_logoTransp; ?>"></div>
-        <ul class="center-ul">
-            <?php
 
-            $nbPage = count($env_page);
+    <?php if($page == 1){ ?>
+        <div class="clear"></div>
+        <nav>
+            <div class="site-title"><img src="<?php echo $env_logoTransp; ?>"></div>
+            <ul class="center-ul">
+                <?php
 
-            for ($i = 1; $i <= $nbPage-1; $i++) {
+                $nbPage = count($env_page);
 
-                echo '<li';
-                if ($page == $i){
-                    echo ' class="nav-active"';
+                for ($i = 1; $i <= $nbPage-1; $i++) {
+
+                    echo '<li';
+                    if ($page == $i){
+                        echo ' class="nav-active"';
+                    }
+                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
                 }
-                echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+                ?>
+            </ul>
+        </nav>
+    <?php } else { ?>
+        <div class="clear"></div>
+        <nav>
+            <div class="site-title"><img src="<?php echo $env_logoTransp; ?>"></div>
+            <ul class="center-ul">
+                <?php
 
-            }
-            ?>
-        </ul>
-    </nav>
+                $nbPage = count($env_page);
+
+                for ($i = 1; $i <= $nbPage-1; $i++) {
+
+                    echo '<li';
+                    if ($page == $i){
+                        echo ' class="nav-active"';
+                    }
+                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
+                }
+                ?>
+            </ul>
+        </nav>
+    <?php } ?>
 </header>
