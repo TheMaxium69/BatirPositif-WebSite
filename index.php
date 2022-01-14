@@ -99,7 +99,60 @@
 
     </section>
 
-    <section id="page1-blog">
+    <section id="page1-blog" class="container">
+
+        <div id="carousel-Blog" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Blog" data-slide-to="1"></li>
+                <li data-target="#carousel-Blog" data-slide-to="2"></li>
+                <li data-target="#carousel-Blog" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coucou</h5>
+                        <p>Coucou</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coucou</h5>
+                        <p>Coucou</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coucou</h5>
+                        <p>Coucou</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coucou</h5>
+                        <p>Coucou</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-Blog" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-Blog" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <style>
+            #carousel-Blog{
+                width: 45%;
+            }
+        </style>
 
 
 
