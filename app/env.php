@@ -6,6 +6,7 @@ $APP_ENV = "PROD";
 
 //Variable Share
 
+$env_assets = "assets/";
 $env_urlFile = "./extension/";
 
 $env_logo = "assets/LogoBatirPositif.png";

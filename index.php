@@ -41,7 +41,7 @@
 
     <section id="page1-list">
 
-        <div id="card" class="row container">
+        <div id="card" class="row container" style="max-width: 1160px">
 
             <div class="col-6 cards">
                 <i class="fas fa-home"></i>
@@ -59,6 +59,53 @@
                 <a href="https://tyrolium.fr">En savois plus</a>
             </div>
         </div>
+
+    </section>
+
+    <section id="page1-form" class="container">
+
+        <h2>
+            Nos acccompagnements
+        </h2>
+
+        <article>
+            <div class="titleService"> <h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3> </div>
+            <br>
+            <p>Effectuez une demande de devis gratuitement
+                pour un audit énergétique, AMO, maîtrise d'éxecution</p>
+            <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "green"); ?>
+            <br>
+        </article>
+
+        <article>
+            <div class="titleService"> <i class="fas fa-home"></i><h3>DEVIS GRATUIT</h3></div>
+            <br>
+            <p>Effectuez une demande de devis gratuitement
+                pour un audit énergétique, AMO, maîtrise d'éxecution</p>
+            <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "green"); ?>
+            <br>
+        </article>
+
+        <article>
+            <div class="titleService"> <i class="fas fa-home"></i><h3>DEVIS GRATUIT</h3></div>
+            <br>
+            <p>Effectuez une demande de devis gratuitement
+                pour un audit énergétique, AMO, maîtrise d'éxecution</p>
+            <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "green"); ?>
+            <br>
+        </article>
+
+
+
+    </section>
+
+    <section id="page1-blog">
+
+
+
+
+
+
 
     </section>
 

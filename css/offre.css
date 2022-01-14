@@ -21,6 +21,46 @@ hr.offre{
 }
 
 /*************************
+       OFFRE PANEL
+ *************************/
+
+#offre-onglet #onglets ul{
+    /* resset du ul */
+    padding : 0;
+    margin : 0;
+}
+
+#offre-onglet .onglet{
+    /* definition des onglet 'normaux' */
+    display : inline-block;
+    padding : 1em 2em;
+    background: LightSlateGrey;
+    opacity: .3;
+    font-weight: bold;
+    border-radius : 4px 4px 0 0;
+    cursor:pointer;
+}
+
+#offre-onglet .onglet.actif{
+    /* ce qui change quand l'onglet est actif */
+    opacity : 1;
+}
+
+#offre-onglet .contenu{
+    /* contenu 'normal' */
+    display : none;
+    border : 5px solid lightslategrey;
+    padding : 1em;
+    background: gainsboro;
+}
+
+#offre-onglet .contenu.actif{
+    /* Ce qui change quand le contenu est actif */
+    display : block;
+}
+
+
+/*************************
        OFFRE TOUS
  *************************/
 

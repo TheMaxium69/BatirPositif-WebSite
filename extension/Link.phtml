@@ -1,12 +1,19 @@
-<?php //All Page ?>
-<link rel="stylesheet" type="text/css" media="screen" href="css/all.css">
+<?php
+//Page
 
-<?php //Page ?>
-<link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/offre.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/blog.css">
+$nbPage = count($env_page);
+
+for ($i = 1; $i <= $nbPage-1; $i++) {
+
+    if ($page == $i){ ?>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/all.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/<?php echo $env_page[$i]['file'] ?>.css">
+
+    <?php }
+}
+?>
 
 <?php //Composant ?>
 <link rel="stylesheet" type="text/css" media="screen" href="css/custombtn.css">
-<script  src="javascript/navbar.js"></script>
 

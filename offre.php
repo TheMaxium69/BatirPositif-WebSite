@@ -16,6 +16,45 @@
     </section>
     <br>
 
+    <section id="offre-onglet" >
+
+        <!-- Liste des onglets -->
+        <nav id="onglets">
+            <ul>
+                <li class="onglet actif">Partie 1</li>
+                <li class="onglet">Partie 2</li>
+                <li class="onglet">Partie 3</li>
+            </ul>
+        </nav>
+
+        <!-- Les contenus -->
+        <article class="contenu actif ">
+            <h2>contenu 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a officia, voluptatibus autem quod minus, ex reprehenderit, aliquid adipisci doloribus suscipit modi est impedit molestiae eaque veritatis corporis alias laudantium!</p>
+            <p>Autem consequatur soluta eligendi reiciendis! Accusamus minima explicabo architecto modi accusantium vitae dicta labore laborum quasi rem est ea doloribus delectus alias perferendis aliquid porro, quis quae optio possimus ipsum!</p>
+            <p>Vitae totam recusandae perferendis molestias explicabo, tenetur veritatis placeat, ullam, adipisci eius voluptatibus est, distinctio commodi? Quia corrupti eligendi commodi ipsum a, quam voluptate temporibus quidem error placeat repudiandae voluptatibus!</p>
+        </article>
+
+        <article class="contenu">
+            <h2>contenu 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi id illo quaerat accusamus vel, doloribus recusandae laborum quasi obcaecati itaque quibusdam ipsam impedit illum! Eligendi esse est, sapiente odit minus.</p>
+            <p>Incidunt voluptatibus animi architecto magni ut, et corporis consectetur asperiores possimus ad, reiciendis ullam, cupiditate eius repellendus dolores vitae voluptatum itaque blanditiis debitis! Pariatur aut odit minus laudantium sunt error.</p>
+        </article>
+
+        <article class="contenu">
+            <h2>Contenu 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In recusandae voluptates quae aperiam tempore, quaerat ea omnis fugit dolores molestias quidem, ex incidunt ipsa nemo beatae harum maiores quia voluptate?</p>
+            <p>Labore ipsam sunt molestias autem architecto neque assumenda maxime, nihil voluptatum maiores dolor illo earum velit unde ipsa dolorem expedita, sequi quis commodi libero dignissimos asperiores. Nobis quae, incidunt rem.</p>
+        </article>
+
+
+    </section>
+
+    <script src="javascript/offre.js"></script>
+
+
+
+
     <section id="offre-tous" style="background: #252525; color: white; padding: 10px 0px">
 
         <article class="row">

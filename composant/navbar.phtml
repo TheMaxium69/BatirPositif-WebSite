@@ -24,11 +24,12 @@
                 ?>
             </ul>
         </nav>
+        <script src="javascript/navbar.js"></script>
     <?php } else { ?>
         <div class="clear"></div>
-        <nav>
-            <div class="site-title"><img src="<?php echo $env_logoTransp; ?>"></div>
-            <ul class="center-ul">
+        <nav class="fixed-header">
+            <div class="site-title visible-title"><img src="<?php echo $env_logoTransp; ?>"></div>
+            <ul class="">
                 <?php
 
                 $nbPage = count($env_page);
