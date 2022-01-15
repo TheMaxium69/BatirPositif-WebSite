@@ -136,7 +136,7 @@
                         <h5>Coucou</h5>
                         <p>Coucou</p>
                     </div>
-                </div>
+                </div> 
             </div>
             <a class="carousel-control-prev" href="#carousel-Blog" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

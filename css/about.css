@@ -1,16 +1,74 @@
 /*************************
+       ABOUT STORY
+ *************************/
+
+#about-story .back{
+    background: url("https://static.wixstatic.com/media/f612d4_a678bd3e3044453485b57aca4613e253~mv2.jpg/v1/fill/w_1264,h_965,al_c,q_85,usm_0.66_1.00_0.01/f612d4_a678bd3e3044453485b57aca4613e253~mv2.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 60px 0px;
+}
+#about-story .text{
+    background: #ffffff;
+    position: relative;
+    margin: 36px 0px 32px calc((100% - 980px) * 0.5);
+    width: 844px;
+    padding: 30px 90px;
+}
+
+#about-story .text h3{
+    margin: 25px 30px;
+    font-size: 32px;
+}
+
+#about-story .text p{
+    font-size: 15px;
+}
+#about-story .text hr {
+    width: 75%;
+    margin: 15px 12.5%;
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+#about-story .text hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+
+/*************************
        ABOUT STAFF
  *************************/
 
+#about-staff{
+    border-top: 6px solid green;
+}
+
+#about-staff div h3{
+    font-size: 29px;
+    text-align: center;
+    margin: 28px 0px;
+}
+
+
 .about__section {
     width:80%;
-    margin:auto;
+    margin: 35px auto 60px auto;
 }
 
 .about__section .about__slot {
     width:25%;
     box-sizing: border-box;
-    background-color:#f5f5f5;
+    /*background-color:#f5f5f5;*/
     /*border:1px solid #ccc;*/
     border-right:none;
     border-top:none;
@@ -83,7 +141,7 @@
     -webkit-transition:all 0.3s linear;
 
 }
-/*BOOM */
+
 .about__slot .headshot {
     margin:auto;
     margin-top:19px;
