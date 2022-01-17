@@ -26,7 +26,7 @@
     width: 49%; ">Rénovations</li>
                 <li class="onglet" style="
     margin: 0px 10px;
-    width: 48%; ">Neuf</li>
+    width: 46%; ">Neuf</li>
             </ul>
         </nav>
 
