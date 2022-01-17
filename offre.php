@@ -21,30 +21,122 @@
         <!-- Liste des onglets -->
         <nav id="onglets">
             <ul>
-                <li class="onglet actif">Partie 1</li>
-                <li class="onglet">Partie 2</li>
-                <li class="onglet">Partie 3</li>
+                <li class="onglet actif" style="
+    margin: 0px 10px;
+    width: 49%; ">Rénovations</li>
+                <li class="onglet" style="
+    margin: 0px 10px;
+    width: 48%; ">Neuf</li>
             </ul>
         </nav>
 
         <!-- Les contenus -->
-        <article class="contenu actif ">
-            <h2>contenu 1</h2>
+        <article class="contenu actif">
+            <div class="container">
+                <h1 style="text-align: center">Rénovations</h1>
+                <h2 style="margin-left: 6%;">1. Shemats : </h2>
+
+                <img style="    width: 624px;
+
+    margin-left: 19.4%;" src="https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg">
+
+
+                <br><br>
+
+                <h2 style="margin-left: 6%;">2. Plus d'info : </h2> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a officia, voluptatibus autem quod minus, ex reprehenderit, aliquid adipisci doloribus suscipit modi est impedit molestiae eaque veritatis corporis alias laudantium!</p>
+                <p>Autem consequatur soluta eligendi reiciendis! Accusamus minima explicabo architecto modi accusantium vitae dicta labore laborum quasi rem est ea doloribus delectus alias perferendis aliquid porro, quis quae optio possimus ipsum!</p>
+                <p>Vitae totam recusandae perferendis molestias explicabo, tenetur veritatis placeat, ullam, adipisci eius voluptatibus est, distinctio commodi? Quia corrupti eligendi commodi ipsum a, quam voluptate temporibus quidem error placeat repudiandae voluptatibus!</p>
+            </div>
+        </article>
+
+        <article class="contenu">
+
+            <div class="container">
+                <h1 style="text-align: center">Neuf</h1>
+                <h2 style="margin-left: 6%;">1. Shemats : </h2>
+
+                <img style="    width: 624px;
+
+    margin-left: 19.4%;" src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=">
+
+
+                <br><br>
+
+                <h2 style="margin-left: 6%;">2. Plus d'info : </h2> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a officia, voluptatibus autem quod minus, ex reprehenderit, aliquid adipisci doloribus suscipit modi est impedit molestiae eaque veritatis corporis alias laudantium!</p>
+                <p>Autem consequatur soluta eligendi reiciendis! Accusamus minima explicabo architecto modi accusantium vitae dicta labore laborum quasi rem est ea doloribus delectus alias perferendis aliquid porro, quis quae optio possimus ipsum!</p>
+                <p>Vitae totam recusandae perferendis molestias explicabo, tenetur veritatis placeat, ullam, adipisci eius voluptatibus est, distinctio commodi? Quia corrupti eligendi commodi ipsum a, quam voluptate temporibus quidem error placeat repudiandae voluptatibus!</p>
+            </div>
+
+
+
+        </article>
+
+
+    </section>
+
+
+    <hr style="margin: 50px 0px">
+
+    <section id="offre-onglet" style="
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;">
+
+        <!-- Liste des onglets -->
+        <nav id="onglets">
+            <ul>
+                <li class="onglet actif" style="
+    margin: 0px 10px;
+    width: 47%; ">Rénovations</li>
+                <li class="onglet" style="
+    margin: 0px 10px;
+    width: 48%; ">Neuf</li>
+            </ul>
+        </nav>
+
+        <!-- Les contenus -->
+        <article class="contenu actif">
+            <div class="container">
+            <h1 style="text-align: center">Rénovations</h1>
+            <h2 style="margin-left: 6%;">1. Shemats : </h2>
+
+            <img style="    width: 624px;
+
+    margin-left: 19.4%;" src="https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg">
+
+
+                <br><br>
+
+                <h2 style="margin-left: 6%;">2. Plus d'info : </h2> <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a officia, voluptatibus autem quod minus, ex reprehenderit, aliquid adipisci doloribus suscipit modi est impedit molestiae eaque veritatis corporis alias laudantium!</p>
             <p>Autem consequatur soluta eligendi reiciendis! Accusamus minima explicabo architecto modi accusantium vitae dicta labore laborum quasi rem est ea doloribus delectus alias perferendis aliquid porro, quis quae optio possimus ipsum!</p>
             <p>Vitae totam recusandae perferendis molestias explicabo, tenetur veritatis placeat, ullam, adipisci eius voluptatibus est, distinctio commodi? Quia corrupti eligendi commodi ipsum a, quam voluptate temporibus quidem error placeat repudiandae voluptatibus!</p>
+            </div>
         </article>
 
         <article class="contenu">
-            <h2>contenu 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi id illo quaerat accusamus vel, doloribus recusandae laborum quasi obcaecati itaque quibusdam ipsam impedit illum! Eligendi esse est, sapiente odit minus.</p>
-            <p>Incidunt voluptatibus animi architecto magni ut, et corporis consectetur asperiores possimus ad, reiciendis ullam, cupiditate eius repellendus dolores vitae voluptatum itaque blanditiis debitis! Pariatur aut odit minus laudantium sunt error.</p>
-        </article>
 
-        <article class="contenu">
-            <h2>Contenu 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In recusandae voluptates quae aperiam tempore, quaerat ea omnis fugit dolores molestias quidem, ex incidunt ipsa nemo beatae harum maiores quia voluptate?</p>
-            <p>Labore ipsam sunt molestias autem architecto neque assumenda maxime, nihil voluptatum maiores dolor illo earum velit unde ipsa dolorem expedita, sequi quis commodi libero dignissimos asperiores. Nobis quae, incidunt rem.</p>
+            <div class="container">
+                <h1 style="text-align: center">Neuf</h1>
+                <h2 style="margin-left: 6%;">1. Shemats : </h2>
+
+                <img style="    width: 624px;
+
+    margin-left: 19.4%;" src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=">
+
+
+                <br><br>
+
+                <h2 style="margin-left: 6%;">2. Plus d'info : </h2> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi a officia, voluptatibus autem quod minus, ex reprehenderit, aliquid adipisci doloribus suscipit modi est impedit molestiae eaque veritatis corporis alias laudantium!</p>
+                <p>Autem consequatur soluta eligendi reiciendis! Accusamus minima explicabo architecto modi accusantium vitae dicta labore laborum quasi rem est ea doloribus delectus alias perferendis aliquid porro, quis quae optio possimus ipsum!</p>
+                <p>Vitae totam recusandae perferendis molestias explicabo, tenetur veritatis placeat, ullam, adipisci eius voluptatibus est, distinctio commodi? Quia corrupti eligendi commodi ipsum a, quam voluptate temporibus quidem error placeat repudiandae voluptatibus!</p>
+            </div>
+
+
+
         </article>
 
 
@@ -53,6 +145,9 @@
     <script src="javascript/offre.js"></script>
 
 
+    <hr style="margin: 100px 0px 0px 0px">
+
+    <h2 style="text-align: center; margin: 0px 0px 30px 0px;">Old Version</h2>
 
 
     <section id="offre-tous" style="background: #252525; color: white; padding: 10px 0px">

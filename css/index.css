@@ -14,7 +14,7 @@
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url("https://batirpositif.files.wordpress.com/2021/07/cropped-image-27-07-21-10-10.jpeg");
     /*background-image: url("https://static.wixstatic.com/media/01145d_140ee626a6f441a280808cf5687fdccd~mv2_d_5120_3090_s_4_2.jpg/v1/fill/w_980,h_785,al_c,q_85,usm_0.66_1.00_0.01/01145d_140ee626a6f441a280808cf5687fdccd~mv2_d_5120_3090_s_4_2.webp");*/
     width: 100%;
-    height: 400px;
+    height: 489px;
     border-bottom-left-radius: 30% 10%;
     border-bottom-right-radius: 30% 10%;
 }
@@ -22,10 +22,15 @@
 #page1-headimg div#img div#center{
     position: absolute;
     width: 50%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
+}
+
+#page1-headimg div#img div#center h1{
+
+    margin-bottom: 36px;
 }
 
 #page1-headimg div#img div#center h1 img{
@@ -45,6 +50,7 @@
     background-color: var(--color-page1-green);
     padding: 15px 0px;
     color: white;
+    margin: 0px 30px;
 }
 
 /*************************
@@ -127,25 +133,48 @@
  *************************/
 
 #page1-form {
-    padding: 63px 0px;
 }
 
 #page1-form h2 {
+    font-size: 25px;
     margin-left: 60px;
+    padding: 56px 0px  10px 31px;
+}
+
+#page1-form div#background{
+    margin: 25px 0px;
+    padding: 63px 0px;
+    background: url("https://static.wixstatic.com/media/f612d4_a678bd3e3044453485b57aca4613e253~mv2.jpg/v1/fill/w_1264,h_965,al_c,q_85,usm_0.66_1.00_0.01/f612d4_a678bd3e3044453485b57aca4613e253~mv2.webp");
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#page1-form div#background div{
+    border-radius: 12px;
+    background-color: white;
 }
 
 #page1-form article {
     margin-left: 20%;
     width: 60%;
+    padding: 40px 20px;
 }
+#page1-form article h3{
+    text-align: center;
+}
+
 #page1-form article p {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
 #page1-form article a {
     margin-left: 30%;
     width: 40%;
+    border-radius: 8px;
+    font-size: 13px;
+    box-shadow: unset;
 }
 
 #page1-form article div.titleService{

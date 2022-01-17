@@ -44,7 +44,7 @@
     <section id="about-staff">
         <div class="title container">
 
-            <h3>Les gens</h3>
+            <h3>L'équipe</h3>
 
         </div>
 
