@@ -142,6 +142,11 @@ header nav ul li a {
         FOOTER
  *************************/
 
+.footer-center{
+    width: 45%;
+    margin-left: 27.5%;
+}
+
 footer .main-footer{	padding: 20px 0;	background: #252525;}
 footer ul{	padding-left: 0;	list-style: none;}
 

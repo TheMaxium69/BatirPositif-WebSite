@@ -7,7 +7,7 @@
             <div id="center">
                 <h1><img src="<?php echo $env_logoTransp; ?>"></h1>
                 <h1 class="bold uppercase">
-                    NEUF - rénovations - accompagnement
+                    CONSTRUCTION - rénovations
                 </h1>
                 <p class="uppercase">
                     Spécialisés dans l’accompagnement de vos projets
@@ -21,16 +21,20 @@
     <section id="page1-about">
         <div class="container row">
 
-            <div class="col-6">
+            <div class="">
             <h2>Bienvenue chez Bâtir positif</h2>
 
-                <p>BÂTIR POSITIF se positionne comme un accompagnant dans les projets de construction, d’extension et de rénovation responsable.</p><p>
-
-                Spécialisé en bâtiment à haute performance énergétique et à faible impact environnemental, BÂTIR POSITIF intervient sur des projets variés (maison individuelle, petit collectif, ERP…), avec la volonté d’aider les maîtres d’ouvrages à choisir les solutions les plus pertinentes et responsables.</p>
+                <p>Bureau d’études spécialisé dans l’accompagnement et le soutien de vos projets.
+                    Vous voulez construire, ou rénover de manière <b class="bold underline">responsable</b> ? Notre expertise pourra vous
+                    orienter ! particuliers ou professionnels, nous sommes opérationnels.</p><p>
+                    Spécialisés dans les bâtiments à faible consommation énergétique et avec un impact
+                    environnemental positif, nous intervenons à différents moments de votre projet. <b class="bold">Travaillons
+                    ensemble pour trouver les solutions les plus pertinentes et responsables.</b> Mais
+                    surtout, rendons ce projet convivial.</p>
 
             <?php custombtn("https://tyrolium.fr", "Voir plus", "white", "green"); ?>
             </div>
-            <div class="col-6">
+            <div class="col-6" style="display: none">
 
                 <img src="assets/City%20buildings_Flatline.svg">
 
@@ -41,57 +45,66 @@
 
     <section id="page1-list">
 
-        <div id="card" class="row container" style="max-width: 1160px">
+        <div id="card" class="row container" style="max-width: 983px">
 
             <div class="col-6 cards">
                 <i class="fas fa-home"></i>
-                <h2>neuf</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur cumque cupiditate debitis
-                    explicabo facere facilis impedit itaque nisi officia officiis</p>
-                <a href="https://tyrolium.fr">En savois plus</a>
+                <h2>CONSTRUCTION</h2>
+                <p>Accompagnement à différents niveaux de votre
+                    projet construction : conception, exécution, coordination...</p>
+                <a href="offre.php?off=0">En savois plus</a>
             </div>
 
             <div class="col-6 cards">
-                <i class="fas fa-house-damage"></i>
-                <h2>renovation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur cumque cupiditate debitis
-                    explicabo facere facilis impedit itaque nisi officia officiis</p>
-                <a href="https://tyrolium.fr">En savois plus</a>
+                <i class="fas fa-tools"></i>
+                <h2>RÉNOVATION</h2>
+                <p>Accompagnement de votre ambition de rénovation : diagnostic, audit,
+                    conception des nouveaux plans, exécution...</p>
+                <a href="offre.php?off=1">En savois plus</a>
             </div>
         </div>
 
     </section>
 
     <section id="page1-form">
-        <div id="background">
             <div class="container">
                 <h2>Nos acccompagnements</h2>
-                <article>
-                    <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
-                    <p>Effectuez une demande de devis gratuitement
-                        pour un audit énergétique, AMO, maîtrise d'éxecution</p>
-                    <?php custombtn("form.php?name=1", "Devis Gratuit", "black", "rgb(142, 248, 130)"); ?>
-                </article>
+                <div style="
+">
+                    <article style="    margin-left: 20%;">
+                        <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
+                        <p>Effectuez une demande de devis gratuitement
+                            pour un audit énergétique, AMO, maîtrise d'éxecution</p>
+                        <?php custombtn("form.php?name=1", "Devis Gratuit", "black", "rgb(142, 248, 130)"); ?>
+                    </article>
 
-                <article>
-                    <div class="titleService"><h3><i class="fas fa-home"></i> DEMANDE DE PARTENARIAT</h3></div>
-                    <p>Effectuez une demande de partenariat pour
-                        collaborer avec Bâtir Positif</p>
-                    <?php custombtn("form.php?name=2", "Demande de partenariat", "black", "rgb(142, 248, 130)"); ?>
-                </article>
+                    <div class="row">
+                        <article class="col-6">
+                            <div class="titleService"><h3><i class="fas fa-home"></i> DEMANDE DE PARTENARIAT</h3></div>
+                            <p>Effectuez une demande de partenariat pour
+                                collaborer avec Bâtir Positif</p>
+                            <?php custombtn("form.php?name=2", "Demande de partenariat", "black", "rgb(142, 248, 130)"); ?>
+                        </article>
 
-                <article>
-                    <div class="titleService"><h3><i class="fas fa-home"></i> ACCOMPAGNEMENT DECRÊT TERTIAIRE</h3></div>
-                    <p>Faites vous accompagner dans vos démarches
-                        vis-à-vis du décret tertiaire</p>
-                    <?php custombtn("form.php?name=3", "Faites-vous accompagner", "black", "rgb(142, 248, 130)"); ?>
-                </article>
-            </div>
+                        <article class="col-6">
+                            <div class="titleService"><h3><i class="fas fa-home"></i> ACCOMPAGNEMENT DECRÊT TERTIAIRE</h3></div>
+                            <p>Faites vous accompagner dans vos démarches
+                                vis-à-vis du décret tertiaire</p>
+                            <?php custombtn("form.php?name=3", "Faites-vous accompagner", "black", "rgb(142, 248, 130)"); ?>
+                        </article>
+                    </div>
+                </div>
         </div>
 
 
 
     </section>
+
+    <hr style="
+    height: 1px;
+    background: #b9b7b7;
+    max-width: 900px;
+    margin: 35px auto;">
 
     <section id="page1-blog" class="container row">
 

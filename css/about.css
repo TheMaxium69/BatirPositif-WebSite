@@ -3,7 +3,7 @@
  *************************/
 
 #about-story .back{
-    background: url("https://static.wixstatic.com/media/f612d4_a678bd3e3044453485b57aca4613e253~mv2.jpg/v1/fill/w_1264,h_965,al_c,q_85,usm_0.66_1.00_0.01/f612d4_a678bd3e3044453485b57aca4613e253~mv2.webp");
+    background: url("http://localhost/BatirPositif-WebSite/assets/foret.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -187,9 +187,13 @@
     font-size:16px;
     font-weight:300;
     margin-top:5px;
-    color:#ccc;
+    color: #7e7e7e;
     -webkit-transition:all 0.3s linear;
 }
+.about__slot:hover .title {
+    color: #ffffff;
+}
+
 
 .about__slot.bio .name {
     color:#f5f5f5;
@@ -212,6 +216,7 @@
 .about__section .about__slot:hover .name {
     color:#f5f5f5 !important;
 }
+
 
 .about__section .about__slot:hover .about__info {
     background-color:rgba(0,0,0,0.42);
