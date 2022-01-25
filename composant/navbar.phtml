@@ -1,4 +1,4 @@
-<header>
+<header id="nav-desktop">
     <!--<div class="header-banner" style="background-image: url('<?php /*echo $env_navImg; */?>');">
         <h1><img src="<?php /*echo $env_logoTransp; */?>"></h1>
     </div>-->
@@ -47,4 +47,36 @@
             </ul>
         </nav>
     <?php } ?>
+</header>
+
+<header id="nav-mobile">
+    <h1><img style="width: 155px;" src="<?php echo $env_logoTransp; ?>"></h1>
+
+    <input id="burger" type="checkbox" />
+
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul>
+
+            <?php
+
+            $nbPage = count($env_page);
+
+            for ($i = 1; $i <= $nbPage-1; $i++) {
+
+                echo '<li';
+                if ($page == $i){
+                    echo ' class="nav-active"';
+                }
+                echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
+            }
+            ?>
+        </ul>
+    </nav>
 </header>

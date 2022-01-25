@@ -9,7 +9,7 @@
         </h1>
 
         <p>
-            Un projet émerge dans votre idée ? Vous voulez construire ou rénover, mais ne savez pas comment vous pouvez vous faire accompagner ?</p>
+            Un projet émerge dans votre tête ? Vous voulez construire ou rénover, mais ne savez pas comment vous pouvez vous faire accompagner ?</p>
 
         <p>Nous sommes là pour vous aider et ainsi vous faciliter le travail. Nous intervenons à
             différents moments de votre projet : conception, exécution, coordination.
@@ -22,10 +22,10 @@
     max-width: 900px;
     margin: 35px auto;">
 
-    <section id="offre-onglet" class="container">
+    <section id="offre-onglet"">
 
         <!-- Liste des onglets -->
-        <nav id="onglets">
+        <nav id="onglets" style="border-bottom: 5px solid #28a745;">
             <?php
             $off = null;
 
@@ -55,24 +55,20 @@
             <?php } ?>
         </nav>
 
+    <div style="background-color: #DAEED9">
+        <div  class="container">
         <!-- Les contenus -->
         <article class="contenu <?php if ($off != 1){
             echo "actif";
         } ?>">
 
-            <div class="container">
-                <h1 style="text-align: center">Construction</h1>
-                <h2 style="margin-left: 6%;">Shemats : </h2>
-
-                <img style="    width: 624px;
-
-    margin-left: 19.4%;" src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=">
-
+            <div class="container" >
+                <h1 class="uppercase" style="text-align: center">Construction</h1>
 
                 <br><br>
 
                 <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
-                <ul style="list-style-type: disc;     width: 60%;" class="container">
+                <!--<ul style="list-style-type: disc;     width: 60%;" class="container">
                     <li><b class="bold">AMO: Assistance maîtrise d’ouvrage responsable :</b> il s’agit d’une mission de
                         <b class="uppercase">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                         est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -88,7 +84,89 @@
                     <li>
                         Étude énergétique RE2020
                     </li>
-                </ul>
+                </ul>-->
+                <div class="row">
+                    <div class="col-6" style="background-color: ">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">AMO : <br> Assistance maîtrise d’ouvrage responsable :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> il s’agit d’une mission de
+                        <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
+                        est de suivre votre projet et de vous aider, de vous conseiller à prendre les
+                        meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
+                            chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">MOE :<br> Maîtrise d'œuvre d'exécution :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Cette mission concerne la coordination de la
+                            mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
+                            expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
+                            sommes décisionnaires !</p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">Accompagnement à l’auto-construction :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Lorem Ispu </p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">Étude énergétique RE2020 :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Lorem Ispu </p>
+                    </div>
+
+
+
+
+
+
+                </div>
             </div>
 
         </article>
@@ -100,18 +178,14 @@
 
 
             <div class="container">
-                <h1 style="text-align: center">Rénovation</h1>
-                <h2 style="margin-left: 6%;">Shemats : </h2>
+                <h1 class="uppercase" style="text-align: center">Rénovation</h1>
 
-                <img style="    width: 624px;
-
-    margin-left: 19.4%;" src="https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg">
 
 
                 <br><br>
 
                 <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
-                <ul style="list-style-type: disc;     width: 60%;" class="container">
+                <!--<ul style="list-style-type: disc;     width: 60%;" class="container">
                     <li><b class="bold">AMO: Assistance maîtrise d’ouvrage responsable :</b> il s’agit d’une mission de
                         <b class="uppercase">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                         est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -128,19 +202,115 @@
                             de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
                             déterminer les points faibles et de construire le meilleur plan d’action pour que votre
                             bien devienne pauvre en consommation et plus responsable !</li>
-                </ul>
+                </ul>-->
+                <div class="row">
+                    <div class="col-6" style="background-color: ">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">AMO : <br> Assistance maîtrise d’ouvrage responsable :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> il s’agit d’une mission de
+                            <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
+                            est de suivre votre projet et de vous aider, de vous conseiller à prendre les
+                            meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
+                            chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">MOE :<br> Maîtrise d'œuvre d'exécution :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Cette mission concerne la coordination de la
+                            mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
+                            expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
+                            sommes décisionnaires !</p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">DDT : <br> Diagnostic technique :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Nous vous fournissons un rapport contenant tous les
+                            diagnostics immobiliers obligatoires concernant la sécurité des futurs occupants du
+                            bâtiment (exposition au plomb, présence d’amiante...) La santé avant tout !</p>
+                    </div>
+
+                    <div class="col-6">
+                        <div style="
+    background-color: #3c3c3c;
+    padding: 20px;
+    margin: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+" class="bold">Audit énergétique :</div>
+                        <p style="
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+"> Nous faisons un “état des lieux” des performances énergétiques
+                            de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
+                            déterminer les points faibles et de construire le meilleur plan d’action pour que votre
+                            bien devienne pauvre en consommation et plus responsable !</p>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
             </div>
 
 
 
         </article>
-
+        </div>
+    </div>
 
     </section>
 
     <script src="javascript/offre.js"></script>
 
-<br>
 
 </main>
 
