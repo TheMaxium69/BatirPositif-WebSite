@@ -266,4 +266,4 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="javascript/article.js"></script>
 
-<?php footer(); ?></body> </html>
+<?php footer($page); ?></body> </html>

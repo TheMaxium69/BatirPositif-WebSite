@@ -89,4 +89,4 @@
 
 
 
-<?php footer(); ?></body> </html>
+<?php footer($page); ?></body> </html>

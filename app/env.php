@@ -41,5 +41,10 @@ $env_page = array(
         "name" => "Blog",
         "file" => "blog",
     ),
+    5 => array(
+        "title" => "Contact",
+        "name" => "Contact",
+        "file" => "form",
+    ),
 );
 
