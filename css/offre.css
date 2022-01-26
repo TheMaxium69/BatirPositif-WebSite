@@ -21,9 +21,19 @@ hr.offre{
     max-width: 65%;
 }
 
+@media (max-width: 767px) {
+    #offre-title{
+        max-width: unset;
+    }
+}
+
 /*************************
-       OFFRE PANEL
+       OFFRE ONGLET
  *************************/
+
+#offre-onglet{
+    padding-bottom: 41px;
+}
 
 #offre-onglet #onglets ul{
     /* resset du ul */
@@ -76,20 +86,59 @@ hr.offre{
 }
 
 
-/*************************
-       OFFRE TOUS
- *************************/
+@media (max-width: 767px){
 
-#offre-tous{
-    margin-bottom: 120px;
+    section#offre-onglet {
+        width: 100%;
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+        padding-right: unset;
+        padding-left: unset;
+    }
+
+    .rowblock{
+        display: unset;
+        -ms-flex-wrap: unset;
+        flex-wrap: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .rowblock .col-6{
+        flex: unset;
+        max-width: unset;
+    }
+
 }
 
+@media (max-width: 538px){
 
-#offre-tous h2.art{
-    padding-top: 60px;
-    padding-bottom: 30px;
+    #offre-onglet #onglets ul {
+        width: 100%;
+        margin-left: unset;
+    }
+
+    div.containerstop{
+        width: 100%;
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+        padding-right: unset;
+        padding-left: unset;
+    }
 }
 
-#offre-tous p.art{
-    padding-bottom: 30px;
+@media (max-width: 433px){
+
+
+    #offre-onglet .onglet:last-child {
+        width: 49%;
+    }
+
+    #offre-onglet .onglet{
+        padding: 15px 10px;
+    }
+
+
 }

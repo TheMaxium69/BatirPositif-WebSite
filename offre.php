@@ -16,13 +16,14 @@
         </p>
 
     </section>
+
     <hr style="
     height: 1px;
     background: #b9b7b7;
     max-width: 900px;
     margin: 35px auto;">
 
-    <section id="offre-onglet"">
+    <section id="offre-onglet" class="container">
 
         <!-- Liste des onglets -->
         <nav id="onglets" style="border-bottom: 5px solid #28a745;">
@@ -55,37 +56,18 @@
             <?php } ?>
         </nav>
 
-    <div style="background-color: #DAEED9">
-        <div  class="container">
+    <div style="background-color: #DAEED9;     border: solid #28A745;
+    border-top: unset;">
+        <div  class="container containerstop">
         <!-- Les contenus -->
         <article class="contenu <?php if ($off != 1){
             echo "actif";
         } ?>">
-
-            <div class="container" >
+            <div class="container containerstop">
                 <h1 class="uppercase" style="text-align: center">Construction</h1>
-
                 <br><br>
-
                 <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
-                <!--<ul style="list-style-type: disc;     width: 60%;" class="container">
-                    <li><b class="bold">AMO: Assistance maîtrise d’ouvrage responsable :</b> il s’agit d’une mission de
-                        <b class="uppercase">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
-                        est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                        meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
-                        chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien !</li>
-                    <li><b class="bold">MOE : Maîtrise d'œuvre d'exécution :</b> Cette mission concerne la coordination de la
-                        mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
-                        expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
-                        sommes décisionnaires !</li>
-                    <li>
-                        Accompagnement à l’auto-construction
-                    </li>
-                    <li>
-                        Étude énergétique RE2020
-                    </li>
-                </ul>-->
-                <div class="row">
+                <div class="row rowblock">
                     <div class="col-6" style="background-color: ">
                         <div style="
     background-color: #3c3c3c;
@@ -160,50 +142,18 @@
     margin-left: 17.5%;
 "> Lorem Ispu </p>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
-
         </article>
 
         <article class="contenu <?php if ($off == 1){
             echo "actif";
         } ?>">
-
-
-
-            <div class="container">
+            <div class="container containerstop">
                 <h1 class="uppercase" style="text-align: center">Rénovation</h1>
-
-
-
                 <br><br>
-
                 <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
-                <!--<ul style="list-style-type: disc;     width: 60%;" class="container">
-                    <li><b class="bold">AMO: Assistance maîtrise d’ouvrage responsable :</b> il s’agit d’une mission de
-                        <b class="uppercase">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
-                        est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                        meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
-                        chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien !</li>
-                    <li><b class="bold">MOE : Maîtrise d'œuvre d'exécution :</b> Cette mission concerne la coordination de la
-                        mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
-                        expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
-                        sommes décisionnaires !</li>
-                    <li><b class="bold">DDT : Diagnostic technique :</b> Nous vous fournissons un rapport contenant tous les
-                            diagnostics immobiliers obligatoires concernant la sécurité des futurs occupants du
-                            bâtiment (exposition au plomb, présence d’amiante...) La santé avant tout !</li>
-                    <li><b class="bold">Audit énergétique :</b> Nous faisons un “état des lieux” des performances énergétiques
-                            de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
-                            déterminer les points faibles et de construire le meilleur plan d’action pour que votre
-                            bien devienne pauvre en consommation et plus responsable !</li>
-                </ul>-->
-                <div class="row">
+                <div class="row rowblock">
                     <div class="col-6" style="background-color: ">
                         <div style="
     background-color: #3c3c3c;
