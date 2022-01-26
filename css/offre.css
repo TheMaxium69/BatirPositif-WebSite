@@ -108,6 +108,9 @@ hr.offre{
     .rowblock .col-6{
         flex: unset;
         max-width: unset;
+
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
 }
