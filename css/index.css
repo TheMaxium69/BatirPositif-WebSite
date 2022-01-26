@@ -344,10 +344,15 @@
 /*************************
         POPUP
  *************************/
+#Popup div.fixed-bottom{
+    bottom: 1%;
+    left: 92%;
+}
 
 #Popup div div{
-    margin-left: 92%;
-    margin-bottom: 1%;
+
+    /*margin-left: 92%;*/
+    /*margin-bottom: 1%;*/
     width: 80px;
     height: 80px;
     background-color: green;

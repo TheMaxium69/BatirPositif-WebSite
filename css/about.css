@@ -3,7 +3,7 @@
  *************************/
 
 #about-story .back{
-    background: url("http://localhost/BatirPositif-WebSite/assets/foret.jpg");
+    background: url("../assets/foret.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -42,6 +42,32 @@
     padding: 0 4px;
     position: relative;
     top: -13px;
+}
+@media (max-width: 600px) {
+    #about-story .text{
+        padding: 30px 30px;
+    }
+
+    #about-story .text hr {
+        width: 90%;
+        margin: 15px 5%;
+    }
+
+}
+
+@media (max-width: 1054px) {
+    #about-story .text{
+        margin: unset;
+        width: unset;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #about-story .back {
+        padding: unset;
+    }
+
 }
 
 
@@ -220,4 +246,45 @@
 
 .about__section .about__slot:hover .about__info {
     background-color:rgba(0,0,0,0.42);
+}
+
+@media (max-width: 1110px) {
+    .about__section{
+        width: 100%;
+    }
+
+}
+@media (max-width: 887px) {
+
+    .about__section .about__slot {
+        width: 35%;
+        margin: 0px 32.5%;
+    }
+
+    .about__slot .about__info {
+        position: unset;
+    }
+
+
+
+}
+
+/*@media (max-width: 638px) {
+
+    .about__section .about__slot {
+        width: 40%;
+        margin: 0px 30%;
+    }
+
+}*/
+
+/*400*/
+@media (max-width: 638px) {
+
+    .about__section .about__slot {
+        width: 98%;
+        margin: 0px 1%;
+    }
+
+
 }

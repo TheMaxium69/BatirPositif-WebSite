@@ -268,20 +268,31 @@ header#nav-desktop nav ul li a {
     opacity: 1;
     transition-delay: 0.5s;
 }
+/*************************
+        CONTACT
+ *************************/
+
+@media (min-width: 394px) {
+    #contact div.mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 394px) {
+    #contact div.desktop{
+        display: none;
+    }
+}
 
 /*************************
         FOOTER
  *************************/
 
-/*.footer-center{*/
-/*    width: 45%;*/
-/*    margin-left: 27.5%;*/
-/*}*/
 
 footer .main-footer{	padding: 20px 0;	background: #252525;}
 footer ul{	padding-left: 0;	list-style: none;}
 
-.footer-copyright {	background: #222;	padding: 18px 0;}
+.footer-copyright {	background: #fbfbfb;	padding: 18px 0;}
 .footer-copyright a.custombtn{	display: unset;}
 .footer-copyright .logo {    display: inherit;}
 .footer-copyright nav {    float: right;    margin-top: 5px;}
@@ -345,18 +356,57 @@ footer .btn:hover, footer .btn:focus, footer .btn.active {background: #7fbf7f;co
 
 }
 
-@media (min-width: 394px) {
-    footer div.mobile{
-        display: none;
-    }
+div#foot-desktop{
+    display: flex;
 }
 
-@media (max-width: 394px) {
-    footer div.desktop{
-        display: none;
-    }
+footer {
+    background-color: #262626;
+    border-top: 10px solid;
+    border-color: #689F67;
+    padding: 20px 0 40px;
+}
+footer h5{
+    font-size: 18px;
+}
+footer div h5 a j{
+    color: #4d8d4c;
+    font-size: 13px;
 }
 
+footer a:hover{
+    color: #689F67;
+    text-decoration: underline;
+}
 
+div#logo1{
+    width: 15%;
+}
 
+@media (max-width: 867px) {
+    div#logo1{
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 731px) {
+    div#logo1{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 655px) {
+    div#foot-mobile{
+        display: none;
+    }
+
+}
+@media (max-width: 654px) {
+    div#foot-desktop{
+        display: none;
+    }
+
+}
 
