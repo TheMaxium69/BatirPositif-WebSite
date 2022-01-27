@@ -59,8 +59,7 @@
                 Parlez-nous de votre projet
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis eum explicabo in, ipsum itaque magnam nemo
-                nesciunt numquam quae rem repudiandae. Ad atque distinctio hic praesentium quam voluptate voluptates.
+                Vous avez un projet de construction ou de rénovation et vous souhaitez vous faire accompagner de manière responsable  ? Écrivez-nous et discutons-en !
             </p>
 
         <?php } ?>

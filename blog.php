@@ -3,24 +3,25 @@
 
 <main>
 
-    <section id="blog-title" class="container">
-        <h1>
-            Actualités et articles
-        </h1>
-        <p>
-            Bienvenue sur le blog de Bâtir positif. Si vous êtes intéressés par les thématiques de
-            la construction, de la rénovation (responsable, toujours!) et encore plus, vous êtes au
-
-            bon endroit pour trouver votre bonheur.
-        </p>
-
-    </section>
-
-    <hr class="blog">
-
     <section id="blog-article">
+
+
         <div class="row" style="margin: unset">
             <div class="col-blog">
+                <div class="container">
+                <h1 style="text-align: center">
+                    Actualités et articles
+                </h1>
+                <p style="text-align: center; color: black; padding-bottom: 35px;">
+                    Bienvenue sur le blog de Bâtir positif. Si vous êtes intéressés par les thématiques de
+                    la construction, de la rénovation (responsable, toujours!) et encore plus, vous êtes au
+
+                    bon endroit pour trouver votre bonheur.
+                </p>
+
+                <hr style="padding-bottom: 35px;">
+
+                </div>
                 <div class="row d-flex justify-content-center" style="row-gap: 20px;
     column-gap: 30px;
     max-width: 1289px;
@@ -234,10 +235,10 @@
 
             <div id="news" class="col-news">
 
-                <div class="card-form">
+                <div class="card-form sticky-top">
                     <form class="signup">
                         <div class="form-title">Newsletter</div>
-                        <p style="color: black; padding-top: 10px">Lorem ispu</p>
+                        <p style="color: black; padding-top: 10px">Découvrez notre vie d’entreprise !</p>
                         <div class="rule"></div>
                         <div class="form-body">
                             <div class="row">

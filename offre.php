@@ -119,11 +119,6 @@
     border-radius: 10px;
     color: white;
 " class="bold">Accompagnement à l’auto-construction :</div>
-                        <p style="
-    max-width: 65%;
-    text-align: center;
-    margin-left: 17.5%;
-"> Lorem Ispu </p>
                     </div>
 
                     <div class="col-6">
@@ -136,11 +131,6 @@
     border-radius: 10px;
     color: white;
 " class="bold">Étude énergétique RE2020 :</div>
-                        <p style="
-    max-width: 65%;
-    text-align: center;
-    margin-left: 17.5%;
-"> Lorem Ispu </p>
                     </div>
                 </div>
             </div>
