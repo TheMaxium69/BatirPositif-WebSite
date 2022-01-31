@@ -37,9 +37,20 @@
 
 #page1-headimg div#img div#center h1 img{
     width: 350px;
-    background-color: rgb(255 255 255 / 80%);;
+    background-color: rgb(255 255 255 / 80%);
     border-radius: 10px;
     padding: 5px 18px;
+
+}
+
+#page1-headimg div#img div#center h1 img:hover{
+    background-color: white;
+    border-radius: 8px;
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
 
 }
 
@@ -60,8 +71,11 @@
 
     border-radius: 10px;
 
-    font-weight: bold;
-
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.05);
 }
 
 @media (max-width: 991px) {
@@ -101,7 +115,11 @@
 
 #page1-about div div img:hover {
 
-    border-radius: 3%;
+    -webkit-transform:scale(1.10); /* Safari et Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* Internet Explorer 9 */
+    -o-transform:scale(1.10); /* Opera */
+    transform:scale(1.10);
 
 }
 
@@ -111,9 +129,20 @@
     padding-bottom: 15px;
 }
 
+#page1-about h2:hover{
+    font-size: 35px;
+}
+
 #page1-about p{
     font-size: 15px;
 }
+
+#page1-about p b:hover{
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
 
 #page1-about a.custombtn{
     margin-left: 37.5%;
@@ -166,6 +195,14 @@
     color: var(--color-page1-green);
     font-size: 45px;
     margin-bottom: 10px;
+}
+
+#page1-list .cards i:hover{
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
 }
 
 #page1-list .cards h2{
@@ -227,8 +264,7 @@
 
 
 #page1-form article {
-    width: 60%;
-    padding: 40px 20px;
+    padding: 66px 54px;
 }
 
 
@@ -237,14 +273,20 @@
     text-align: center;
 }
 
+#page1-form article h3:hover{
+    font-size: 23px;
+}
+
 #page1-form article p {
     margin-bottom: 18px;
     text-align: center;
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 #page1-form article a {
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 25%;
+    width: 50%;
     font-size: 13px;
     box-shadow: unset;
 }
@@ -296,6 +338,13 @@
 }
 #page1-blog img.p1{
     margin-left: 35px;
+}
+#page1-blog img:hover{
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
 }
 
 #page1-blog .carousel-caption{

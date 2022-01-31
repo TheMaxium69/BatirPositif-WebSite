@@ -70,26 +70,32 @@
     </section>
 
     <section id="page1-form">
-            <div class="container">
-                <h2>Pour aller plus loin :</h2>
-                <div style="
-">
-                    <article class="first">
-                        <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
-                        <p>Effectuez une demande de devis gratuitement
-                            pour un audit énergétique, AMO, maîtrise d'éxecution</p>
-                        <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "#4d8d4c"); ?>
-                    </article>
+            <div >
+                <div style="padding-top: 46px">
 
-                    <div class="row">
-                        <article class="col-6">
+                    <div style="padding: 100px;
+                               background: url(assets/foret.jpg);
+
+    background-position: left;
+">
+                    </div>
+
+                    <div class="row" style="    margin-left: 5%;
+    width: 90%;">
+                        <article class="col-4">
+                            <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
+                            <p>Effectuez une demande de devis gratuitement
+                                pour un audit énergétique, AMO, maîtrise d'éxecution</p>
+                            <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "#4d8d4c"); ?>
+                        </article>
+                        <article class="col-4">
                             <div class="titleService"><h3><i class="fas fa-handshake"></i> DEMANDE DE PARTENARIAT</h3></div>
                             <p>Effectuez une demande de partenariat pour
-                                collaborer avec Bâtir Positif</p>
+                                collaborer<br> avec Bâtir Positif</p>
                             <?php custombtn("form.php?name=2", "Demande de partenariat", "white", "#4d8d4c"); ?>
                         </article>
 
-                        <article class="col-6">
+                        <article class="col-4">
                             <div class="titleService"><h3><i class="fas fa-building"></i> ACCOMPAGNEMENT DECRÊT TERTIAIRE</h3></div>
                             <p>Faites vous accompagner dans vos démarches
                                 vis-à-vis du décret tertiaire</p>
@@ -109,11 +115,117 @@
     max-width: 900px;
     margin: 35px auto;">
 
-    <section id="page1-blog" class="container row">
+    <section id="page1-blog" class="container row" style="
+    padding-bottom: 37px;">
 
-        <div class="col-6">
+        <div class="col-6" id="news">
 
-            <h2>Nos articles :</h2>
+            <h2 style="padding-bottom: 14px">Newsletter :</h2>
+
+            <div class="card-form">
+                <form class="signup">
+                    <div class="form-title text-white">Newsletter</div>
+                    <p style="color: black; padding-top: 10px">Découvrez notre vie d’entreprise !</p>
+                    <div class="rule"></div>
+                    <div class="form-body">
+                        <div class="row">
+                            <input type="text" placeholder="Email Address*">
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <a>S'inscire ! <i class="fa fa-check"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <style>
+                #news p,
+                #news h2,
+                #news{
+                    text-align: center;
+                }
+
+                #news a {
+                    color: white;
+                }
+
+                .card-form {
+                    /*margin-left: -120px;*/
+                    /*width: 500px;*/
+                    border-radius: 10px;
+                    background: white;
+                    box-shadow: 0 1px 22px 0 rgb(0, 0, 0, 30%), 0 17px 17px 0 rgb(0, 0, 0, 15%);
+                }
+
+                .card-form .form-title {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background: #27ae60;
+                    border-radius: 10px 10px 0 0;
+                }
+                .card-form .form-body {
+                    padding: 10px;
+                }
+                .card-form .form-body .row {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px;
+                }
+                .card-form .form-body .row input[type=text] {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    width: 100%;
+                    margin: 0 15px;
+                    height: 35px;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    background: #e8ebed;
+                    color: #576366;
+                    font-size: 14px;
+                }
+                .card-form .rule {
+                    height: 2px;
+                    background: #e8ebed;
+                    margin: 0px 35px;
+                }
+                .card-form .form-footer {
+                    margin: 0 25px 15px 25px;
+                    padding: 0px 10px 22px 10px;
+
+
+                }
+                .card-form .form-footer a {
+                    display: inline-block;
+                    /*height: 40px;*/
+                    line-height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 5px 15px;
+                    background: #27ae60;
+                    margin-right: 10px;
+                    font-size: 14px;
+                }
+                .card-form .form-footer a:hover {
+
+                    background-color: #12d765;
+                }
+                .card-form .form-footer span {
+                    margin-left: 8px;
+                }
+            </style>
+        </div>
+
+
+
+<!--            <h2>Nos articles :</h2>
             <div id="carousel-Blog" class="carousel slide " data-ride="carousel">
 
 
@@ -175,18 +287,32 @@
                 text-align: center;
                 padding-bottom: 35px;
             }
-        </style>
+        </style>-->
 
         <div class="col-6">
 
-            <h2 class="padd-mob">Nos partenaires :</h2>
+            <h2 class="padd-mob" style="text-align: center;">Nos partenaires :</h2>
 
-            <div class="img">
-            <img class="p1" src="https://batirpositif.files.wordpress.com/2021/03/oikos.png">
+            <div class="img" style="    padding-top: 36px;
+    padding-left: 15px;
+}">
 
-            <img class="p2" src="https://batirpositif.files.wordpress.com/2021/07/capture-decran-2021-03-11-110853-edited.png">
 
-            <img class="p3" src="https://batirpositif.files.wordpress.com/2021/03/image18-1.png">
+                <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png" style="
+                    width: 47%;
+                ">
+                <img class="p4" src="assets/certif/l3.png" style="
+                    width: 43%;
+                ">
+                <img class="p1" src="https://batirpositif.files.wordpress.com/2021/03/oikos.png" style="
+                    width: 46%;
+                    margin-left: 18%;
+                    margin-top: -7%;
+                ">
+                <img class="p3" src="https://batirpositif.files.wordpress.com/2021/03/image18-1.png" style="
+                    margin-left: 19%;
+                ">
+
             </div>
 
         </div>
@@ -202,7 +328,7 @@
     <section id="Popup">
         <div class="fixed-bottom">
             <div style="">
-                <a href="blog.php">
+                <a href="#news">
                     <i class="far fa-newspaper" style="margin-top: 17px;"></i>
                 </a>
             </div>

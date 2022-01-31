@@ -61,7 +61,7 @@ hr.offre{
     font-weight: bold;
     border-radius : 4px 4px 0 0;
     cursor:pointer;
-
+    color: white;
     text-align: center;
 }
 
@@ -85,10 +85,29 @@ hr.offre{
     display : block;
 }
 
+#offre-onglet .otitle{
+    background-color: #3c3c3c;
+    padding: 20px;
+    /*margin: 50px;*/
+    margin-bottom: 7px;
+    text-align: center;
+    /*border-top-left-radius: 7px;*/
+    /*border-top-right-radius: 7px;*/
+    color: white;
+}
+
 
 @media (max-width: 767px){
 
     section#offre-onglet {
+        width: 100%;
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+        padding-right: unset;
+        padding-left: unset;
+    }
+    section#offre-onglet div.container {
         width: 100%;
         max-width: unset;
         margin-left: unset;
@@ -144,4 +163,84 @@ hr.offre{
     }
 
 
+}
+
+.titlediv {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.titleoffre {
+    position: relative;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #f1eaea;
+    font-size: 33px;
+    font-weight: normal;
+    text-align: center;
+    color: #28A745;
+}
+
+.titleoffre:after {
+    content:    '';
+    position:   absolute;
+    display:    block;
+    width:      48px;
+    height:     5px;
+    left:       50%;
+    bottom:     -3px;
+    margin:     0 -24px;
+    background: #28A745;
+}
+
+
+/**/
+section#offre-onglet{
+    background-image: url("../assets/cuisine2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#offre-onglet div.container{
+    padding-top: 20px;
+}
+
+.timeline .content {
+    height: 4.2rem;
+    margin: 2rem 0;
+    background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);
+    display: flex;
+}
+.timeline .content div {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1.2rem 0 1.2rem 1.2rem;
+    font-size: 1.4rem;
+    background: #f0f0f0;
+    text-align: center;
+}
+.timeline .content div:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 2.1rem inset transparent;
+    border-left: 2.1rem solid transparent;
+}
+.timeline .content .current {
+    color: white;
+    font-weight: bold;
+}
+.timeline .content .current:after {
+    border-bottom: 2.1rem solid #f0f0f0;
+    border-top: 2.1rem solid #f0f0f0;
+}
+.timeline .content .current:last-child:after {
+    border: 0;
+}
+.timeline .content .completed {
+    color: rgba(255, 255, 255, 0.89);
+}
+.timeline .content .current,
+.timeline .content .completed {
+    background: transparent;
 }
