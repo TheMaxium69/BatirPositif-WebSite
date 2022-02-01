@@ -69,20 +69,44 @@
     <hr class="title">
 
     <section id="contact-form" class="contact-wrap">
-        <form action="" class="contact-form ">
+        <form action="db/add.php" class="contact-form" method="GET">
+        <?php if (!empty($idForm)){
+
+            if ($idForm == 1){
+            ?>
+                <input type="hidden" name="type" value="1">
+            <?php
+            }
+
+            if ($idForm == 2){
+                ?>
+
+                <input type="hidden" name="type" value="2">
+
+            <?php
+            }
+
+            if ($idForm == 3){
+            ?>
+
+                <input type="hidden" name="type" value="3">
+
+            <?php
+            }
+        } ?>
 
             <div class="col-sm-12">
                 <div class=" row">
                     <div class="col-sm-6">
                         <div class="input-block">
-                            <label for="">Prénom</label>
-                            <input type="text" class="form-control">
+                            <label for="">Prénom*</label>
+                            <input type="text" class="form-control" name="firstName" required>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="input-block">
-                            <label for="">Nom</label>
-                            <input type="text" class="form-control">
+                            <label for="">Nom*</label>
+                            <input type="text" class="form-control" name="lastName" required>
                         </div>
                     </div>
                 </div>
@@ -90,27 +114,57 @@
 
             <div class="col-sm-12">
                 <div class="input-block">
-                    <label for="">Email</label>
-                    <input type="text" class="form-control">
+                    <label for="">Email*</label>
+                    <input type="text" class="form-control" name="email" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block">
                     <label for="">Numéro de téléphone</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="phone">
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="input-block textarea">
-                    <label for="">Déposez votre message ici</label>
-                    <textarea rows="3" type="text" class="form-control"></textarea>
+                    <label for="">Déposez votre message ici*</label>
+                    <textarea rows="3" type="text" class="form-control" name="content" required></textarea>
                 </div>
             </div>
             <div class="col-sm-12">
-                <button class="square-button">Envoyé</button>
+                <input class="square-button" type="submit" value="Envoyé">
             </div>
         </form>
     </section>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+    <script  src="javascript/notif.js"></script>
+
+    <?php if (!empty($_GET['err'])) {?>
+        <script>
+            if(Text != 1){
+                iziToast.error({
+                    title: 'Erreur',
+                    position: 'bottomRight',
+                    message: 'Une erreur est survenue | Code : <?php echo $_GET['err']; ?>'
+                });
+            }
+        </script>
+    <?php } ?>
+
+    <?php if (!empty($_GET['true'])) {?>
+        <script>
+            if(Text != 1){
+                iziToast.success({
+                    title: 'OK',
+                    position: 'bottomRight',
+                    message: 'Votre demande a bien été envoyé !'
+                });
+            }
+        </script>
+    <?php } ?>
 
 </main>
 

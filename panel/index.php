@@ -1,11 +1,21 @@
-<?php include "app.php"; $page = 9; head($page); ?>
-<body> <?php navbar($page); ?>
 
-<main>
+    <?php
 
-
-</main>
+    require "../db/app.php";
 
 
+    $AllContact = getAllContact();
 
-<?php footer($page); ?></body> </html>
+    foreach ($AllContact as $contact){
+
+
+        $OneContact = getClassContact($contact);
+
+        echo "<br> - " . $OneContact->email;
+
+    }
+
+
+
+
+    ?>
