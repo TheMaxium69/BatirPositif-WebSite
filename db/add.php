@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 if (!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['email']) && !empty($_GET['content'])){
 
 
@@ -13,7 +10,6 @@ if (!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['ema
 
     $sendObjectExtract = extracted($sendObject);
 
-//    var_dump($sendObjectExtract);
     $sendObjectProtect = protect($sendObjectExtract);
     insert($sendObjectProtect);
 

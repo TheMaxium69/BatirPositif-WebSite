@@ -37,7 +37,7 @@
             </div>
             <div class="col-6">
 
-                <img src="assets/Sans titre.png" style="
+                <img src="assets/Biofib-isolation-naturelle-pose-saine-3.png" style="
 
 
 ">
@@ -122,17 +122,17 @@
             <h2 style="padding-bottom: 14px">Newsletter :</h2>
 
             <div class="card-form">
-                <form class="signup">
+                <form class="signup" action="db/newsletter.php" method="GET">
                     <div class="form-title text-white">Newsletter</div>
                     <p style="color: black; padding-top: 10px">Découvrez notre vie d’entreprise !</p>
                     <div class="rule"></div>
                     <div class="form-body">
                         <div class="row">
-                            <input type="text" placeholder="Email Address*">
+                            <input type="text" name="mail" placeholder="Email Address">
                         </div>
                     </div>
                     <div class="form-footer">
-                        <a>S'inscire ! <i class="fa fa-check"></i></a>
+                        <input type="submit" value="S'inscire !">
                     </div>
                 </form>
             </div>
@@ -201,7 +201,8 @@
 
 
                 }
-                .card-form .form-footer a {
+                .card-form .form-footer input {
+                    color: white;
                     display: inline-block;
                     /*height: 40px;*/
                     line-height: 40px;
@@ -212,7 +213,7 @@
                     margin-right: 10px;
                     font-size: 14px;
                 }
-                .card-form .form-footer a:hover {
+                .card-form .form-footer input:hover {
 
                     background-color: #12d765;
                 }
@@ -325,6 +326,34 @@
         </div>
 
     </section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+    <script  src="javascript/notif.js"></script>
+
+    <?php if (!empty($_GET['err'])) {?>
+        <script>
+            if(Text != 1){
+                iziToast.error({
+                    title: 'Erreur',
+                    position: 'bottomRight',
+                    message: 'Une erreur est survenue | Code : <?php echo $_GET['err']; ?>'
+                });
+            }
+        </script>
+    <?php } ?>
+
+    <?php if (!empty($_GET['true'])) {?>
+        <script>
+            if(Text != 1){
+                iziToast.success({
+                    title: 'OK',
+                    position: 'bottomRight',
+                    message: 'Votre demande a bien été envoyé !'
+                });
+            }
+        </script>
+    <?php } ?>
 
 <!---->
 <!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis eum explicabo in, ipsum itaque magnam nemo-->

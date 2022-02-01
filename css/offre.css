@@ -86,6 +86,8 @@ hr.offre{
 }
 
 #offre-onglet .otitle{
+
+    width: 100%;
     background-color: #3c3c3c;
     padding: 20px;
     /*margin: 50px;*/
@@ -96,6 +98,68 @@ hr.offre{
     color: white;
 }
 
+#offre-onglet .otitle:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+div.rowblock div.col-6{
+    padding-bottom: 35px;
+}
+
+.divGlobal{
+    /*background-color: #DAEED9;*/
+    background-color: white;
+    border: solid #28A745;
+    border-radius: 20px;
+}
+
+.divOne{
+
+    background-color: white; border: solid #3C3C3C; border-radius: 10px;
+    background: linear-gradient(97deg, #7BCE76 0%, #afffa6 100%);
+    min-height: 410px;
+}
+
+
+.divTwo{
+
+    display: none;
+
+    padding: 70px;
+    background: url(../assets/foret.jpg);
+
+    background-position: left;
+
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.divP{
+    max-width: 65%;
+    text-align: center;
+    margin-left: 17.5%;
+    margin-bottom: 20px;
+}
+
+
+section#offre-onglet{
+    background-image: url("../assets/cuisine2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+@media (max-width: 1038px) {
+    section#offre-onglet{
+        background-image: unset;
+        background-color: white;
+    }
+}
 
 @media (max-width: 767px){
 
@@ -149,6 +213,11 @@ hr.offre{
         padding-right: unset;
         padding-left: unset;
     }
+
+    .divGlobal{
+        border-radius: unset;
+    }
+
 }
 
 @media (max-width: 433px){
@@ -161,7 +230,6 @@ hr.offre{
     #offre-onglet .onglet{
         padding: 15px 10px;
     }
-
 
 }
 
@@ -194,12 +262,6 @@ hr.offre{
 
 
 /**/
-section#offre-onglet{
-    background-image: url("../assets/cuisine2.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
 
 #offre-onglet div.container{
     padding-top: 20px;

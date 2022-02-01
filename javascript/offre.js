@@ -24,6 +24,10 @@ let divOne = document.querySelector('div#a1');
 let divTwo = document.querySelector('div#a2');
 let divThree = document.querySelector('div#a3');
 
+let divOneB = document.querySelector('div#b1');
+let divTwoB = document.querySelector('div#b2');
+let divThreeB = document.querySelector('div#b3');
+
 
 /*function shemat(id) {
 
@@ -94,6 +98,43 @@ $(document).ready(function() {
             divOne.classList.remove("completed");
             divTwo.classList.remove("completed");
             divThree.classList.remove("current");
+
+        }
+    );
+
+    $("div#b2").hover(
+        function () {
+
+            divTwoB.classList.add("current");
+
+            divOneB.classList.add("completed");
+            divOneB.classList.remove("current");
+
+            if (divThreeB.classList.toString() === "completed"){
+                divThreeB.classList.remove("completed")
+            }
+        },
+        function () {
+
+            divOneB.classList.add("current");
+            divOneB.classList.remove("completed");
+            divTwoB.classList.remove("current");
+        }
+    );
+
+    $("div#b3").hover(
+        function () {
+            divThreeB.classList.add("current");
+            divOneB.classList.add("completed");
+            divOneB.classList.remove("current");
+            divTwoB.classList.add("completed");
+        },
+        function () {
+
+            divOneB.classList.add("current");
+            divOneB.classList.remove("completed");
+            divTwoB.classList.remove("completed");
+            divThreeB.classList.remove("current");
 
         }
     );
