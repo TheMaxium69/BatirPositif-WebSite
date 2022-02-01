@@ -73,15 +73,38 @@
             <div >
                 <div style="padding-top: 46px">
 
-                    <div style="padding: 100px;
-                               background: url(assets/foret.jpg);
-
-    background-position: left;
-">
+                    <div id="testrow" class="row" style="/*padding: 100px;*/
+                                /*background: url(assets/foret.jpg);*/
+                                /*background-position: left;/*">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
                     </div>
 
-                    <div class="row" style="    margin-left: 5%;
-    width: 90%;">
+                    <style>
+                        #testrow{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                        #testrow div.col-4{
+                            padding: 100px;
+                            background-image: url("assets/foret.jpg");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+
+                        #testrow div.col-4:hover {
+                            -webkit-transform:scale(1.25); /* Safari et Chrome */
+                            -moz-transform:scale(1.25); /* Firefox */
+                            -ms-transform:scale(1.25); /* Internet Explorer 9 */
+                            -o-transform:scale(1.25); /* Opera */
+                            transform:scale(1.25);
+
+                        }
+
+                    </style>
+
+                    <div class="row" id="linkform">
                         <article class="col-4">
                             <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
                             <p>Effectuez une demande de devis gratuitement
@@ -298,20 +321,10 @@
 }">
 
 
-                <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png" style="
-                    width: 47%;
-                ">
-                <img class="p4" src="assets/certif/l3.png" style="
-                    width: 43%;
-                ">
-                <img class="p1" src="https://batirpositif.files.wordpress.com/2021/03/oikos.png" style="
-                    width: 46%;
-                    margin-left: 18%;
-                    margin-top: -7%;
-                ">
-                <img class="p3" src="https://batirpositif.files.wordpress.com/2021/03/image18-1.png" style="
-                    margin-left: 19%;
-                ">
+                <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png">
+                <img class="p4" src="assets/certif/l3.png">
+                <img class="p1" src="https://batirpositif.files.wordpress.com/2021/03/oikos.png">
+                <img class="p3" src="https://batirpositif.files.wordpress.com/2021/03/image18-1.png">
 
             </div>
 

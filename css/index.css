@@ -285,8 +285,8 @@
 }
 
 #page1-form article a {
-    margin-left: 25%;
-    width: 50%;
+    margin: 0;
+    width: 100%;
     font-size: 13px;
     box-shadow: unset;
 }
@@ -296,36 +296,37 @@
 }
 
 @media (max-width: 991px) {
-    #page1-form div.container{ width: 100% }
-    #page1-form h2 {
-        font-size: 25px;
-        margin-left: 0px;
-        padding: 40px 0px 0px 0px;
+    #testrow{
+        display: none;
     }
 
-    #page1-form article {
-        width: unset;
-        padding: 40px 0px;
-    }
-    #page1-form article.first {
-        margin-left: unset;
-    }
-
-    #page1-form div div div.row{
+    #linkform.row{
         display: unset;
         -ms-flex-wrap: unset;
         flex-wrap: unset;
         margin-right: unset;
         margin-left: unset;
     }
-    #page1-form div div div.row article.col-6{
+
+    #linkform.row article.col-4{
         flex: unset;
         max-width: unset;
     }
-    #page1-form article a {
-        margin-left: 15%;
-        width: 70%;
+}
+
+
+#linkform {
+    margin-left: 5%;
+    width: 90%;
+}
+
+@media (max-width: 1179px) {
+    #linkform {
+        margin-left: unset;
+        width: 100%;
+
     }
+
 }
 
 /*************************
@@ -336,9 +337,26 @@
     margin-left: 60px;
     margin-top: -27px;
 }
-#page1-blog img.p1{
-    margin-left: 35px;
+
+#page1-blog img.p2{
+    width: 47%;
 }
+
+#page1-blog img.p4{
+    width: 43%;
+}
+
+#page1-blog img.p1{
+    width: 46%;
+    margin-left: 18%;
+    margin-top: -7%;
+}
+
+#page1-blog img.p3{
+    margin-left: 19%;
+}
+
+
 #page1-blog img:hover{
     -webkit-transform:scale(1.25); /* Safari et Chrome */
     -moz-transform:scale(1.25); /* Firefox */
@@ -372,21 +390,29 @@
         margin-left: 0px;
     }
 
-    #page1-blog img.p1{
-        margin-left: 5%;
-        width: 90%;
-    }
 
     #page1-blog img.p2{
-        margin-left: 20%;
-        width: 60%;
+        width: 47%;
+        margin-left: 24%;
+    }
+
+    #page1-blog img.p4{
+        width: 43%;
+        margin-left: 24%;
+    }
+
+    #page1-blog img.p1{
+        width: 46%;
+        margin-left: 24%;
+        margin-top: -7%;
     }
 
     #page1-blog img.p3{
-        margin-left: 20%;
-        width: 60%;
-        padding-bottom: 45px;
+        margin-left: 16%;
+        margin-top: 7%;
     }
+
+
 
 }
 
