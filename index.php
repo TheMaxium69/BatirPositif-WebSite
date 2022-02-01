@@ -74,36 +74,11 @@
             <div >
                 <div style="padding-top: 46px">
 
-                    <div id="testrow" class="row" style="/*padding: 100px;*/
-                                /*background: url(assets/foret.jpg);*/
-                                /*background-position: left;/*">
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                    <div id="testrow" class="row">
+                        <div class="col-4 d1"></div>
+                        <div class="col-4 d2"></div>
+                        <div class="col-4 d3"></div>
                     </div>
-
-                    <style>
-                        #testrow{
-                            margin-left: 0;
-                            margin-right: 0;
-                        }
-                        #testrow div.col-4{
-                            padding: 100px;
-                            background-image: url("assets/foret.jpg");
-                            background-position: center;
-                            background-repeat: no-repeat;
-                        }
-
-                        #testrow div.col-4:hover {
-                            -webkit-transform:scale(1.25); /* Safari et Chrome */
-                            -moz-transform:scale(1.25); /* Firefox */
-                            -ms-transform:scale(1.25); /* Internet Explorer 9 */
-                            -o-transform:scale(1.25); /* Opera */
-                            transform:scale(1.25);
-
-                        }
-
-                    </style>
 
                     <div class="row" id="linkform">
                         <article class="col-4">

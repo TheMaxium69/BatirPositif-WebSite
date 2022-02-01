@@ -12,13 +12,17 @@
 
                 $nbPage = count($env_page);
 
-                for ($i = 1; $i <= 3; $i++) {
+                for ($i = 1; $i <= 5; $i++) {
 
-                    echo '<li';
-                    if ($page == $i){
-                        echo ' class="nav-active"';
+                    if($i != 4){
+                        echo '<li';
+                        if ($page == $i){
+                            echo ' class="nav-active"';
+                        }
+                        echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
                     }
-                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
 
                 }
                 ?>
@@ -34,13 +38,17 @@
 
                 $nbPage = count($env_page);
 
-                for ($i = 1; $i <= 3; $i++) {
+                for ($i = 1; $i <= 5; $i++) {
 
-                    echo '<li';
-                    if ($page == $i){
-                        echo ' class="nav-active"';
+                    if($i != 4){
+                        echo '<li';
+                        if ($page == $i){
+                            echo ' class="nav-active"';
+                        }
+                        echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
                     }
-                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
 
                 }
                 ?>
@@ -67,13 +75,17 @@
 
             $nbPage = count($env_page);
 
-            for ($i = 1; $i <= 3; $i++) {
+            for ($i = 1; $i <= 5; $i++) {
 
-                echo '<li';
-                if ($page == $i){
-                    echo ' class="nav-active"';
+                if($i != 4){
+                    echo '<li';
+                    if ($page == $i){
+                        echo ' class="nav-active"';
+                    }
+                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
                 }
-                echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+
 
             }
             ?>

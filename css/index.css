@@ -295,6 +295,38 @@
     margin-bottom: 15px;
 }
 
+#testrow{
+    margin-left: 0;
+    margin-right: 0;
+}
+#testrow div.col-4{
+    padding: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#testrow div.d1 {
+    background-image: url("../assets/devis gratuit_cleanup.jpg");
+}
+
+#testrow div.d2 {
+    background-image: url("../assets/Partenariat.jpg");
+}
+#testrow div.d3 {
+    background-image: url("../assets/decret tertiaire.jpg");
+}
+
+
+/*#testrow div.col-4:hover {
+    -webkit-transform:scale(1.25); !* Safari et Chrome *!
+    -moz-transform:scale(1.25); !* Firefox *!
+    -ms-transform:scale(1.25); !* Internet Explorer 9 *!
+    -o-transform:scale(1.25); !* Opera *!
+    transform:scale(1.25);
+
+}*/
+
 @media (max-width: 991px) {
     #testrow{
         display: none;
