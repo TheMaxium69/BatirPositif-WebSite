@@ -8,5 +8,6 @@ fontawesome-5.15.4/
 # File
 
 db.php
+env_db.php
 
 # Other files and folders
