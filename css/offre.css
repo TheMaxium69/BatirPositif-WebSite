@@ -121,8 +121,9 @@ div.rowblock div.col-6{
 .divOne{
 
     background-color: white; border: solid #3C3C3C; border-radius: 10px;
-    background: linear-gradient(97deg, #7BCE76 0%, #afffa6 100%);
+    /*background: linear-gradient(97deg, #7BCE76 0%, #afffa6 100%);*/
     min-height: 410px;
+    background: gainsboro;
 }
 
 

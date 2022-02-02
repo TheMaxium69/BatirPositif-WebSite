@@ -68,13 +68,13 @@
                 <div class="timeline">
                     <div class="content">
                         <div id="a1" onclick="shemat(1)" class="current">Analyse</div>
-                        <div id="a2" onclick="shemat(2)" class="">Conceptions</div>
+                        <div id="a2" onclick="shemat(2)" class="">Conception</div>
                         <div id="a3" onclick="shemat(3)" class="">Travaux</div>
                     </div>
                 </div>
 
                 <br><br>
-                <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
+                <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
                 <div class="row rowblock">
 
                     <div class="col-6">
@@ -147,12 +147,12 @@
                 <div class="timeline">
                     <div class="content">
                         <div id="b1" onclick="shemat(1)" class="current">Analyse</div>
-                        <div id="b2" onclick="shemat(2)" class="">Conceptions</div>
+                        <div id="b2" onclick="shemat(2)" class="">Conception</div>
                         <div id="b3" onclick="shemat(3)" class="">Travaux</div>
                     </div>
                 </div>
                 <br><br>
-                <h2 style="margin-left: 6%;">Plus d'info : </h2> <br>
+                <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
                 <div class="row rowblock">
 
 

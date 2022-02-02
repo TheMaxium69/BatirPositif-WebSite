@@ -2,7 +2,6 @@
 
 if (!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['email']) && !empty($_GET['content'])){
 
-
     require "contact.php";
 
     $sendObject = null;

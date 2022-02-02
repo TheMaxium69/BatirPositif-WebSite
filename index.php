@@ -299,9 +299,9 @@
 
 
                 <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png">
+                <img class="p1" src="assets/oikos.png">
                 <img class="p4" src="assets/certif/l3.png">
-                <img class="p1" src="https://batirpositif.files.wordpress.com/2021/03/oikos.png">
-                <img class="p3" src="https://batirpositif.files.wordpress.com/2021/03/image18-1.png">
+                <img class="p3" src="assets/image18-1.png">
 
             </div>
 
@@ -354,11 +354,6 @@
             }
         </script>
     <?php } ?>
-
-<!---->
-<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis eum explicabo in, ipsum itaque magnam nemo-->
-<!--        nesciunt numquam quae rem repudiandae. Ad atque distinctio hic praesentium quam voluptate voluptates.</p>-->
-
 
 </main>
 

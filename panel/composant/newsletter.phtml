@@ -1,0 +1,26 @@
+<table class="container py-5">
+    <h4 class="container">Mail de la Newsletter</h4>
+    <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Date</th>
+    </tr>
+
+    <?php
+
+    require "../db/app.php";
+
+
+    $AllMail = getAllNewsletter();
+
+    foreach ($AllMail as $Newsletter){
+
+        ?>
+        <tr>
+            <td><?php echo $email = substr($Newsletter['mail'], 1, -1); ?></td>
+            <td><?php echo $Newsletter['createdAt']; ?></td>
+        </tr>
+
+        <?php
+    }
+    ?>
+</table>

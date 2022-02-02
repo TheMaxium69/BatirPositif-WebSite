@@ -32,3 +32,15 @@ function getClassContact($contact){
     return $contactClass;
 
 }
+
+function getAllNewsletter(){
+
+    require_once "db.php";
+
+    $requestNews = "SELECT * FROM newsletter";
+
+    $allNewsletter = mysqli_query($ConnectDB, $requestNews);
+
+    return $allNewsletter;
+
+}
