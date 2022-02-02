@@ -2,7 +2,8 @@
 
 function getAllContact(){
 
-    require_once "db.php";
+
+    require "db.php";
 
     $request = "SELECT * FROM contact";
 
@@ -35,7 +36,7 @@ function getClassContact($contact){
 
 function getAllNewsletter(){
 
-    require_once "db.php";
+    require "db.php";
 
     $requestNews = "SELECT * FROM newsletter";
 

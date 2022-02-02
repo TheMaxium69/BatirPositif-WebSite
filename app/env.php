@@ -23,28 +23,33 @@ $env_page = array(
     1 => array(
         "title" => "Accueil | Bâtir Positif",
         "name" => "Accueil",
-        "file" => "index",
+        "file" => "./",
+        "css" => "index",
     ),
     2 => array(
         "title" => "Nos Offres | Bâtir Positif",
         "name" => "Nos offres",
-        "file" => "offre",
+        "file" => "offre.php",
+        "css" => "offre",
     ),
 
     3 => array(
         "title" => "Home Page | Bâtir Positif",
         "name" => "Qui sommes-nous ?",
-        "file" => "about",
+        "file" => "about.php",
+        "css" => "about",
     ),
     4 => array(
         "title" => "Blog | Bâtir Positif",
         "name" => "Blog",
-        "file" => "blog",
+        "file" => "blog.php",
+        "css" => "blog",
     ),
     5 => array(
         "title" => "Contact | Bâtir Positif",
         "name" => "Contact",
-        "file" => "form",
+        "file" => "form.php",
+        "css" => "form",
     ),
 );
 

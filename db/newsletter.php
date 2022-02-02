@@ -48,7 +48,7 @@ function insertMail($mail){
 
 function erreurMail($errCode){
 
-    $url = "../index.php?err=" . $errCode . "#news";
+    $url = "../?err=" . $errCode . "#news";
 
     header('Location: '. $url );
 
@@ -56,7 +56,7 @@ function erreurMail($errCode){
 
 function valideMail($trueCode){
 
-        $url = "../index.php?true=" . $trueCode . "#news";
+        $url = "../?true=" . $trueCode . "#news";
 
         header('Location: '. $url );
 

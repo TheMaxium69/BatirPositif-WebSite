@@ -19,7 +19,7 @@
                         if ($page == $i){
                             echo ' class="nav-active"';
                         }
-                        echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+                        echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
 
                     }
 
@@ -32,7 +32,7 @@
     <?php } else { ?>
         <div class="clear"></div>
         <nav class="fixed-header">
-            <div class="site-title visible-title"><a href="index.php"><img src="<?php echo $env_logoTransp; ?>"></a></div>
+            <div class="site-title visible-title"><a href="./"><img src="<?php echo $env_logoTransp; ?>"></a></div>
             <ul class="">
                 <?php
 
@@ -45,7 +45,7 @@
                         if ($page == $i){
                             echo ' class="nav-active"';
                         }
-                        echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+                        echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
 
                     }
 
@@ -58,7 +58,7 @@
 </header>
 
 <header id="nav-mobile">
-    <h1><img style="width: 155px;" src="<?php echo $env_logoTransp; ?>"></h1>
+    <h1><a href="./"><img style="width: 155px;" src="<?php echo $env_logoTransp; ?>"></a></h1>
 
     <input id="burger" type="checkbox" />
 
@@ -82,7 +82,7 @@
                     if ($page == $i){
                         echo ' class="nav-active"';
                     }
-                    echo '><a href="' . $env_page[$i]["file"] . '.php">' . $env_page[$i]["name"] . '</a></li>';
+                    echo '><a href="' . $env_page[$i]["file"] . '">' . $env_page[$i]["name"] . '</a></li>';
 
                 }
 
