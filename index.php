@@ -9,7 +9,7 @@
                 <h1 class="bold uppercase">
                     CONSTRUCTION - rénovation
                 </h1>
-                <p class="uppercase">
+                <p class="uppercase" style="border-radius: 6px;">
                     Spécialisés dans l’accompagnement de vos projets
                 </p>
             </div>
@@ -72,7 +72,7 @@
 
     <section id="page1-form">
             <div >
-                <div style="padding-top: 46px">
+                <div class="p46">
 
                     <div id="testrow" class="row">
                         <div class="col-4 d1"></div>
@@ -82,21 +82,22 @@
 
                     <div class="row" id="linkform">
                         <article class="col-4">
-                            <div class="titleService"><h3><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
-                            <p>Effectuez une demande de devis gratuitement
+                            <div class="titleService"><h3 style="padding-top: 5px;"><i class="fas fa-home"></i> DEVIS GRATUIT</h3></div>
+                            <p style="margin-top: -15px;
+margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                                 pour un audit énergétique, AMO, maîtrise d'éxecution</p>
                             <?php custombtn("form.php?name=1", "Devis Gratuit", "white", "#4d8d4c"); ?>
                         </article>
                         <article class="col-4">
-                            <div class="titleService"><h3><i class="fas fa-handshake"></i> DEMANDE DE PARTENARIAT</h3></div>
-                            <p>Effectuez une demande de partenariat pour
+                            <div class="titleService"><h3><i class="fas fa-handshake"></i> DEMANDE DE<br> PARTENARIAT</h3></div>
+                            <p style="padding-top: 16px;">Effectuez une demande de partenariat pour
                                 collaborer<br> avec Bâtir Positif</p>
                             <?php custombtn("form.php?name=2", "Demande de partenariat", "white", "#4d8d4c"); ?>
                         </article>
 
                         <article class="col-4">
-                            <div class="titleService"><h3><i class="fas fa-building"></i> ACCOMPAGNEMENT DECRÊT TERTIAIRE</h3></div>
-                            <p>Faites vous accompagner dans vos démarches
+                            <div class="titleService"><h3><i class="fas fa-building"></i> ACCOMPAGNEMENT <br>DECRÊT TERTIAIRE</h3></div>
+                            <p style="padding-top: 16px;">Faites vous accompagner dans vos démarches
                                 vis-à-vis du décret tertiaire</p>
                             <?php custombtn("form.php?name=3", "Faites-vous accompagner", "white", "#4d8d4c"); ?>
                         </article>
@@ -164,7 +165,7 @@
                     height: 80px;
                     font-size: 20px;
                     font-weight: bold;
-                    background: #27ae60;
+                    background: #4D8D4C;
                     border-radius: 10px 10px 0 0;
                 }
                 .card-form .form-body {
@@ -209,13 +210,13 @@
                     border: none;
                     border-radius: 5px;
                     padding: 5px 15px;
-                    background: #27ae60;
+                    background: #4D8D4C;
                     margin-right: 10px;
                     font-size: 14px;
                 }
                 .card-form .form-footer input:hover {
-
-                    background-color: #12d765;
+                    transition: all 150ms linear;
+                    opacity: 0.85;
                 }
                 .card-form .form-footer span {
                     margin-left: 8px;
@@ -293,9 +294,7 @@
 
             <h2 class="padd-mob" style="text-align: center;">Nos partenaires :</h2>
 
-            <div class="img" style="    padding-top: 36px;
-    padding-left: 15px;
-}">
+            <div class="img" style=" padding-top: 48px;">
 
 
                 <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png">

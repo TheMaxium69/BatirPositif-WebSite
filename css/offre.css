@@ -149,7 +149,7 @@ div.rowblock div.col-6{
 
 
 section#offre-onglet{
-    background-image: url("../assets/cuisine2.jpg");
+    background-image: url("../assets/nosoffres2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -281,6 +281,12 @@ section#offre-onglet{
     font-size: 1.4rem;
     background: #f0f0f0;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .timeline .content div {
+        padding: 1.2rem 0 2.2rem 0;
+    }
 }
 .timeline .content div:after {
     content: "";
