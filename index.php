@@ -56,7 +56,7 @@
                 <h2>CONSTRUCTION</h2>
                 <p>Accompagnement à différents niveaux <br> de votre
                     projet construction : conception,<br>  exécution, coordination...</p>
-                <a class="bold" href="offre.php?off=0">En savois plus</a>
+                <a class="bold" href="offre.php?off=0">En savoir plus</a>
             </div>
 
             <div class="col-6 cards">
@@ -64,7 +64,7 @@
                 <h2>RÉNOVATION</h2>
                 <p>Accompagnement de votre ambition de rénovation : diagnostic, conception des nouveaux plans,<br> audit,
                     exécution...</p>
-                <a class="bold" href="offre.php?off=1">En savois plus</a>
+                <a class="bold" href="offre.php?off=1">En savoir plus</a>
             </div>
         </div>
 
