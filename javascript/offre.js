@@ -28,6 +28,10 @@ let divOneB = document.querySelector('div#b1');
 let divTwoB = document.querySelector('div#b2');
 let divThreeB = document.querySelector('div#b3');
 
+let iA = document.querySelector('i.fa-search');
+let iC = document.querySelector('i.fa-ruler-combined');
+let iT = document.querySelector('i.fa-puzzle-piece');
+
 
 /*function shemat(id) {
 

@@ -122,7 +122,7 @@ div.rowblock div.col-6{
 
     background-color: white; border: solid #3C3C3C; border-radius: 10px;
     /*background: linear-gradient(97deg, #7BCE76 0%, #afffa6 100%);*/
-    min-height: 410px;
+    min-height: 453px;
     background: gainsboro;
 }
 
@@ -153,6 +153,10 @@ section#offre-onglet{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+}
+
+.iGreen {
+    color: #28A745;
 }
 
 @media (max-width: 1038px) {
