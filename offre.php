@@ -83,7 +83,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c1" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction : </div>
+                            <div class="bold otitle" id="c1" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction </div>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c2" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 : </div>
+                            <div class="bold otitle" id="c2" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 </div>
                         </div>
                     </div>
 
@@ -105,7 +105,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c3"><i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :</div>
+                            <div class="bold otitle" id="c3"><i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
                             <p style="text-align: center; margin-bottom: 0">|</p><p class="divP"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                             est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -122,7 +122,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution : </div>
+                            <div class="bold otitle" id="c4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution </div>
                             <p style="text-align: center; margin-bottom: 0; margin-top: 9%;">|</p><p class="divP"> Cette mission concerne la coordination de la
                                 mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
                                 expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
@@ -163,7 +163,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="r1"><i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique :</div>
+                            <div class="bold otitle" id="r1"><i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique </div>
                             <p style="text-align: center; margin-bottom: 0; margin-top: 10%;">|</p><p class="divP">Nous vous fournissons un rapport contenant tous les
                                 diagnostics immobiliers obligatoires concernant la sécurité des futurs occupants du
                                 bâtiment (exposition au plomb, présence d’amiante...) La santé avant tout ! </p>
@@ -178,7 +178,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="r2" style="  padding: 32px 20px;"><i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique :</div>
+                            <div class="bold otitle" id="r2" style="  padding: 32px 20px;"><i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique </div>
                             <p style="text-align: center; margin-bottom: 0; margin-top: 4%;">|</p><p class="divP"> Nous faisons un “état des lieux” des performances énergétiques
                                 de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
                                 déterminer les points faibles et de construire le meilleur plan d’action pour que votre
@@ -193,7 +193,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="r3"> <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :</div>
+                            <div class="bold otitle" id="r3"> <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
                             <p style="text-align: center; margin-bottom: 0">|</p><p class="divP"> il s’agit d’une mission de
                                 <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                                 est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -210,7 +210,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="r4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution : </div>
+                            <div class="bold otitle" id="r4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution </div>
                             <p style="text-align: center; margin-bottom: 0; margin-top: 9%;">|</p><p class="divP"> Cette mission concerne la coordination de la
                                 mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
                                 expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
