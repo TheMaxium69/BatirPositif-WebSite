@@ -56,7 +56,7 @@
                 </div></a><a><div class="about__slot">
                     <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>2.png');"></div>
                     <div class="about__info">
-                        <h4 class="name">Quentin Claudel</h4>
+                        <h4 class="name">Quentin <j class="uppercase"> Claudel</j></h4>
                         <h5 class="title">Chargé d’affaire Economie de la construction</h5>
                     </div>
 
@@ -64,7 +64,7 @@
                     <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>3.png');"></div>
 
                     <div class="about__info">
-                        <h4 class="name">Youcef Messalti</h4>
+                        <h4 class="name">Youcef <j class="uppercase">Messalti</j></h4>
                         <h5 class="title">Chargé d’affaires-Optimisation énergétique</h5>
                     </div>
 
@@ -72,7 +72,7 @@
                 </div></a><a><div class="about__slot">
                     <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>4.png');"></div>
                     <div class="about__info">
-                        <h4 class="name">Elisabeth Merenna</h4>
+                        <h4 class="name">Elisabeth <j class="uppercase">Merenna</j></h4>
                         <h5 class="title">Responsable communication</h5>
                     </div>
 
