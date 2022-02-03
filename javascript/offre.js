@@ -28,9 +28,288 @@ let divOneB = document.querySelector('div#b1');
 let divTwoB = document.querySelector('div#b2');
 let divThreeB = document.querySelector('div#b3');
 
-let iA = document.querySelector('i.fa-search');
-let iC = document.querySelector('i.fa-ruler-combined');
-let iT = document.querySelector('i.fa-puzzle-piece');
+let divC1 = document.querySelector('div#c1');
+let divC2 = document.querySelector('div#c2');
+let divC3 = document.querySelector('div#c3');
+let divC4 = document.querySelector('div#c4');
+
+let divR1 = document.querySelector('div#r1');
+let divR2 = document.querySelector('div#r2');
+let divR3 = document.querySelector('div#r3');
+let divR4 = document.querySelector('div#r4');
+
+
+
+$(document).ready(function() {
+
+
+    //Hover Construction
+
+    $("div#c1").hover(
+        function () {
+
+            divC1.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> Accompagnement à l’auto-construction :'
+
+        },
+        function () {
+
+
+            divC1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction :'
+
+        }
+    );
+
+    $("div#c2").hover(
+        function () {
+
+            divC2.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> Étude énergétique RE2020 :'
+
+        },
+        function () {
+
+
+            divC2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 :'
+
+        }
+    );
+
+    $("div#c3").hover(
+        function () {
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> Analyse <i class="fas fa-ruler-combined"></i> Conception <i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+        },
+        function () {
+
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+        }
+    );
+
+    $("div#c4").hover(
+        function () {
+
+            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        },
+        function () {
+
+
+            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        }
+    );
+
+    //Prise Construction
+
+    $("div#a1").hover(
+        function () {
+
+
+            divC1.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <hr style="background: white;"> Accompagnement à l’auto-construction :'
+
+            divC2.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <hr style="background: white;"> Étude énergétique RE2020 :'
+
+
+            divC3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+
+        },
+        function () {
+
+            divC1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction :'
+
+
+            divC2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 :'
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+        }
+    );
+
+
+    $("div#a2").hover(
+        function () {
+            divTwo.classList.add("current");
+
+            divOne.classList.add("completed");
+            divOne.classList.remove("current");
+
+            if (divThree.classList.toString() === "completed"){
+                divThree.classList.remove("completed")
+            }
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception </j><i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+
+        },
+        function () {
+
+            divOne.classList.add("current");
+            divOne.classList.remove("completed");
+            divTwo.classList.remove("current");
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+        }
+    );
+
+    $("div#a3").hover(
+        function () {
+            divThree.classList.add("current");
+            divOne.classList.add("completed");
+            divOne.classList.remove("current");
+            divTwo.classList.add("completed");
+
+            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+            divC4.innerHTML = '<j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j><hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+        },
+        function () {
+
+            divOne.classList.add("current");
+            divOne.classList.remove("completed");
+            divTwo.classList.remove("completed");
+            divThree.classList.remove("current");
+
+            divC3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        }
+    );
+
+
+
+    //Hover Reno
+
+    $("div#r1").hover(
+        function () {
+
+            divR1.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> DDT <br> Diagnostic technique :'
+
+        },
+        function () {
+
+
+            divR1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique :'
+
+        }
+    );
+
+    $("div#r2").hover(
+        function () {
+
+            divR2.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> Audit énergétique :'
+
+        },
+        function () {
+
+
+            divR2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique :'
+
+        }
+    );
+
+    $("div#r3").hover(
+        function () {
+
+            divR3.innerHTML = '<i class="fas fa-search"></i> Analyse <i class="fas fa-ruler-combined"></i> Conception <i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+        },
+        function () {
+
+
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+        }
+    );
+
+    $("div#r4").hover(
+        function () {
+
+            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        },
+        function () {
+
+
+            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        }
+    );
+
+
+
+
+    //Phrise Reno
+
+    $("div#b1").hover(
+        function () {
+
+            divR1.innerHTML = '<j class="iGreen"><i class="fas fa-search"></i> Analyse</j> <hr style="background: white;"> DDT <br> Diagnostic technique :'
+
+
+            divR2.innerHTML = '<j class="iGreen"><i class="fas fa-search"></i> Analyse</j> <hr style="background: white;"> Audit énergétique :'
+
+
+            divR3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+
+        },
+        function () {
+
+            divR1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique :'
+            divR2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique :'
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+        }
+    );
+
+    $("div#b2").hover(
+        function () {
+
+            divTwoB.classList.add("current");
+
+            divOneB.classList.add("completed");
+            divOneB.classList.remove("current");
+
+            if (divThreeB.classList.toString() === "completed"){
+                divThreeB.classList.remove("completed")
+            }
+
+            divR3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception</j> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+        },
+        function () {
+
+            divOneB.classList.add("current");
+            divOneB.classList.remove("completed");
+            divTwoB.classList.remove("current");
+
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+        }
+    );
+
+    $("div#b3").hover(
+        function () {
+            divThreeB.classList.add("current");
+            divOneB.classList.add("completed");
+            divOneB.classList.remove("current");
+            divTwoB.classList.add("completed");
+
+            divR3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+            divR4.innerHTML = '<j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j><hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        },
+        function () {
+
+            divOneB.classList.add("current");
+            divOneB.classList.remove("completed");
+            divTwoB.classList.remove("completed");
+            divThreeB.classList.remove("current");
+
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable :'
+            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution :'
+
+        }
+    );
+});
+
 
 
 /*function shemat(id) {
@@ -67,79 +346,3 @@ let iT = document.querySelector('i.fa-puzzle-piece');
 
     }
 }*/
-
-
-$(document).ready(function() {
-    $("div#a2").hover(
-        function () {
-            divTwo.classList.add("current");
-
-            divOne.classList.add("completed");
-            divOne.classList.remove("current");
-
-            if (divThree.classList.toString() === "completed"){
-                divThree.classList.remove("completed")
-            }
-        },
-        function () {
-
-            divOne.classList.add("current");
-            divOne.classList.remove("completed");
-            divTwo.classList.remove("current");
-        }
-    );
-
-    $("div#a3").hover(
-        function () {
-            divThree.classList.add("current");
-            divOne.classList.add("completed");
-            divOne.classList.remove("current");
-            divTwo.classList.add("completed");
-        },
-        function () {
-
-            divOne.classList.add("current");
-            divOne.classList.remove("completed");
-            divTwo.classList.remove("completed");
-            divThree.classList.remove("current");
-
-        }
-    );
-
-    $("div#b2").hover(
-        function () {
-
-            divTwoB.classList.add("current");
-
-            divOneB.classList.add("completed");
-            divOneB.classList.remove("current");
-
-            if (divThreeB.classList.toString() === "completed"){
-                divThreeB.classList.remove("completed")
-            }
-        },
-        function () {
-
-            divOneB.classList.add("current");
-            divOneB.classList.remove("completed");
-            divTwoB.classList.remove("current");
-        }
-    );
-
-    $("div#b3").hover(
-        function () {
-            divThreeB.classList.add("current");
-            divOneB.classList.add("completed");
-            divOneB.classList.remove("current");
-            divTwoB.classList.add("completed");
-        },
-        function () {
-
-            divOneB.classList.add("current");
-            divOneB.classList.remove("completed");
-            divTwoB.classList.remove("completed");
-            divThreeB.classList.remove("current");
-
-        }
-    );
-});
