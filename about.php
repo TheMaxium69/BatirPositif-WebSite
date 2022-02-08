@@ -62,10 +62,10 @@
 
                 <div id="ee" class="row">
 
-                    <div class="col-6"><p><img src="assets/pexels-pixabay-259239.jpg"> Innovation & dynamisme</p></div>
-                    <div class="col-6"><p><img src="assets/pexels-pixabay-259239.jpg"> Vision globale</p></div>
-                    <div class="col-6"><p><img src="assets/pexels-pixabay-259239.jpg"> Écoute & bienveillance</p></div>
-                    <div class="col-6"><p><img src="assets/pexels-pixabay-259239.jpg"> Engagement & sécurité</p></div>
+                    <div class="col-6"><p><img src="assets/histoire/2.png"> Innovation & dynamisme</p></div>
+                    <div class="col-6"><p><img src="assets/histoire/4 (1).png"> Vision globale</p></div>
+                    <div class="col-6"><p><img src="assets/histoire/3 (1).png"> Écoute & bienveillance</p></div>
+                    <div class="col-6"><p><img src="assets/histoire/5 (1).png"> Engagement & sécurité</p></div>
 
                 </div>
                 <style>
@@ -82,6 +82,12 @@
                         -ms-transform:scale(1.25); /* Internet Explorer 9 */
                         -o-transform:scale(1.25); /* Opera */
                         transform:scale(1.25);
+                    }
+                    @media (max-width: 780px) {
+                        #ee div.col-6{
+                            flex: unset;
+                            max-width: unset;
+                        }
                     }
 
                 </style>
@@ -117,26 +123,29 @@
                         margin-bottom: 10px;
                     }
 
-                     #cr .col-4{
-                         /*max-width: 30%;*/
-                     }
+                    @media (max-width: 463px) {
+                        #cr .col-4{
+                            flex: unset;
+                            max-width: unset;
+                        }
+                    }
                 </style>
 
                 <div id="mt" class="row">
 
-                    <div class="col-4"><p><img src="assets/pexels-pixabay-259239.jpg"> <j>Le bois, la paille, le chanvre,
+                    <div class="col-4"><p><img src="assets/histoire/3.png"> <j>Le bois, la paille, le chanvre,
                             etc. sont des matériaux
                             locaux, renouvelables,
                             recyclables.</j></p></div>
                     <img class="icon1" src="assets/151861.png">
 
-                    <div class="col-4"><p><img src="assets/pexels-pixabay-259239.jpg"> <j>Un bâtiment bien
+                    <div class="col-4"><p><img src="assets/histoire/4.png"> <j>Un bâtiment bien
                                 étudié minimisera les
                                 consommations
                                 énergétiques.</j></p></div>
 
-                    <img class="icon2" src="assets/151861.png">
-                    <div class="col-4"><p><img src="assets/pexels-pixabay-259239.jpg"> <j>Le résultat : un habitat
+                    <img class="icon2" src="assets/56751.png">
+                    <div class="col-4"><p><img src="assets/histoire/5.png"> <j>Le résultat : un habitat
                                 économe et confortable,
                                 qui préservera votre santé
                                 et l'environnement !</j></p></div>
@@ -169,6 +178,12 @@
                         color: green;
                         margin-top: 8%;
                     }
+                    
+                    @media (max-width: 825px) {
+                        #mt img.icon1, #mt img.icon2{
+                            display: none;
+                        }
+                    }
 
                     #mt img.icon1{
                         margin-left: 24%;
@@ -195,6 +210,17 @@
                         -o-transform:scale(1.15); /* Opera */
                         transform:scale(1.15);
                     }
+                    @media (max-width: 463px) {
+                        #mt .col-4{
+                            flex: unset;
+                            max-width: unset;
+                        }
+
+                        #mt .col-4 p{
+                            font-size: 15px;
+                        }
+                    }
+
 
 
                 </style>
