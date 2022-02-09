@@ -65,6 +65,97 @@
                 </div>
 
 
+
+                <div id="shema">
+
+
+                    <div class="l1 row">
+                        <article class="t col-4"><p>Accompagnement à<br> l’auto-construction</p></article>
+                        <article class="vide col-4"></article>
+                        <article class="vide col-4"></article>
+                    </div>
+
+                    <div class="l1 row">
+                        <article class="t col-4"><p>Étude énergétique<br> RE2020</p></article>
+                        <article class="vide col-4"></article>
+                        <article class="t col-4"><p>MOE<br>
+                            Maîtrise d'œuvre d'exécution</p></article>
+                    </div>
+                    <div class="l1 row">
+                        <article class="t col-12"><p>AMO<br>
+                            Assistance maîtrise d’ouvrage responsable</p></article>
+                    </div>
+
+
+                </div>
+
+
+                <style>
+                    :root {
+                        --color-back-table: #c8f9c4;
+                    }
+
+                    div.l1{
+                        width: 100%;
+                        height: 33.333333%;
+                        text-align: center;
+                        margin-right: unset;
+                        margin-left: unset;
+
+                        background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);
+                    }
+                    article.vide{
+                        background: var(--color-back-table);
+                    }
+
+                    article.t{
+                        color: white;
+                    }
+
+                    #shema p{
+                        padding-top: 6px;
+                    }
+
+                    #shema p:hover{
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+
+                    div#shema {
+                        position: relative;
+                        /*top: 10px;
+                        left: 110px;*/
+                        width: 90%;
+                        height: 201px;
+                        background: var(--color-back-table);
+                        /*border: solid green;*/
+                    }
+
+                    div#shema:before {
+                        content : '';
+                        position: absolute;
+                        right: -100px;
+                        border-style: solid;
+                        border-width: 121px 0 121px 100px;
+                        border-color: transparent
+                        transparent transparent var(--color-back-table);
+                    }
+
+                    .timeline{
+                        margin-top: -20px;
+                        width: 90%;
+                    }
+
+
+
+                </style>
+
+
+
+
                 <div class="timeline">
                     <div class="content">
                         <div id="a1" onclick="shemat(1)" class="current"><i class="fas fa-search"></i> Analyse</div>
@@ -83,7 +174,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c1" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction </div>
+                            <div class="bold otitle" id="c1" style="margin-bottom: unset"> <i class="fas fa-search"></i> <br> Accompagnement à l’auto-construction </div>
                         </div>
                     </div>
 
@@ -94,7 +185,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c2" style="margin-bottom: unset"> <i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 </div>
+                            <div class="bold otitle" id="c2" style="margin-bottom: unset"> <i class="fas fa-search"></i> <br> Étude énergétique RE2020 </div>
                         </div>
                     </div>
 
@@ -105,7 +196,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c3"><i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
+                            <div class="bold otitle" id="c3"><i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
                             <p style="text-align: center; margin-bottom: 0">|</p><p class="divP"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                             est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -122,7 +213,7 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="c4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution </div>
+                            <div class="bold otitle" id="c4"> <i class="fas fa-puzzle-piece"></i> <br> MOE <br> Maîtrise d'œuvre d'exécution </div>
                             <p style="text-align: center; margin-bottom: 0; margin-top: 9%;">|</p><p class="divP"> Cette mission concerne la coordination de la
                                 mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
                                 expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous

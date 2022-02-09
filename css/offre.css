@@ -283,7 +283,7 @@ section#offre-onglet{
     flex: 1 1 auto;
     padding: 1.2rem 0 1.2rem 1.2rem;
     font-size: 1.4rem;
-    background: #f0f0f0;
+    background: var(--color-back-table);
     text-align: center;
 }
 
@@ -305,8 +305,8 @@ section#offre-onglet{
     font-weight: bold;
 }
 .timeline .content .current:after {
-    border-bottom: 2.1rem solid #f0f0f0;
-    border-top: 2.1rem solid #f0f0f0;
+    border-bottom: 2.1rem solid var(--color-back-table);
+    border-top: 2.1rem solid var(--color-back-table);
 }
 .timeline .content .current:last-child:after {
     border: 0;

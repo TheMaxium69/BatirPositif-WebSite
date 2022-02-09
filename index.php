@@ -297,10 +297,10 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
             <div class="img" style=" padding-top: 48px;">
 
 
-                <img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png">
-                <img class="p1" src="assets/oikos.png">
-                <img class="p4" src="assets/certif/l3.png">
-                <img class="p3" src="assets/image18-1.png">
+                <a href="http://uneplumealedifice.letscolab.co/"><img class="p2" src="assets/une-plume-a-ledifice-logo-V3.png"></a>
+                <a href="https://oikos-ecoconstruction.com/"><img class="p1" src="assets/oikos.png"></a>
+                <a href="https://www.capeb.fr/"><img class="p4" src="assets/certif/l3.png"></a>
+                <a href="https://www.entreprendre-pour-apprendre.fr/auvergne-rhone-alpes"><img class="p3" src="assets/image18-1.png"></a>
 
             </div>
 
