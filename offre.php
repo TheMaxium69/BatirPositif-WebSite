@@ -69,13 +69,13 @@
                 <div id="shema">
 
 
-                    <div class="l1 row">
+                    <div class="l1 row borderB">
                         <article class="t col-4"><a href="?name=ac#upOne"><p>Accompagnement à<br> l’auto-construction</p></a></article>
                         <article class="vide col-4"></article>
                         <article class="vide col-4"></article>
                     </div>
 
-                    <div class="l1 row">
+                    <div class="l1 row borderB">
                         <article class="t col-4"><a href="?name=et#upOne"><p>Étude énergétique<br> RE2020</p></a></article>
                         <article class="vide col-4"></article>
                         <article class="t col-4"><a href="?name=moe1#downOne"><p>MOE<br>
@@ -89,15 +89,40 @@
 
                 </div>
 
+                <div class="row" id="upOne">
+
+                    <div class="col-4" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                    <div class="col-4" style="padding-left: 5%;"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
+                    <div class="col-4" style="padding-left: 3%"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
+
+                </div>
+
+                <style>
+
+                    div#upOne{
+                        margin-top: 15px;
+                        margin-right: unset;
+                        margin-left: unset;
+                    }
+
+                    #upOne i.my img.reno{
+                        width: 26px;
+                    }
+                    #upOne i.my img{
+                        width: 23px;
+                    }
+
+                </style>
 
 
-                <div class="timeline" id="upOne">
+
+                <!--<div class="timeline" id="upOne">
                     <div class="content">
                         <div id="a1" onclick="shemat(1)" class="current"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
                         <div id="a2" onclick="shemat(2)" class=""><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
                         <div id="a3" onclick="shemat(3)" class=""><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
                     </div>
-                </div>
+                </div>-->
 
                 <style>
 

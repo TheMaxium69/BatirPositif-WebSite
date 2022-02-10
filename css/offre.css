@@ -43,8 +43,12 @@ div.l1{
     margin-left: unset;
 
     background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);
+}
+
+div.borderB{
     border-bottom: solid var(--color-back-table);
 }
+
 article.vide{
     background: var(--color-back-table);
 }
@@ -62,6 +66,11 @@ article.t:after{
     right: 0;
     /*border-top: 2.1rem inset transparent;*/
     border-left: 2.1rem solid transparent;
+}
+
+article.col-12:after{
+    border-bottom: 34px solid var(--color-back-table);
+    border-top: 33px solid var(--color-back-table);
 }
 
 #shema p{
@@ -91,7 +100,7 @@ div#shema:before {
     position: absolute;
     right: -100px;
     border-style: solid;
-    border-width: 121px 0 121px 100px;
+    border-width: 100px 0 101px 100px;
     border-color: transparent
     transparent transparent var(--color-back-table);
 }
