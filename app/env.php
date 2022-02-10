@@ -51,5 +51,11 @@ $env_page = array(
         "file" => "form.php",
         "css" => "form",
     ),
+    6 => array(
+        "title" => "Mention Legal | Bâtir Positif",
+        "name" => "Mention",
+        "file" => "legal.php",
+        "css" => "legal",
+    ),
 );
 

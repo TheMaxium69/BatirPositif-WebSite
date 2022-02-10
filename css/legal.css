@@ -1,0 +1,57 @@
+/*************************
+       LEGAL TITLE
+ *************************/
+
+#legal-title{
+    text-align: center;
+    max-width: 65%;
+}
+
+@media (max-width: 767px) {
+    #legal-title{
+        max-width: unset;
+    }
+}
+
+/*************************
+       LEGAL INFO
+ *************************/
+
+
+.no-p {
+    padding: unset;
+    margin: unset;
+}
+
+a.link{
+    color: #32b618;
+
+}
+
+a.link:hover{
+    color: #167806;
+    text-decoration: underline;
+}
+
+div#info{
+    padding: 30px 60px
+}
+
+@media (max-width: 496px) {
+    div#info{
+        padding: 30px 20px
+    }
+
+}
+@media (max-width: 751px) {
+    div.textmore{
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    p.mobile{
+        margin-top: 33px;
+    }
+
+}
