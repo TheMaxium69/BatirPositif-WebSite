@@ -48,13 +48,13 @@ $(document).ready(function() {
     $("div#c1").hover(
         function () {
 
-            divC1.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> Accompagnement à l’auto-construction '
+            divC1.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse <br> Accompagnement à l’auto-construction '
 
         },
         function () {
 
 
-            divC1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction '
+            divC1.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Accompagnement à l’auto-construction '
 
         }
     );
@@ -62,13 +62,13 @@ $(document).ready(function() {
     $("div#c2").hover(
         function () {
 
-            divC2.innerHTML = '<i class="fas fa-search"></i> Analyse <hr style="background: white;"> Étude énergétique RE2020 '
+            divC2.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse <br> Étude énergétique RE2020 '
 
         },
         function () {
 
 
-            divC2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 '
+            divC2.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Étude énergétique RE2020 '
 
         }
     );
@@ -76,13 +76,13 @@ $(document).ready(function() {
     $("div#c3").hover(
         function () {
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> Analyse <i class="fas fa-ruler-combined"></i> Conception <i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divC3.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse <i class="fas my"><img src="assets/picto/idee.png"></i> Conception <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
         },
         function () {
 
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divC3.innerHTML = '<i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
         }
     );
@@ -90,13 +90,13 @@ $(document).ready(function() {
     $("div#c4").hover(
         function () {
 
-            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divC4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux <br> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         },
         function () {
 
 
-            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divC4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         }
     );
@@ -107,23 +107,23 @@ $(document).ready(function() {
         function () {
 
 
-            divC1.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <hr style="background: white;"> Accompagnement à l’auto-construction '
+            // divC1.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <br> Accompagnement à l’auto-construction '
 
-            divC2.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <hr style="background: white;"> Étude énergétique RE2020 '
+            // divC2.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <br> Étude énergétique RE2020 '
 
 
-            divC3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            // divC3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
 
         },
         function () {
 
-            divC1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Accompagnement à l’auto-construction '
+            // divC1.innerHTML = '<i class="fas fa-search"></i> <br> Accompagnement à l’auto-construction '
 
 
-            divC2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Étude énergétique RE2020 '
+            // divC2.innerHTML = '<i class="fas fa-search"></i> <br> Étude énergétique RE2020 '
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            // divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
         }
     );
 
@@ -139,7 +139,7 @@ $(document).ready(function() {
                 divThree.classList.remove("completed")
             }
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception </j><i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            // divC3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception </j><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
 
         },
@@ -149,7 +149,7 @@ $(document).ready(function() {
             divOne.classList.remove("completed");
             divTwo.classList.remove("current");
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            // divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
         }
     );
 
@@ -160,8 +160,10 @@ $(document).ready(function() {
             divOne.classList.remove("current");
             divTwo.classList.add("completed");
 
-            divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
-            divC4.innerHTML = '<j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j><hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divTwo.innerHTML = '<i class="fas my first"><img src="assets/picto/idee.png"></i> Conception';
+
+            /*divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divC4.innerHTML = '<j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j><br> MOE <br> Maîtrise d\'œuvre d\'exécution '*/
         },
         function () {
 
@@ -170,9 +172,12 @@ $(document).ready(function() {
             divTwo.classList.remove("completed");
             divThree.classList.remove("current");
 
-            divC3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
-            divC4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
+            divTwo.innerHTML = '<i class="fas my"><img src="assets/picto/idee.png"></i> Conception';
+
+            /*divC3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divC4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d\'œuvre d\'exécution '
+*/
         }
     );
 
@@ -211,13 +216,13 @@ $(document).ready(function() {
     $("div#r3").hover(
         function () {
 
-            divR3.innerHTML = '<i class="fas fa-search"></i> Analyse <i class="fas fa-ruler-combined"></i> Conception <i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = '<i class="fas fa-search"></i> Analyse <i class="fas fa-ruler-combined"></i> Conception <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
         },
         function () {
 
 
-            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
         }
     );
@@ -225,13 +230,13 @@ $(document).ready(function() {
     $("div#r4").hover(
         function () {
 
-            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> Travaux <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divR4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         },
         function () {
 
 
-            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divR4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         }
     );
@@ -250,14 +255,14 @@ $(document).ready(function() {
             divR2.innerHTML = '<j class="iGreen"><i class="fas fa-search"></i> Analyse</j> <hr style="background: white;"> Audit énergétique '
 
 
-            divR3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = '<j class="iGreen"> <i class="fas fa-search"></i> Analyse </j> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
 
         },
         function () {
 
             divR1.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique '
             divR2.innerHTML = '<i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique '
-            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
         }
     );
 
@@ -273,7 +278,7 @@ $(document).ready(function() {
                 divThreeB.classList.remove("completed")
             }
 
-            divR3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception</j> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = '<i class="fas fa-search"></i> <j class="iGreen"><i class="fas fa-ruler-combined"></i> Conception</j> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
         },
         function () {
 
@@ -281,7 +286,7 @@ $(document).ready(function() {
             divOneB.classList.remove("completed");
             divTwoB.classList.remove("current");
 
-            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
         }
     );
 
@@ -292,8 +297,8 @@ $(document).ready(function() {
             divOneB.classList.remove("current");
             divTwoB.classList.add("completed");
 
-            divR3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
-            divR4.innerHTML = '<j class="iGreen"><i class="fas fa-puzzle-piece"></i> Travaux </j><hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divR3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR4.innerHTML = '<j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j><hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         },
         function () {
@@ -303,8 +308,8 @@ $(document).ready(function() {
             divTwoB.classList.remove("completed");
             divThreeB.classList.remove("current");
 
-            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
-            divR4.innerHTML = '<i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
+            divR3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divR4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <hr style="background: white;"> MOE <br> Maîtrise d\'œuvre d\'exécution '
 
         }
     );

@@ -31,6 +31,97 @@ hr.offre{
        OFFRE ONGLET
  *************************/
 
+:root {
+    --color-back-table: #c8f9c4;
+}
+
+div.l1{
+    width: 100%;
+    height: 33.333333%;
+    text-align: center;
+    margin-right: unset;
+    margin-left: unset;
+
+    background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);
+    border-bottom: solid var(--color-back-table);
+}
+article.vide{
+    background: var(--color-back-table);
+}
+
+article.t{
+    color: white;
+}
+article.t:after{
+    border-bottom: 32px solid var(--color-back-table);
+    border-top: 32px solid var(--color-back-table);
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*border-top: 2.1rem inset transparent;*/
+    border-left: 2.1rem solid transparent;
+}
+
+#shema p{
+    padding-top: 6px;
+}
+
+#shema p:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+div#shema {
+    position: relative;
+    /*top: 10px;
+    left: 110px;*/
+    width: 90%;
+    height: 201px;
+    background: var(--color-back-table);
+    /*border: solid green;*/
+}
+
+div#shema:before {
+    content : '';
+    position: absolute;
+    right: -100px;
+    border-style: solid;
+    border-width: 121px 0 121px 100px;
+    border-color: transparent
+    transparent transparent var(--color-back-table);
+}
+
+.timeline{
+    margin-top: -20px;
+    width: 90%;
+}
+.timeline i.my img.reno{
+    width: 26px;
+}
+.timeline i.my img{
+    width: 23px;
+    margin-top: -6px;
+    filter: unset;
+}
+
+.timeline i.first img{
+    filter: invert(100%);
+}
+
+.timeline .content div:hover img{
+    filter: invert(100%);
+}
+
+.timeline .content a2.complete i.my img{
+    filter: invert(100%);
+}
+
+
 #offre-onglet{
     padding-bottom: 41px;
 }
@@ -122,7 +213,7 @@ div.rowblock div.col-6{
 
     background-color: white; border: solid #3C3C3C; border-radius: 10px;
     /*background: linear-gradient(97deg, #7BCE76 0%, #afffa6 100%);*/
-    min-height: 453px;
+    min-height: 406px;
     background: gainsboro;
 }
 
@@ -318,3 +409,4 @@ section#offre-onglet{
 .timeline .content .completed {
     background: transparent;
 }
+
