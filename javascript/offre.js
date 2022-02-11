@@ -38,8 +38,7 @@ let divR2 = document.querySelector('div#r2');
 let divR3 = document.querySelector('div#r3');
 let divR4 = document.querySelector('div#r4');
 
-
-
+/*
 $(document).ready(function() {
 
 
@@ -162,8 +161,8 @@ $(document).ready(function() {
 
             divTwo.innerHTML = '<i class="fas my first"><img src="assets/picto/idee.png"></i> Conception';
 
-            /*divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
-            divC4.innerHTML = '<j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j><br> MOE <br> Maîtrise d\'œuvre d\'exécution '*/
+            /!*divC3.innerHTML = '<i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            divC4.innerHTML = '<j class="iGreen"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux </j><br> MOE <br> Maîtrise d\'œuvre d\'exécution '*!/
         },
         function () {
 
@@ -175,9 +174,9 @@ $(document).ready(function() {
 
             divTwo.innerHTML = '<i class="fas my"><img src="assets/picto/idee.png"></i> Conception';
 
-            /*divC3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
+            /!*divC3.innerHTML = ' <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable '
             divC4.innerHTML = '<i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d\'œuvre d\'exécution '
-*/
+*!/
         }
     );
 
@@ -317,7 +316,7 @@ $(document).ready(function() {
 
 
 
-/*function shemat(id) {
+/!*function shemat(id) {
 
     let isCurrent = document.querySelector('div.current');
     let isClickDiv = document.querySelector('div#a' + id);
@@ -350,4 +349,4 @@ $(document).ready(function() {
         divTwo.classList.add("completed");
 
     }
-}*/
+}*!/*/

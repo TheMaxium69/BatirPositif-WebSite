@@ -64,77 +64,98 @@
                     <h1 class="titleoffre uppercase" style="text-align: center">VOUS CONSTRUISEZ ?</h1>
                 </div>
 
+                <p class="container text-center">Nous vous accompagnons sur des constructions passives, pour un bilan
+                    carbone neutre,<br class="br875"> en composant votre intérieur idéal.</p>
+
+                <br>
 
 
-                <div id="shema">
+                <section class="desktop">
+                    <div id="shema">
 
 
-                    <div class="l1 row borderB">
-                        <article class="t col-4"><a href="?name=ac#upOne"><p>Accompagnement à<br> l’auto-construction</p></a></article>
-                        <article class="vide col-4"></article>
-                        <article class="vide col-4"></article>
+                        <div class="l1 row borderB">
+                            <article class="t col-4"><a href="?name=ac#upOne"><p>Accompagnement à<br> l’auto-construction</p></a></article>
+                            <article class="vide col-4"></article>
+                            <article class="vide col-4"></article>
+                        </div>
+
+                        <div class="l1 row borderB">
+                            <article class="t col-4"><a href="?name=et#upOne"><p>Étude énergétique<br> RE2020</p></a></article>
+                            <article class="vide col-4"></article>
+                            <article class="content t col-4"><a href="?name=moe1#downOne"><p>MOE<br>
+                                Maîtrise d'œuvre d'exécution</p></a></article>
+                        </div>
+                        <div class="l1 row">
+                            <article class="t col-12"><a href="?name=amo1#downOne"><p>AMO<br>
+                                Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+
                     </div>
 
-                    <div class="l1 row borderB">
-                        <article class="t col-4"><a href="?name=et#upOne"><p>Étude énergétique<br> RE2020</p></a></article>
-                        <article class="vide col-4"></article>
-                        <article class="t col-4"><a href="?name=moe1#downOne"><p>MOE<br>
-                            Maîtrise d'œuvre d'exécution</p></a></article>
+                    <div class="row up" id="upOne">
+
+                        <div class="col-4" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                        <div class="col-4" style="padding-left: 5%;"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
+                        <div class="col-4" style="padding-left: 3%"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
+
                     </div>
-                    <div class="l1 row">
-                        <article class="t col-12"><a href="?name=amo1#downOne"><p>AMO<br>
-                            Assistance maîtrise d’ouvrage responsable</p></a></article>
+                </section>
+                <section class="mobile">
+
+                    <div class="text-center" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                    <div class="back">
+<p>test</p>
                     </div>
 
-
-                </div>
-
-                <div class="row" id="upOne">
-
-                    <div class="col-4" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
-                    <div class="col-4" style="padding-left: 5%;"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
-                    <div class="col-4" style="padding-left: 3%"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
-
-                </div>
+                </section>
 
                 <style>
 
-                    div#upOne{
-                        margin-top: 15px;
-                        margin-right: unset;
-                        margin-left: unset;
+                    .back {
+
+                        position: relative;
+                        background-color: #C8F9C4;
                     }
 
-                    #upOne i.my img.reno{
+                    .back:before{
+                        content : '';
+                        position: absolute;
+                        right: -100px;
+                        border-style: solid;
+                        border-width: 100px 100px 0 101px;
+                        border-color: var(--color-back-table) transparent transparent transparent ;
+                    }
+
+
+                    .text-center i.my img.reno{
                         width: 26px;
                     }
-                    #upOne i.my img{
+                    .text-center i.my img{
                         width: 23px;
                     }
 
-                </style>
-
-
-
-                <!--<div class="timeline" id="upOne">
-                    <div class="content">
-                        <div id="a1" onclick="shemat(1)" class="current"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
-                        <div id="a2" onclick="shemat(2)" class=""><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
-                        <div id="a3" onclick="shemat(3)" class=""><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
-                    </div>
-                </div>-->
-
-                <style>
-
-
-                    .otitle i.my img{
-                        width: 26px;
-                        filter: invert(100%);
+                    @media (max-width: 995px) {
+                        .content a p br{
+                            display: none;
+                        }
                     }
 
-                    .otitle i.my img.reno{
-                        width: 29px;
+                    @media (max-width: 875px) {
+                        br.br875{
+                            display: none;
+                        }
                     }
+
+
+
+
+
+
+
+
+
 
 
                 </style>
@@ -150,7 +171,7 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "ac" ){ ?>
-                                <div class="bold otitle" id="c1" style="margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
+                                <div class="bold otitle" id="c1" style="    border-radius: 6px; margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
                             <?php } else {?>
                                 <div class="bold otitle" id="c1" style="margin-bottom: unset">
                             <?php } ?>
@@ -166,7 +187,7 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "et" ){ ?>
-                                <div class="bold otitle" id="c2" style="margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
+                                <div class="bold otitle" id="c2" style="    border-radius: 6px; margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
                             <?php } else {?>
                                 <div class="bold otitle" id="c2" style="margin-bottom: unset">
                             <?php } ?>
@@ -182,13 +203,13 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "amo1" ){ ?>
-                                <div class="bold otitle" id="c3" style="background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <div class="bold otitle" id="c3" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                             <?php } else {?>
                                 <div class="bold otitle" id="c3" >
                             <?php } ?>
 
 
-                                    <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i><i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
+                                    <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
                             <p class="divP"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                             est de suivre votre projet et de vous aider, de vous conseiller à prendre les
@@ -206,7 +227,7 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "moe1" ){ ?>
-                            <div class="bold otitle" id="c4" style="background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="c4" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="c4" >
                                     <?php } ?>
@@ -233,14 +254,48 @@
                     <h1 class="titleoffre uppercase" style="text-align: center">Rénovation</h1>
                 </div>
 
+                <p class="container text-center">Restaurer, c'est être responsable. Pensons ensemble à la préservation<br>
+                    des matériaux en élaborant votre projet</p>
 
-                <div class="timeline" id="upTwo">
-                    <div class="content">
-                        <div id="b1" onclick="shemat(1)" class="current"><i class="fas fa-search"></i> Analyse</div>
-                        <div id="b2" onclick="shemat(2)" class=""><i class="fas fa-ruler-combined"></i> Conception</div>
-                        <div id="b3" onclick="shemat(3)" class=""><i class="fas fa-puzzle-piece"></i> Travaux</div>
+                <br>
+                <section class="desktop">
+                    <div id="shema">
+
+
+                        <div class="l1 row borderB">
+                            <article class="t col-4"><a href="?off=1&name=ae#upTwo"><p>Audit <br>énergétique</p></a></article>
+                            <article class="vide col-4"></article>
+                            <article class="vide col-4"></article>
+                        </div>
+
+                        <div class="l1 row borderB">
+                            <article class="t col-4"><a href="?off=1&name=dt#upTwo"><p>Diagnostic<br>technique</p></a></article>
+                            <article class="vide col-4"></article>
+                            <article class="content t col-4"><a href="?off=1&name=moe2#downTwo"><p>MOE<br>
+                                        Maîtrise d'œuvre d'exécution</p></a></article>
+                        </div>
+                        <div class="l1 row">
+                            <article class="t col-12"><a href="?off=1&name=amo2#downTwo"><p>AMO<br>
+                                        Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+
                     </div>
-                </div>
+
+                    <div class="row up" id="upTwo">
+
+                        <div class="col-4" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                        <div class="col-4" style="padding-left: 5%;"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
+                        <div class="col-4" style="padding-left: 3%"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
+
+                    </div>
+                </section>
+                <section class="mobile">
+
+                    <!--Mobile-->
+
+                </section>
+
                 <br><br>
                 <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
                 <div class="row rowblock">
@@ -252,9 +307,12 @@
 
                             <div class="divTwo">
                             </div>
-
-                            <div class="bold otitle" id="r1"><i class="fas fa-search"></i> <hr style="background: white;"> DDT <br> Diagnostic technique </div>
-                            <p style="text-align: center; margin-bottom: 0; margin-top: 10%;">|</p><p class="divP">Nous vous fournissons un rapport contenant tous les
+                            <?php if (!empty($_GET['name'])  && $_GET['name'] == "dt" ){ ?>
+                            <div class="bold otitle" id="r1" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <?php } else {?>
+                                <div class="bold otitle" id="r1" >
+                                    <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> DDT <br> Diagnostic technique </div>
+                            <p class="divP" style="margin-top: 11%">Nous vous fournissons un rapport contenant tous les
                                 diagnostics immobiliers obligatoires concernant la sécurité des futurs occupants du
                                 bâtiment (exposition au plomb, présence d’amiante...) La santé avant tout ! </p>
                         </div>
@@ -267,24 +325,31 @@
 
                             <div class="divTwo">
                             </div>
-
-                            <div class="bold otitle" id="r2" style="  padding: 32px 20px;"><i class="fas fa-search"></i> <hr style="background: white;"> Audit énergétique </div>
-                            <p style="text-align: center; margin-bottom: 0; margin-top: 4%;">|</p><p class="divP"> Nous faisons un “état des lieux” des performances énergétiques
+                            <?php if (!empty($_GET['name'])  && $_GET['name'] == "ae" ){ ?>
+                            <div class="bold otitle" id="r2" style=" padding: 32px 20px;    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <?php } else {?>
+                                <div class="bold otitle" id="r2" style="  padding: 32px 20px;">
+                                    <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Audit énergétique </div>
+                            <p class="divP" style="margin-top: 6.5%;"> Nous faisons un “état des lieux” des performances énergétiques
                                 de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
                                 déterminer les points faibles et de construire le meilleur plan d’action pour que votre
                                 bien devienne pauvre en consommation et plus responsable ! </p>
                         </div>
                     </div>
 
+                    <div id="downTwo"></div>
                     <div class="col-6">
 
                         <div class="divOne">
 
                             <div class="divTwo">
                             </div>
-
-                            <div class="bold otitle" id="r3"> <i class="fas fa-search"></i> <i class="fas fa-ruler-combined"></i> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
-                            <p style="text-align: center; margin-bottom: 0">|</p><p class="divP"> il s’agit d’une mission de
+                            <?php if (!empty($_GET['name'])  && $_GET['name'] == "amo2" ){ ?>
+                            <div class="bold otitle" id="r3" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <?php } else {?>
+                                <div class="bold otitle" id="r3" >
+                                    <?php } ?> <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
+                            <p class="divP"> il s’agit d’une mission de
                                 <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                                 est de suivre votre projet et de vous aider, de vous conseiller à prendre les
                                 meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
@@ -300,8 +365,16 @@
                             <div class="divTwo">
                             </div>
 
-                            <div class="bold otitle" id="r4"> <i class="fas fa-puzzle-piece"></i> <hr style="background: white;"> MOE <br> Maîtrise d'œuvre d'exécution </div>
-                            <p style="text-align: center; margin-bottom: 0; margin-top: 9%;">|</p><p class="divP"> Cette mission concerne la coordination de la
+                            <?php if (!empty($_GET['name'])  && $_GET['name'] == "moe2" ){ ?>
+                            <div class="bold otitle" id="r4" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <?php } else {?>
+                                <div class="bold otitle" id="r4" >
+                                    <?php } ?>
+
+
+                                    <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d'œuvre d'exécution </div>
+                            <p class="divP" style="
+    margin-top: 11%;"> Cette mission concerne la coordination de la
                                 mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
                                 expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
                                 sommes décisionnaires ! </p>
