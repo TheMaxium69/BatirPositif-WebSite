@@ -104,61 +104,79 @@
                 </section>
                 <section class="mobile">
 
-                    <div class="text-center" style="padding-left: 10%;"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
-                    <div class="back">
-<p>test</p>
+                    <div class="text-center"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                    <div id="shemaM"  class="shema1">
+
+                        <div class="l1 row borderB">
+                            <article class="t col-12"><a><p>Accompagnement à<br> l’auto-construction</p></a></article>
+                        </div>
+                        <div class="l1 row borderB">
+                            <article class="t col-12"><a><p>Étude énergétique<br> RE2020</p></a></article>
+                        </div>
+                        <div class="l1 row">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
                     </div>
 
+                    <div class="text-center titleMo"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
+                    <div id="shemaM" class="shema2">
+
+                        <div class="l1 row" style="height: unset;">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center titleMo"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
+                    <div id="shemaM" class="shema3">
+
+                        <div class="l1 row borderB" style="height: 50%;">
+                            <article class="t col-12"><a><p>MOE: Maîtrise d'œuvre d'exécution</p></a></article>
+                        </div>
+                        <div class="l1 row" style="height: 50%;">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+                    </div>
                 </section>
 
                 <style>
 
-                    .back {
-
-                        position: relative;
-                        background-color: #C8F9C4;
+                    .shema1{
+                        height: 201px;
                     }
 
-                    .back:before{
-                        content : '';
-                        position: absolute;
-                        right: -100px;
-                        border-style: solid;
-                        border-width: 100px 100px 0 101px;
-                        border-color: var(--color-back-table) transparent transparent transparent ;
+                    .shema1:before{
+                        border-bottom: 100px solid transparent;
+                        border-top: 100px solid transparent;
+                        right: -51px;
+                        border-left: 5.1rem solid var(--color-back-table);
                     }
 
-
-                    .text-center i.my img.reno{
-                        width: 26px;
-                    }
-                    .text-center i.my img{
-                        width: 23px;
+                    .shema2{
+                        height: 67px;
                     }
 
-                    @media (max-width: 995px) {
-                        .content a p br{
-                            display: none;
-                        }
+                    .shema2:before{
+                        border-bottom: 34px solid transparent;
+                        border-top: 33px solid transparent;
+                        right: -41px;
+                        border-left: 4.1rem solid var(--color-back-table);
                     }
 
-                    @media (max-width: 875px) {
-                        br.br875{
-                            display: none;
-                        }
+                    .shema3{
+                        height: 135px;
                     }
 
-
-
-
-
-
-
-
-
-
-
+                    .shema3:before{
+                        border-bottom: 67px solid transparent;
+                        border-top: 68px solid transparent;
+                        right: -51px;
+                        border-left: 5.1rem solid var(--color-back-table);
+                    }
                 </style>
+
 
                 <br><br>
                 <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
@@ -292,8 +310,41 @@
                 </section>
                 <section class="mobile">
 
-                    <!--Mobile-->
+                    <div class="text-center"><i class="fas my first"><img src="assets/picto/lanalyse-des-donnees.png"></i> Analyse</div>
+                    <div id="shemaM"  class="shema1">
 
+                        <div class="l1 row borderB">
+                            <article class="t col-12"><a><p>Audit<br> énergétique</p></a></article>
+                        </div>
+                        <div class="l1 row borderB">
+                            <article class="t col-12"><a><p>Diagnostic<br> technique</p></a></article>
+                        </div>
+                        <div class="l1 row">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center titleMo"><i class="fas my"><img src="assets/picto/idee.png"></i> Conception</div>
+                    <div id="shemaM" class="shema2">
+
+                        <div class="l1 row" style="height: unset;">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center titleMo"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
+                    <div id="shemaM" class="shema3" style="height: 134px;">
+
+                        <div class="l1 row borderB" style="height: 50%;">
+                            <article class="t col-12"><a><p>MOE: Maîtrise d'œuvre d'exécution</p></a></article>
+                        </div>
+                        <div class="l1 row" style="height: 50%;">
+                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                        </div>
+
+                    </div>
                 </section>
 
                 <br><br>

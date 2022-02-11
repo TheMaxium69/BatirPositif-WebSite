@@ -34,6 +34,70 @@ hr.offre{
 :root {
     --color-back-table: #c8f9c4;
 }
+#shemaM{
+    width: 86%;
+    position: relative;
+    background: var(--color-back-table);
+}
+
+#shemaM:before{
+    content: '';
+    position: absolute;
+}
+
+
+article.t2:after{
+    margin-top: 14.5%;
+    border-bottom: 33px solid var(--color-back-table);
+    border-top: 33px solid var(--color-back-table);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border-top: 2.1rem inset transparent; */
+    border-left: 2.1rem solid transparent;
+}
+
+article.t3:after{
+    margin-top: 14.5%;
+    border-bottom: 33px solid var(--color-back-table);
+    border-top: 33px solid var(--color-back-table);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* border-top: 2.1rem inset transparent; */
+    border-left: 2.1rem solid transparent;
+}
+
+.mobile .text-center{
+    margin-left: -4%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mobile .titleMo{
+    margin-top: 30px;
+}
+
+.text-center i.my img.reno{
+    width: 32px;
+}
+.text-center i.my img{
+    width: 29px;
+}
+
+@media (max-width: 995px) {
+    .content a p br{
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    br.br875{
+        display: none;
+    }
+}
 
 
 .otitle i.my img{
@@ -119,6 +183,18 @@ article.col-12:after{
 }
 
 #shema p:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#shemaM p{
+    padding-top: 6px;
+}
+
+#shemaM p:hover{
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
