@@ -114,7 +114,7 @@
                             <article class="t col-12"><a><p>Étude énergétique<br> RE2020</p></a></article>
                         </div>
                         <div class="l1 row">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -123,19 +123,19 @@
                     <div id="shemaM" class="shema2">
 
                         <div class="l1 row" style="height: unset;">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
 
                     <div class="text-center titleMo"><i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> Travaux</div>
-                    <div id="shemaM" class="shema3">
+                    <div id="shemaM" class="shema3" style="height: 134px;">
 
                         <div class="l1 row borderB" style="height: 50%;">
-                            <article class="t col-12"><a><p>MOE: Maîtrise d'œuvre d'exécution</p></a></article>
+                            <article class="t col-12"><a><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
                         </div>
                         <div class="l1 row" style="height: 50%;">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -320,7 +320,7 @@
                             <article class="t col-12"><a><p>Diagnostic<br> technique</p></a></article>
                         </div>
                         <div class="l1 row">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -329,7 +329,7 @@
                     <div id="shemaM" class="shema2">
 
                         <div class="l1 row" style="height: unset;">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -338,10 +338,10 @@
                     <div id="shemaM" class="shema3" style="height: 134px;">
 
                         <div class="l1 row borderB" style="height: 50%;">
-                            <article class="t col-12"><a><p>MOE: Maîtrise d'œuvre d'exécution</p></a></article>
+                            <article class="t col-12"><a><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
                         </div>
                         <div class="l1 row" style="height: 50%;">
-                            <article class="t col-12"><a><p>AMO: Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
