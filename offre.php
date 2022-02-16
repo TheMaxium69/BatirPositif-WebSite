@@ -31,21 +31,26 @@
                 if (1 == $off){ ?>
 
                     <ul>
-                        <li class="onglet" style="">CONSTRUCTION</li>
-                        <li class="onglet actif" style="">RÉNOVATION</li>
+                        <li class="onglet" style=""><i class="fas fa-home"></i> CONSTRUCTION</li>
+                        <li class="onglet actif" style="">
+                            <i class="fas fa-tools"></i> RÉNOVATION</li>
                     </ul>
 
                 <?php } else { ?>
                     <ul>
-                        <li class="onglet actif" style="">CONSTRUCTION</li>
-                        <li class="onglet" style="">RÉNOVATION</li>
+                        <li class="onglet actif" style="">
+                            <i class="fas fa-home"></i> CONSTRUCTION</li>
+                        <li class="onglet" style="">
+                            <i class="fas fa-tools"></i> RÉNOVATION</li>
                     </ul>
 
                     <?php }
             } else { ?>
                 <ul>
-                    <li class="onglet actif" style="">CONSTRUCTION</li>
-                    <li class="onglet" style="">RÉNOVATION</li>
+                    <li class="onglet actif" style="">
+                        <i class="fas fa-home"></i> CONSTRUCTION</li>
+                    <li class="onglet" style="">
+                        <i class="fas fa-tools"></i> RÉNOVATION</li>
                 </ul>
             <?php } ?>
         </nav>
@@ -75,7 +80,7 @@
 
 
                         <div class="l1 row borderB">
-                            <article class="t col-4"><a href="?name=ac#upOne"><p>Accompagnement à<br> l’auto-construction</p></a></article>
+                            <article class="t col-4"><a href="?name=ac#upOne"><p>Accompagnement à<br> la conception</p></a></article>
                             <article class="vide col-4"></article>
                             <article class="vide col-4"></article>
                         </div>
@@ -108,13 +113,13 @@
                     <div id="shemaM"  class="shema1">
 
                         <div class="l1 row borderB">
-                            <article class="t col-12"><a><p>Accompagnement à<br> l’auto-construction</p></a></article>
+                            <article class="t col-12"><a href="?name=ac#acMobile"><p>Accompagnement à<br> la conception</p></a></article>
                         </div>
                         <div class="l1 row borderB">
-                            <article class="t col-12"><a><p>Étude énergétique<br> RE2020</p></a></article>
+                            <article class="t col-12"><a href="?name=et#etMobile"><p>Étude énergétique<br> RE2020</p></a></article>
                         </div>
                         <div class="l1 row">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?name=amo1#amoMobile"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -123,7 +128,7 @@
                     <div id="shemaM" class="shema2">
 
                         <div class="l1 row" style="height: unset;">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?name=amo1#amoMobile"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -132,10 +137,10 @@
                     <div id="shemaM" class="shema3" style="height: 134px;">
 
                         <div class="l1 row borderB" style="height: 50%;">
-                            <article class="t col-12"><a><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
+                            <article class="t col-12"><a href="?name=moe1#moeMobile"><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
                         </div>
                         <div class="l1 row" style="height: 50%;">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?name=amo1#amoMobile"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -177,13 +182,14 @@
                     }
                 </style>
 
+                <div id="acMobile"></div>
 
                 <br><br>
                 <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
                 <div class="row rowblock">
 
                     <div class="col-6">
-                        <div class="divOne" style="min-height: unset;">
+                        <div class="divOne" style="min-height: unset;" id="etMobile">
 
                             <div class="divTwo">
                             </div>
@@ -193,11 +199,11 @@
                             <?php } else {?>
                                 <div class="bold otitle" id="c1" style="margin-bottom: unset">
                             <?php } ?>
-                                    <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Accompagnement à l’auto-construction </div>
+                                    <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Accompagnement à la conception </div>
                         </div>
                     </div>
                     <div id="downOne"></div>
-                    <div class="col-6">
+                    <div class="col-6" id="amoMobile">
 
                         <div class="divOne" style="min-height: unset;">
 
@@ -231,7 +237,7 @@
                             <p class="divP"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                             est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                            meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
+                            meilleures décisions pour votre projet.<b id="moeMobile"></b> Et in fine, assurer un meilleur déroulement du
                                 chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
                         </div>
 
@@ -314,13 +320,13 @@
                     <div id="shemaM"  class="shema1">
 
                         <div class="l1 row borderB">
-                            <article class="t col-12"><a><p>Audit<br> énergétique</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=ae#aeMobile"><p>Audit<br> énergétique</p></a></article>
                         </div>
                         <div class="l1 row borderB">
-                            <article class="t col-12"><a><p>Diagnostic<br> technique</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=dt#dtMobile"><p>Diagnostic<br> technique</p></a></article>
                         </div>
                         <div class="l1 row">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=amo2#amoMobile2"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -329,7 +335,7 @@
                     <div id="shemaM" class="shema2">
 
                         <div class="l1 row" style="height: unset;">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=amo2#amoMobile2"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
@@ -338,15 +344,16 @@
                     <div id="shemaM" class="shema3" style="height: 134px;">
 
                         <div class="l1 row borderB" style="height: 50%;">
-                            <article class="t col-12"><a><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=moe2#moeMobile2"><p>MOE<br class="a393"> Maîtrise d'œuvre d'exécution</p></a></article>
                         </div>
                         <div class="l1 row" style="height: 50%;">
-                            <article class="t col-12"><a><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
+                            <article class="t col-12"><a href="?off=1&name=amo2#amoMobile2"><p>AMO<br class="a533"> Assistance maîtrise d’ouvrage responsable</p></a></article>
                         </div>
 
                     </div>
                 </section>
 
+                <div id="dtMobile"></div>
                 <br><br>
                 <h2 style="margin-left: 6%;">Pour plus d'informations : </h2> <br>
                 <div class="row rowblock">
@@ -364,7 +371,7 @@
                                 <div class="bold otitle" id="r1" >
                                     <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> DDT <br> Diagnostic technique </div>
                             <p class="divP" style="margin-top: 11%">Nous vous fournissons un rapport contenant tous les
-                                diagnostics immobiliers obligatoires concernant la sécurité des futurs occupants du
+                                diagnostics immobiliers obligatoires concernant la sécurité des futurs<b id="aeMobile"></b> occupants du
                                 bâtiment (exposition au plomb, présence d’amiante...) La santé avant tout ! </p>
                         </div>
 
@@ -383,7 +390,7 @@
                                     <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Audit énergétique </div>
                             <p class="divP" style="margin-top: 6.5%;"> Nous faisons un “état des lieux” des performances énergétiques
                                 de votre bien. Nous examinons le chauffage, l’isolation, la ventilation, etc. afin de
-                                déterminer les points faibles et de construire le meilleur plan d’action pour que votre
+                                déterminer les points faibles et de construire le meilleur<b id="amoMobile2"></b> plan d’action pour que votre
                                 bien devienne pauvre en consommation et plus responsable ! </p>
                         </div>
                     </div>
@@ -403,7 +410,7 @@
                             <p class="divP"> il s’agit d’une mission de
                                 <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                                 est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                                meilleures décisions pour votre projet. Et in fine, assurer un meilleur déroulement du
+                                meilleures décisions pour votre projet.<b id="moeMobile2"></b> Et in fine, assurer un meilleur déroulement du
                                 chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
                         </div>
 

@@ -25,13 +25,12 @@
             <div class="col-6">
             <h2>Bienvenue chez Bâtir positif</h2>
 
-                <p>Bureau d’études spécialisé dans l’accompagnement et le soutien de vos projets.
+                <p>Bureau d’études spécialisé dans l’accompagnement et l’optimisation de vos projets.
                     Vous voulez construire, ou rénover de manière <b class="bold underline">responsable</b> ? Notre expertise pourra vous
-                    orienter ! particuliers ou professionnels, nous sommes opérationnels.</p><p>
+                    simplifier/faciliter ! particuliers ou professionnels, nous sommes opérationnels.</p><p>
                     Spécialisés dans les bâtiments à faible consommation énergétique et avec un impact
-                    environnemental positif, nous intervenons à différents moments de votre projet. <b class="bold">Travaillons
-                    ensemble pour trouver les solutions les plus pertinentes et responsables.</b> <br> Mais
-                    surtout, rendons ce projet convivial.</p>
+                    environnemental positif, nous intervenons à différentes étapes de votre projet.<br> <b class="bold">Travaillons
+                    ensemble pour trouver les solutions efficaces pour votre budget, la santé et l’environnement.</b></p>
 
             <?php custombtn("about.php", "Voir plus", "white", "#4d8d4c"); ?>
             </div>

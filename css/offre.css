@@ -267,8 +267,8 @@ div#shema:before {
     /* resset du ul */
     padding : 0;
     margin: 0;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 #offre-onglet .onglet:first-child{
@@ -285,7 +285,7 @@ div#shema:before {
     display : inline-block;
     padding : 1em 2em;
     background: #28a745;
-    opacity: .6;
+    opacity: .8;
     font-weight: bold;
     border-radius : 4px 4px 0 0;
     cursor:pointer;
