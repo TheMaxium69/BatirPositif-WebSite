@@ -36,6 +36,8 @@
                     <small>- Freepik </small><br>
                     <p class="no-p">Icone Travaux - Page Offre (<a class="link" href="http://localhost/BatirPositif-WebSite/assets/picto/renovation2.png">Voir</a>)</p>
                     <small>- Iconmarketpk </small><br>
+                    <p class="no-p">Reste des images</p>
+                    <small>- Canva.com (<a class="link" href="https://www.canva.com/">Lien</a>) </small><br>
                 </div>
                 <div class="col-6 textmore">
                     <h3 style="margin-bottom: 12px; margin-top: 20px;color: #32b618">Technologies</h3>
