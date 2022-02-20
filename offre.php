@@ -189,7 +189,7 @@
                 <div class="row rowblock">
 
                     <div class="col-6">
-                        <div class="divOne" style="min-height: unset;" id="etMobile">
+                        <div class="divOne" style="min-height: 639px;">
 
                             <div class="divTwo">
                             </div>
@@ -200,12 +200,36 @@
                                 <div class="bold otitle" id="c1" style="margin-bottom: unset">
                             <?php } ?>
                                     <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Accompagnement à la conception </div>
-                        </div>
-                    </div>
-                    <div id="downOne"></div>
-                    <div class="col-6" id="amoMobile">
 
-                        <div class="divOne" style="min-height: unset;">
+
+                                    <p class="divP" style="
+                                        max-width: 95%;
+                                        text-align: center;
+                                        margin-left: 2.5%;
+                                        margin-bottom: 20px;
+                                        margin-top: 10px;">
+
+                                        La conception d’un projet immobilier est LE moment le plus intéressant pour réfléchir de
+                                        manière global. Nous vous accompagnons pour poser sur la feuille blanche votre rêve de
+                                        manière éveillé.
+                                        <br><br>
+                                        Choix des matériaux, positions des ouvertures, emplacements des équipements, systèmes
+                                        énergétiques... sont autant de points à soigner par une connaissance total des impacts.
+                                        Notre expertise vous permettra d’avoir une sérénité total lors de ces réflexions pour garantir
+                                        à votre projet :<br><br>
+                                        - un cout maitriser à la construction, et pendant son exploitation (consommations)<br>
+                                        - un confort d’utilisation et une qualité de l’air maximum<br>
+                                        - un impact environnemental réduit par l’orientation des choix les plus vertueux<br><b id="etMobile"></b>
+                                        <br>
+                                        Si vous ne le faite pas maintenant...
+                                    </p>
+
+
+                                </div>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="divOne" style="min-height: 639px;">
 
                             <div class="divTwo">
                             </div>
@@ -216,7 +240,27 @@
                                 <div class="bold otitle" id="c2" style="margin-bottom: unset">
                             <?php } ?>
                                     <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Étude énergétique RE2020 </div>
-                        </div>
+
+
+                                    <p class="divP" style="
+                                        text-align: center;
+                                        margin-bottom: 20px;
+                                        margin-top: 8%;">
+
+                                        Depuis le 01/01/2022, l’ensemble des logements neufs est soumis à une nouvelle
+                                        règlementation thermique et environnementale. La RE2020 pousse le Maitre d’ouvrage à
+                                        analyser de manière règlementaire :<br>
+                                        <br>
+                                        - Le cycle de vie du projet (choix de matériaux plus vertueux)<br>
+                                        - L’isolation thermique amélioré<br>
+                                        - Le confort d’été (risque de surchauffe dans le logement) est pris en compte<br>
+                                        <br><b id="downOne"></b><b id="amoMobile"></b>
+                                        Nous vous aidons à trouver les compositions les plus judicieuses pour répondre à cette
+                                        exigence et faciliter l’obtention de votre permis de construire.
+                                    </p>
+
+
+                                </div>
                     </div>
 
                     <div class="col-6">
@@ -236,9 +280,9 @@
                                     <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
                             <p class="divP"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
-                            est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                            meilleures décisions pour votre projet.<b id="moeMobile"></b> Et in fine, assurer un meilleur déroulement du
-                                chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
+                            vous donner les outils pour anticiper de manière méthodique votre projet. <b id="moeMobile"></b> Et in fine, assurer un meilleur déroulement du
+                                chantier ! Attention, l’AMO ne fait que conseiller. vous restez pilote de votre projet, mais avec un
+                                professionnel à vos côtés </p>
                         </div>
 
                     </div>
@@ -258,10 +302,10 @@
 
 
                                     <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d'œuvre d'exécution </div>
-                            <p class="divP" style="margin-top: 11%"> Cette mission concerne la coordination de la
+                            <p class="divP" style="margin-top: 9%"> Cette mission concerne la coordination de la
                                 mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
-                                expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
-                                sommes décisionnaires ! </p>
+                                expert suivra le bon déroulement du chantier de A à Z. Vous pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre
+                                chantier. </p>
                         </div>
                     </div>
                 </div>
@@ -407,11 +451,11 @@
                                 <?php } else {?>
                                 <div class="bold otitle" id="r3" >
                                     <?php } ?> <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
-                            <p class="divP"> il s’agit d’une mission de
-                                <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
-                                est de suivre votre projet et de vous aider, de vous conseiller à prendre les
-                                meilleures décisions pour votre projet.<b id="moeMobile2"></b> Et in fine, assurer un meilleur déroulement du
-                                chantier ! Attention, l’AMO ne fait que conseiller. Il ne décide de rien ! </p>
+                                <p class="divP"> il s’agit d’une mission de
+                                    <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
+                                    vous donner les outils pour anticiper de manière méthodique votre projet. <b id="moeMobile2"></b> Et in fine, assurer un meilleur déroulement du
+                                    chantier ! Attention, l’AMO ne fait que conseiller. vous restez pilote de votre projet, mais avec un
+                                    professionnel à vos côtés </p>
                         </div>
 
                     </div>
@@ -431,11 +475,10 @@
 
 
                                     <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d'œuvre d'exécution </div>
-                            <p class="divP" style="
-    margin-top: 11%;"> Cette mission concerne la coordination de la
-                                mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
-                                expert suivra le bon déroulement du chantier de A à Z. Ici effectivement, nous
-                                sommes décisionnaires ! </p>
+                                <p class="divP" style="margin-top: 9%"> Cette mission concerne la coordination de la
+                                    mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
+                                    expert suivra le bon déroulement du chantier de A à Z. Vous pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre
+                                    chantier. </p>
                         </div>
                     </div>
 

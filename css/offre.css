@@ -370,11 +370,18 @@ border-top-left-radius: 7px;
 border-top-right-radius: 7px;
 }
 
+/*.divP{*/
+/*max-width: 65%;*/
+/*text-align: center;*/
+/*margin-left: 17.5%;*/
+/*margin-bottom: 20px;*/
+/*}*/
+
 .divP{
-max-width: 65%;
-text-align: center;
-margin-left: 17.5%;
-margin-bottom: 20px;
+    max-width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 20px;
 }
 
 
