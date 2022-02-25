@@ -68,14 +68,57 @@ $env_page = array(
 $env_test = array(
 
     1 => array(
+
+        "id" => 1,
         "title" => "JeSuisUnTitre",
         "picture" => "test.png",
+        "content" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+    ),
+
+    2 => array(
+        "id" => 2,
+        "title" => "JeSuisUnTitre2",
+        "picture" => "2.png",
         "content" => "salut \n
         \nje m'appel maxime tournier \n
         \net je suis beau",
+    ),
 
+    3 => array(
+        "id" => 3,
+        "title" => "JeSuisUnTitre2",
+        "picture" => "2.png",
+        "content" => "salut \n
+        \nje m'appel maxime tournier \n
+        \net je suis beau",
+    ),
 
+    4 => array(
+        "id" => 4,
+        "title" => "JeSuisUnTitre2",
+        "picture" => "2.png",
+        "content" => "salut \n
+        \nje m'appel maxime tournier \n
+        \net je suis beau",
+    ),
 
+    5 => array(
+        "id" => 5,
+        "title" => "JeSuisUnTitre2",
+        "picture" => "2.png",
+        "content" => "salut \n
+        \nje m'appel maxime tournier \n
+        \net je suis beau",
+    ),
+
+    6 => array(
+        "id" => 6,
+        "title" => "JeSuisUnTitre2",
+        "picture" => "2.png",
+        "content" => "salut \n
+        \nje m'appel maxime tournier \n
+        \net je suis beau",
     ),
 
 

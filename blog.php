@@ -26,8 +26,45 @@
     column-gap: 30px;
     max-width: 1289px;
     ">
+
+                    <?php
+
+                    $articles = $env_test;
+
+                    foreach ($articles as $article) { ?>
+
+                        <div class="membre">
+                            <img src="assets/upload/<?php echo $article['picture'] ?>" alt="" >
+
+                            <div class="info to-top">
+                                <h5 class="name"><?php echo $article['title'] ?></h5>
+                                <p class="job">[DATE]</p>
+                            </div>
+
+                            <div class="overly bottom">
+                                <div class="middle">
+                                    <h5 class="name"><?php echo $article['title'] ?></h5>
+                                    <p class="job">[DATE]</p>
+                                    <p class="text">
+                                        <?php echo substr($article['content'], 0, 100) . "..."; ?>
+                                    </p>
+                                    <div class="social-icones">
+                                        <a href="article.php?n=<?php echo $article['id'] ?>" >Voir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
+
+
+
+
+
+
                     <!--membre 1-->
-                    <div class="membre">
+                    <!--<div class="membre">
                         <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
 
                         <div class="info to-top">
@@ -226,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
 
