@@ -30,12 +30,16 @@
                     <small>- Tyrolium (© 2022 Tyrolium, Ent.)</small><br>
                     <p class="no-p">Hébergement</p>
                     <small>- OvhCloud (© Copyright 1999-2022 OVHcloud)</small><br>
-                    <p class="no-p">Icone Analyse - Page Offre (<a class="link" href="http://localhost/BatirPositif-WebSite/assets/picto/lanalyse-des-donnees.png">Voir</a>)</p>
+                    <p class="no-p">Icone Analyse - Page Offre (<a class="link" href="assets/picto/lanalyse-des-donnees.png">Voir</a>)</p>
                     <small>- Kornkum </small><br>
-                    <p class="no-p">Icone Conception - Page Offre (<a class="link" href="http://localhost/BatirPositif-WebSite/assets/picto/idee.png">Voir</a>)</p>
+                    <p class="no-p">Icone Conception - Page Offre (<a class="link" href="assets/picto/idee.png">Voir</a>)</p>
                     <small>- Freepik </small><br>
-                    <p class="no-p">Icone Travaux - Page Offre (<a class="link" href="http://localhost/BatirPositif-WebSite/assets/picto/renovation2.png">Voir</a>)</p>
+                    <p class="no-p">Icone Travaux - Page Offre (<a class="link" href="assets/picto/renovation2.png">Voir</a>)</p>
                     <small>- Iconmarketpk </small><br>
+
+                    <p class="no-p">Image Principal - Page Accueil (<a class="link" href="assets/Biofib-isolation-naturelle-pose-saine-3.png">Voir</a>)</p>
+                    <small>- Biofib.com (<a class="link" href="https://biofib.com/">Lien</a>) </small><br>
+
                     <p class="no-p">Reste des images</p>
                     <small>- Canva.com (<a class="link" href="https://www.canva.com/">Lien</a>) </small><br>
                 </div>

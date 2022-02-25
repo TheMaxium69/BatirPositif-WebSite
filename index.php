@@ -38,7 +38,6 @@
 
                 <img src="assets/Biofib-isolation-naturelle-pose-saine-3.png" style="
 
-
 ">
 
             </div>

@@ -57,5 +57,29 @@ $env_page = array(
         "file" => "legal.php",
         "css" => "legal",
     ),
+    7 => array(
+        "title" => "Article | Bâtir Positif",
+        "name" => "Article",
+        "file" => "article.php",
+        "css" => "article",
+    ),
 );
+
+$env_test = array(
+
+    1 => array(
+        "title" => "JeSuisUnTitre",
+        "picture" => "test.png",
+        "content" => "salut \n
+        \nje m'appel maxime tournier \n
+        \net je suis beau",
+
+
+
+    ),
+
+
+);
+
+
 
