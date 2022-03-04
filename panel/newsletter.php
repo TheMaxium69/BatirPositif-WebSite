@@ -47,7 +47,13 @@
         </style>
     </table>
 
-</main>
+    <div class="container py-5">
 
+        <h6>Pour tout copier d'un coup (Penser au CTRL+A)</h6>
+        <a class="btn btn-success" href="userJson.php">JSON</a>
+
+    </div>
+
+</main>
 
 </body> </html>

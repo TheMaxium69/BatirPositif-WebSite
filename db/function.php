@@ -125,3 +125,38 @@ function getUser($email){
 
 }
 
+function delUser($idUser){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM users WHERE id = '$idUser'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 1){
+
+        $requestDelete = "DELETE FROM users WHERE id ='$idUser'";
+
+        mysqli_query($ConnectDB, $requestDelete);
+
+    }
+
+}
+
+function createUser($alias, $email, $password){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM users WHERE email = '$email'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 0){
+
+        $requestCreate = "INSERT INTO users(alias, email, password) VALUES ('$alias', '$email', '$password')";
+
+        mysqli_query($ConnectDB, $requestCreate);
+
+    }
+
+}
