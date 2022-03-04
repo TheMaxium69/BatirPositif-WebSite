@@ -2,6 +2,55 @@
 
 require "composant/head.phtml";
 require "../db/app.php";
+session_start();
+?>
+    <header id="nav-desktop">
+        <div class="clear"></div>
+        <?php if (!empty($_SESSION['userIdLog'])){ ?>
+            <nav class="fixed-header">
+                <div class="site-title visible-title"><a href="../"><img src="../assets/LogoBatirPositifT.png"></a></div>
+
+                <ul class="">
+                    <li>
+                        <a class="btn" href="home.php">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="general.php">Général</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="user.php">User</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="blog.php">Blog</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="galery.php">Galery</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="contact.php">Contact</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="newsletter.php">Newsletter</a>
+                    </li>
+                    <li>
+                        <form class="form-inline" method="POST" action="?logout=true">
+                            <button class="btn my-2 my-sm-0" type="submit" style="color: red">Déconnexion</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        <?php } else { ?>
+            <nav class="fixed-header">
+                <div class="site-title visible-title"><a href="../"><img src="../assets/LogoBatirPositifT.png"></a></div>
+            </nav>
+        <?php } ?>
+    </header>
+<?php
+
+
+if (!empty($_GET['logout'])){
+    session_unset();
+}
 
 function form($isWonk = null){
 

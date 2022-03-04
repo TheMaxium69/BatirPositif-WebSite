@@ -34,6 +34,24 @@ function getClassContact($contact){
 
 }
 
+function delContact($idContact){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM contact WHERE id = '$idContact'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 1){
+
+        $requestDelete = "DELETE FROM contact WHERE id ='$idContact'";
+
+        mysqli_query($ConnectDB, $requestDelete);
+
+    }
+
+}
+
 function getAllNewsletter(){
 
     require "db.php";
@@ -43,6 +61,24 @@ function getAllNewsletter(){
     $allNewsletter = mysqli_query($ConnectDB, $requestNews);
 
     return $allNewsletter;
+
+}
+
+function delNewsletter($idNews){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM newsletter WHERE id = '$idNews'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 1){
+
+        $requestDelete = "DELETE FROM newsletter WHERE id ='$idNews'";
+
+        mysqli_query($ConnectDB, $requestDelete);
+
+    }
 
 }
 

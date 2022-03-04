@@ -4,6 +4,11 @@
 
 
     <?php
+    
+    if (!empty($_SESSION['userIdLog'])){
+        header("location: home.php");
+    }
+
 
     if (empty($_POST['username']) && empty($_POST['password'])){
 
@@ -27,17 +32,21 @@
 
             if ($TapePassword == $vraiMotDePasse){
 
-                include "composant/contact.phtml"; ?>
+                echo "valide";
 
-                <br>
+                $_SESSION["userIdLog"]= $userId;
+                $_SESSION["userNameLog"]= $userAlias;
+                $_SESSION["userEmailLog"]= $userEmail;
+                header("location: home.php");
 
-                <?php include "composant/newsletter.phtml";
 
             } else {
                 form("err");
             }
 
 
+        } else {
+            form("err");
         }
 
     }
