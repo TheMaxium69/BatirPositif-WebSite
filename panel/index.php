@@ -14,19 +14,32 @@
         $TapeUsername = $_POST['username'];
         $TapePassword = $_POST['password'];
 
-        if ($formuser != $TapeUsername && $formpass != $TapePassword){
+        $resultUser = getUser($TapeUsername);
 
-            form("err");
+        if ($resultUser != null){
+            foreach( $resultUser as $value){
+                $userId =  $value['id'];
+                $userAlias =  $value['alias'];
+                $userEmail = $value['email'];
+                $vraiMotDePasse =  $value['password'];
+            }
 
-        } else {
 
-            include "composant/contact.phtml"; ?>
+            if ($TapePassword == $vraiMotDePasse){
 
-            <br>
+                include "composant/contact.phtml"; ?>
 
-            <?php include "composant/newsletter.phtml";
+                <br>
+
+                <?php include "composant/newsletter.phtml";
+
+            } else {
+                form("err");
+            }
+
 
         }
+
     }
 
 

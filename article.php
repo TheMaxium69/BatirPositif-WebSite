@@ -7,8 +7,18 @@ if (empty($_GET['n'])){
     header('Location: '. $url);
 }
 
+require "db/function.php";
 
-$article = $env_test[$_GET['n']];
+$blogs = getAllBlog();
+
+foreach ($blogs as $blog){
+
+    if ($blog['id'] == $_GET['n']){
+        $article = $blog;
+    }
+
+}
+
 ?>
 
 <main>
@@ -27,6 +37,12 @@ $article = $env_test[$_GET['n']];
             echo $content;
             ?>
         </p>
+        <small>
+            <?php
+//            $date = $article['date'];
+//            echo $date->format('H:i d/m/y');
+            ?>
+        </small>
 
         <hr>
 

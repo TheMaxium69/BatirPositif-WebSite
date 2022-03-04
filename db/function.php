@@ -45,3 +45,47 @@ function getAllNewsletter(){
     return $allNewsletter;
 
 }
+
+function getAllBlog(){
+
+    require "db.php";
+
+    $requestNews = "SELECT * FROM blog";
+
+    $allBlog = mysqli_query($ConnectDB, $requestNews);
+
+    return $allBlog;
+
+}
+
+function getAllUser(){
+
+    require "db.php";
+
+    $requestNews = "SELECT * FROM users";
+
+    $allUser = mysqli_query($ConnectDB, $requestNews);
+
+    return $allUser;
+
+}
+
+function getUser($email){
+
+    require "db.php";
+
+    $requestNews = "SELECT * FROM users WHERE email = '$email'";
+
+    $resultUser = mysqli_query($ConnectDB, $requestNews);
+
+    if($resultUser->num_rows == 1){
+
+        return $resultUser;
+
+    } else {
+        return null;
+    }
+
+
+}
+

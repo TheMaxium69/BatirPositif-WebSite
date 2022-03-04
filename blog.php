@@ -29,7 +29,11 @@
 
                     <?php
 
-                    $articles = $env_test;
+                    require "db/function.php";
+
+                    $blogs = getAllBlog();
+
+                    $articles = $blogs;
 
                     foreach ($articles as $article) { ?>
 
@@ -38,13 +42,25 @@
 
                             <div class="info to-top">
                                 <h5 class="name"><?php echo $article['title'] ?></h5>
-                                <p class="job">[DATE]</p>
+                                <p class="job"><?php
+
+//                                        $date = $article['date'];
+//
+//                                        echo $date->format('d/m/y');
+
+                                    ?></p>
                             </div>
 
                             <div class="overly bottom">
                                 <div class="middle">
                                     <h5 class="name"><?php echo $article['title'] ?></h5>
-                                    <p class="job">[DATE]</p>
+                                    <p class="job"><?php
+
+//                                        $date = $article['date'];
+//
+//                                        echo $date->format('H:i d/m/y');
+
+                                        ?></p>
                                     <p class="text">
                                         <?php echo substr($article['content'], 0, 100) . "..."; ?>
                                     </p>

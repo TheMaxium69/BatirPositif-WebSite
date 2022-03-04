@@ -18,3 +18,8 @@
     display: block;
     margin-bottom: 1em;
 }
+
+#article small{
+    margin: 0 130px;
+    margin-bottom: 95px;
+}
