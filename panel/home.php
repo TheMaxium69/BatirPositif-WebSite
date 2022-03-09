@@ -1,4 +1,4 @@
-<?php include "app.php"; ?>
+<?php include "app.php"; navbar(1); ?>
 
 <main>
 

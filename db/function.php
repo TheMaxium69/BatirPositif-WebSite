@@ -160,3 +160,15 @@ function createUser($alias, $email, $password){
     }
 
 }
+
+function getAllEnv(){
+
+    require "db.php";
+
+    $requestNews = "SELECT * FROM env";
+
+    $allEnv = mysqli_query($ConnectDB, $requestNews);
+
+    return $allEnv;
+
+}

@@ -1,4 +1,4 @@
-<?php include "app.php"; ?>
+<?php include "app.php"; navbar(3); ?>
 
 <main>
 
@@ -36,6 +36,8 @@
 
         foreach ($AllUsers as $User){
 
+            if($User['id'] != 1){
+
             ?>
             <tr>
                 <td><?php echo $User['alias']; ?></td>
@@ -50,6 +52,8 @@
             </tr>
 
             <?php
+
+            }
         }
         ?>
         <style>

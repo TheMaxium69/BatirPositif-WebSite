@@ -1,4 +1,4 @@
-<?php include "app.php"; ?>
+<?php include "app.php"; navbar(7); ?>
 
 <main>
 
@@ -15,6 +15,13 @@
         delNewsletter($idNews);
     }
     ?>
+
+    <div class="container py-5">
+
+        <h6>Pour tout copier d'un coup (Penser au CTRL+A)</h6>
+        <a class="btn btn-success" href="userJson.php">JSON</a>
+
+    </div>
 
     <table class="container py-5">
         <h4 class="container">Mail de la Newsletter</h4>
@@ -47,12 +54,8 @@
         </style>
     </table>
 
-    <div class="container py-5">
+    <br>
 
-        <h6>Pour tout copier d'un coup (Penser au CTRL+A)</h6>
-        <a class="btn btn-success" href="userJson.php">JSON</a>
-
-    </div>
 
 </main>
 
