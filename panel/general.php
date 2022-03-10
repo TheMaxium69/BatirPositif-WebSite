@@ -10,6 +10,15 @@
         header("location: index.php");
     }
 
+    if (!empty($_GET['name'])){
+
+        $name = $_GET['name'];
+        $content = $_GET['content'];
+
+        editGeneral($name, $content);
+    }
+
+
     $AllEnv = getAllEnv();
 
     foreach ($AllEnv as $EnvSection){
@@ -31,9 +40,10 @@
                 </tr>
             </table>
         <br>
-        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "mail"){ echo "style='display: none'"; } ?> method="GET" action="">
+        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "mail"){ echo "style='display: none'"; } ?> method="GET">
+            <input type="hidden" name="name" value="<?php echo $_GET['edit'] ?>">
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Nouveau Mail" required>
+                <input type="email" class="form-control" placeholder="Nouveau Mail" required name="content">
                 <small class="form-text text-muted">Ce mail sera changer sur tout le site</small>
             </div>
             <div class="form-group form-check">
@@ -55,9 +65,10 @@
             </tr>
         </table>
         <br>
-        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "numero"){ echo "style='display: none'"; } ?> method="GET" action="">
+        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "numero"){ echo "style='display: none'"; } ?> method="GET">
+            <input type="hidden" name="name" value="<?php echo $_GET['edit'] ?>">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nouveau Numéro" required>
+                <input type="text" class="form-control" placeholder="Nouveau Numéro" required name="content">
                 <small class="form-text text-muted">Ce Numéro sera changer sur tout le site</small>
             </div>
             <div class="form-group form-check">
@@ -79,9 +90,10 @@
             </tr>
         </table>
         <br>
-        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "adresse"){ echo "style='display: none'"; } ?> method="GET" action="">
+        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "adresse"){ echo "style='display: none'"; } ?> method="GET">
+            <input type="hidden" name="name" value="<?php echo $_GET['edit'] ?>">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nouvelle Adresse" required>
+                <input type="text" class="form-control" placeholder="Nouvelle Adresse" required name="content">
                 <small class="form-text text-muted">Cette adresse sera changer sur tout le site</small>
             </div>
             <div class="form-group form-check">

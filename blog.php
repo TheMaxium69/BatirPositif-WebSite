@@ -35,32 +35,25 @@
 
                     $articles = $blogs;
 
-                    foreach ($articles as $article) { ?>
+                    foreach ($articles as $article) {
+
+                        $dateSrc = $article['date'];
+                        $dateTime = new DateTime($dateSrc);
+
+                        ?>
 
                         <div class="membre">
                             <img src="assets/upload/<?php echo $article['picture'] ?>" alt="" >
 
                             <div class="info to-top">
                                 <h5 class="name"><?php echo $article['title'] ?></h5>
-                                <p class="job"><?php
-
-//                                        $date = $article['date'];
-//
-//                                        echo $date->format('d/m/y');
-
-                                    ?></p>
+                                <p class="job"><?php echo $dateTime->format('d/m/y'); ?></p>
                             </div>
 
                             <div class="overly bottom">
                                 <div class="middle">
                                     <h5 class="name"><?php echo $article['title'] ?></h5>
-                                    <p class="job"><?php
-
-//                                        $date = $article['date'];
-//
-//                                        echo $date->format('H:i d/m/y');
-
-                                        ?></p>
+                                    <p class="job"><?php echo $dateTime->format('H:i d/m/y'); ?></p>
                                     <p class="text">
                                         <?php echo substr($article['content'], 0, 100) . "..."; ?>
                                     </p>

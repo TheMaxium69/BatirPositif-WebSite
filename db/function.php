@@ -94,6 +94,21 @@ function getAllBlog(){
 
 }
 
+function createBlog($title, $content, $picture){
+
+    require "db.php";
+
+    $title = str_replace("'", "&#039", $title);
+    $content = str_replace("'", "&#039", $content);
+    $picture = str_replace("'", "&#039", $picture);
+
+    $requestCreateBlog = "INSERT INTO blog(title, picture, content) VALUES ('$title', '$picture', '$content')";
+
+    mysqli_query($ConnectDB, $requestCreateBlog);
+
+
+}
+
 function getAllUser(){
 
     require "db.php";
@@ -170,5 +185,15 @@ function getAllEnv(){
     $allEnv = mysqli_query($ConnectDB, $requestNews);
 
     return $allEnv;
+
+}
+
+function editGeneral($name, $content){
+
+    require "db.php";
+
+    $requestEnv = "UPDATE env SET content='$content' WHERE name='$name'";
+
+    mysqli_query($ConnectDB, $requestEnv);
 
 }
