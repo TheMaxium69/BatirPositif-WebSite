@@ -46,14 +46,32 @@
 
             <div class="form-group">
                 <label>Miniature de l'article</label>
-                <input type="file" name="picture" class="form-control-file" required>
+                <input type="file" name="picture" class="form-control-file" accept="image/png, image/jpeg" required>
+            </div>
+
+            <hr>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Petit Rappel</strong><br>
+                - Sous ligner : <j>&lt;u&gt;&lt;/u&gt;</j><br>
+                - Text Gras : <j>&lt;b&gt;&lt;/b&gt;</j><br>
+                - Italique : <j>&lt;i&gt;&lt;/i&gt;</j>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
 
             <div class="form-group">
                 <label>Contenue de votre article</label>
-                <textarea class="form-control" rows="25" name="content" required></textarea>
+                <textarea class="form-control" rows="10" name="content" required></textarea>
             </div>
 
+
+<!--            <button class="btn btn-outline-success" >Plus</button>-->
+
+
+
+            <hr>
 
 
             <div class="form-group form-check">
@@ -66,11 +84,29 @@
 
         </form>
 
+        <hr>
+
+
+
+
+
+
     </div>
     <br>
 
+    <style>
+        j {
+            color: mediumvioletred;
+        }
+    </style>
+
+    <script>
 
 
+
+
+
+    </script>
 
 
 </main>
