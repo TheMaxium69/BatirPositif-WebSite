@@ -118,7 +118,7 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
 
         <div class="col-6" id="news">
 
-            <h2 style="padding-bottom: 14px">Newsletter :</h2>
+            <!--<h2 style="padding-bottom: 14px">Newsletter :</h2>
 
             <div class="card-form">
                 <form class="signup" action="db/newsletter.php" method="GET">
@@ -221,50 +221,72 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                 }
             </style>
         </div>
+-->
 
 
-
-<!--            <h2>Nos articles :</h2>
+            <h2>Nos articles :</h2>
             <div id="carousel-Blog" class="carousel slide " data-ride="carousel">
 
+                <?php
 
+                require "db/function.php";
 
+                $blogs = getAllBlog();
+
+                $articles = $blogs;
+
+                ?>
 
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-Blog" data-slide-to="1"></li>
-                    <li data-target="#carousel-Blog" data-slide-to="2"></li>
-                    <li data-target="#carousel-Blog" data-slide-to="3"></li>
+                    <?php if ($articles->num_rows >= 3) { ?>
+                        <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="1"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="2"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="3"></li>
+                    <?php } else if ($articles->num_rows == 2) { ?>
+                        <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="1"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="2"></li>
+                    <?php } else if ($articles->num_rows == 1) { ?>
+                        <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-Blog" data-slide-to="1"></li>
+                    <?php } else if ($articles->num_rows == 0) { ?>
+                        <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
+                    <?php }?>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Coucou</h5>
-                            <p>Coucou</p>
+                    <?php
+
+                    $i = 0;
+
+
+                    foreach ($articles as $article) {
+
+                        $i = $i + 1;
+
+
+                        if ($i >= 5){ ?>
+
+                            <!--On Affiche pas-->
+
+                        <?php } else {
+
+
+                        $dateSrc = $article['date'];
+                        $dateTime = new DateTime($dateSrc); ?>
+
+                        <div class="carousel-item <?php if ($i == 1){ echo "active"; } ?> ">
+                            <img src="assets/upload/<?php echo $article['picture'] ?>" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p><?php echo $article['title']?></p>
+                                <h5><?php echo $dateTime->format('d/m/y'); ?></h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Coucou</h5>
-                            <p>Coucou</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p>Est-ce que tu aime la vie ?</p>
-                            <h5>6 min </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Coucou</h5>
-                            <p>Coucou</p>
-                        </div>
-                    </div>
+
+
+                    <?php } }
+                    ?>
+
                 </div>
                 <a class="carousel-control-prev" href="#carousel-Blog" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -286,7 +308,7 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                 text-align: center;
                 padding-bottom: 35px;
             }
-        </style>-->
+        </style>
 
         <div class="col-6">
 
@@ -315,7 +337,7 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
     <section id="Popup">
         <div class="fixed-bottom">
             <div style="">
-                <a href="#news">
+                <a href="blog.php#news">
                     <i class="far fa-newspaper" style="margin-top: 17px;"></i>
                 </a>
             </div>
