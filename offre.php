@@ -499,4 +499,5 @@
 
 
 
-<?php footer($page); ?></body> </html>
+<?php
+require "db/function.php"; footer($page); ?></body> </html>

@@ -25,6 +25,7 @@
         if ($EnvSection['name'] == "adresse"){ $SectionAdresse = $EnvSection; }
         if ($EnvSection['name'] == "mail"){ $SectionMail = $EnvSection; }
         if ($EnvSection['name'] == "numero"){ $SectionNum = $EnvSection; }
+        if ($EnvSection['name'] == "galery"){ $SectionGalery = $EnvSection; }
     }
 
     ?>
@@ -100,6 +101,35 @@
                 <input type="checkbox" class="form-check-input" required>
                 <label class="form-check-label">Vous comfirmer changer ça sur tout le site</label>
             </div>
+            <button type="submit" class="btn btn-success">Enregistrez</button>
+        </form>
+    </div>
+
+    <div class="container py-5">
+
+        <h2>Activations de la galery</h2>
+
+        <table class="container py-5">
+            <tr>
+                <td><?php if ($SectionGalery['content'] == "false"){ echo "Désactivé"; } else { echo "Activé"; } ?></td>
+                <td><a href="?edit=<?php echo $SectionGalery['name'] ?>"><i class="fas fa-edit"></i></a></td>
+            </tr>
+        </table>
+        <br>
+        <form <?php if (empty($_GET['edit']) || $_GET['edit'] != "galery"){ echo "style='display: none'"; } ?> method="GET">
+            <input type="hidden" name="name" value="<?php echo $_GET['edit'] ?>">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="content" value="true" <?php if ($SectionGalery['content'] == "true"){ echo "checked"; } ?> >
+                <label class="form-check-label">
+                    Activé
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="content" value="false" <?php if ($SectionGalery['content'] == "false"){ echo "checked"; } ?>>
+                <label class="form-check-label">
+                    Désactivé
+                </label>
+            </div><br>
             <button type="submit" class="btn btn-success">Enregistrez</button>
         </form>
     </div>

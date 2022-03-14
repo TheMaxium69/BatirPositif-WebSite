@@ -226,7 +226,7 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
 
             <h2>Nos articles :</h2>
             <div id="carousel-Blog" class="carousel slide " data-ride="carousel">
-
+            <a href="blog.php">
                 <?php
 
                 require "db/function.php";
@@ -235,24 +235,28 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
 
                 $articles = $blogs;
 
+                if ($articles->num_rows == 0) {
+
+                    echo "<p style='text-align: center'>Il n'y a pas d'article disponible</p>";
+                } else {
                 ?>
 
                 <ol class="carousel-indicators">
-                    <?php if ($articles->num_rows >= 3) { ?>
+                    <?php if ($articles->num_rows >= 4) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
                         <li data-target="#carousel-Blog" data-slide-to="2"></li>
                         <li data-target="#carousel-Blog" data-slide-to="3"></li>
-                    <?php } else if ($articles->num_rows == 2) { ?>
+                    <?php } else if ($articles->num_rows == 3) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
                         <li data-target="#carousel-Blog" data-slide-to="2"></li>
-                    <?php } else if ($articles->num_rows == 1) { ?>
+                    <?php } else if ($articles->num_rows == 2) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
-                    <?php } else if ($articles->num_rows == 0) { ?>
+                    <?php } else if ($articles->num_rows == 1) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
-                    <?php }?>
+                    <?php } }?>
                 </ol>
                 <div class="carousel-inner">
                     <?php
@@ -276,7 +280,10 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                         $dateTime = new DateTime($dateSrc); ?>
 
                         <div class="carousel-item <?php if ($i == 1){ echo "active"; } ?> ">
-                            <img src="assets/upload/<?php echo $article['picture'] ?>" class="d-block w-100" alt="...">
+                            <img src="assets/upload/<?php echo $article['picture'] ?>" class="d-block" style="
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <p><?php echo $article['title']?></p>
                                 <h5><?php echo $dateTime->format('d/m/y'); ?></h5>
@@ -297,6 +304,7 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </a>
         </div>
 
         <style>

@@ -34,7 +34,17 @@
 
         <div id="logo2">
             <h5 class="widget-title">Contact<span></span></h5>
-            <a href="mailto:contact@batirpositif.com">contact@batirpositif.com</a>
+            <?php
+
+
+            $AllEnv = getAllEnv();
+
+            foreach ($AllEnv as $EnvSection){
+                if ($EnvSection['name'] == "mail"){ $SectionMail = $EnvSection; }
+            }
+
+            ?>
+            <a href="mailto:<?php echo $SectionMail['content'] ?>"> <?php echo $SectionMail['content'] ?></a>
 
 <!--            <p>0988415088</p>-->
 

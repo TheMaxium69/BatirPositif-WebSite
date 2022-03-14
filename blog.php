@@ -35,6 +35,11 @@
 
                     $articles = $blogs;
 
+                    if ($articles->num_rows == 0) {
+
+                        echo "<p style='text-align: center; color: black'>Il n'y a pas d'article disponible</p>";
+                    } else {
+
                     foreach ($articles as $article) {
 
                         $dateSrc = $article['date'];
@@ -64,7 +69,7 @@
                             </div>
                         </div>
 
-                    <?php } ?>
+                    <?php } } ?>
 
 
 
@@ -441,7 +446,7 @@
 
 </main>
 
-
+<br><br>
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

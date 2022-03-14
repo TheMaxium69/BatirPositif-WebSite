@@ -109,6 +109,24 @@ function createBlog($title, $content, $picture){
 
 }
 
+function delBlog($idBlog){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM blog WHERE id = '$idBlog'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 1){
+
+        $requestDelete = "DELETE FROM blog WHERE id ='$idBlog'";
+
+        mysqli_query($ConnectDB, $requestDelete);
+
+    }
+
+}
+
 function getAllUser(){
 
     require "db.php";
@@ -192,8 +210,63 @@ function editGeneral($name, $content){
 
     require "db.php";
 
+    $content = str_replace("'", "&#039", $content);
+    $content = str_replace("ô", "&ocirc;", $content);
+    $content = str_replace("î", "&icirc;", $content);
+
     $requestEnv = "UPDATE env SET content='$content' WHERE name='$name'";
 
     mysqli_query($ConnectDB, $requestEnv);
+
+}
+
+function getAllGalery(){
+
+    require "db.php";
+
+    $requestGalery = "SELECT * FROM galery";
+
+    $allGalery = mysqli_query($ConnectDB, $requestGalery);
+
+    return $allGalery;
+
+}
+
+function createGalery($text, $picture){
+
+    require "db.php";
+
+
+    $picture = str_replace("'", "&#039", $picture);
+    $picture = str_replace(" ", "%20", $picture);
+
+    if ($text == null){
+
+        $requestCreateGalery = "INSERT INTO galery(picture, text) VALUES ('$picture', null)";
+    } else {
+
+        $text = str_replace("'", "&#039", $text);
+        $requestCreateGalery = "INSERT INTO galery(picture, text) VALUES ('$picture', '$text')";
+
+    }
+    mysqli_query($ConnectDB, $requestCreateGalery);
+
+}
+
+function delGalery($idGalery){
+
+    require "db.php";
+
+    $requestIsValide = "SELECT * FROM galery WHERE id = '$idGalery'";
+
+    $isIdValide = mysqli_query($ConnectDB, $requestIsValide);
+
+    if($isIdValide->num_rows == 1){
+
+        $requestDelete = "DELETE FROM galery WHERE id ='$idGalery'";
+
+        mysqli_query($ConnectDB, $requestDelete);
+
+    }
 
 }

@@ -171,4 +171,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="javascript/contact.js"></script>
 
-<?php footer($page); ?></body> </html>
+<?php
+require "db/function.php"; footer($page); ?></body> </html>

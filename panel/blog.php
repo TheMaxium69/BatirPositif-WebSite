@@ -9,6 +9,11 @@
         header("location: index.php");
     }
 
+    if (!empty($_GET['del'])){
+        $idBlog = $_GET['del'];
+        delBlog($idBlog);
+    }
+
     if (!empty($_GET['create']) && !empty($_POST['title']) && !empty($_POST['content'])){
 
         $title = $_POST['title'];

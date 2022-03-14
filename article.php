@@ -39,10 +39,14 @@ foreach ($blogs as $blog){
         </p>
         <small>
             <?php
-//            $date = $article['date'];
-//            echo $date->format('H:i d/m/y');
+
+            $dateSrc = $article['date'];
+            $dateTime = new DateTime($dateSrc);
+            echo $dateTime->format('H:i d/m/y');
+
             ?>
         </small>
+        <br><br>
 
         <hr>
 
@@ -53,6 +57,13 @@ foreach ($blogs as $blog){
             background: center / 80% no-repeat url("assets/upload/<?php echo $article['picture']; ?>"),
             content-box radial-gradient(#ffffff, #d4d3d3);
         }
+        j[size="1"] {
+            font-size: 2em;
+        }
+        j[size="2"] {
+            font-size: 1em;
+        }
+
     </style>
 
 </main>

@@ -12,6 +12,19 @@
 
     </section>
 
+    <?php
+
+    require "db/function.php";
+
+    $AllEnv = getAllEnv();
+
+    foreach ($AllEnv as $EnvSection){
+        if ($EnvSection['name'] == "adresse"){ $SectionAdresse = $EnvSection; }
+        if ($EnvSection['name'] == "mail"){ $SectionMail = $EnvSection; }
+        if ($EnvSection['name'] == "numero"){ $SectionNum = $EnvSection; }
+    }
+
+    ?>
 
     <section id="info">
         <div id="info" class="container" style="text-align: center;">
@@ -19,8 +32,8 @@
                 <h2 style="text-align: center; margin-bottom: 20px; color: #32b618"><i class="fas fa-scroll"></i> Administratif de l'entreprise</h2>
                 <p>Copyright © Bâtir Positif. 2022<br> © 2022 Bâtir Positif<br>All Right Reserved © Bâtir Positif</p>
                 <p>Fondateur, directeur : Habib Boubia</p>
-                <p>Siège Social : <br> 7 Rue des Maraîchers, Vaulx-en-Velin, Auvergne-Rhône-Alpes 69120, France</p>
-                <p>Contact : <br> contact@batirpositif.com <br> +33 9 88 41 50 88</p>
+                <p>Siège Social : <br> <?php echo $SectionAdresse['content'] ?></p>
+                <p>Contact : <br> <?php echo $SectionMail['content'] ?> <br> <?php echo $SectionNum['content'] ?></p>
             </div>
             <h2 style="margin-top: 20px; color: #32b618"><i class="fas fa-paperclip"></i> Crédit du site web</h2>
             <div class="row">

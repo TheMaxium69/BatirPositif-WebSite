@@ -323,9 +323,125 @@
 
     </section>
 
+    <?php
+
+    require "db/function.php";
+
+    $AllEnv = getAllEnv();
+
+    foreach ($AllEnv as $EnvSection){
+        if ($EnvSection['name'] == "galery"){ $isGalery = $EnvSection; }
+    }
+
+    if ($isGalery['content'] == "true"){ ?>
+
+        <section id="about-galery">
+
+            <div class="title container">
+
+                <hr>
+                <h3>Galerie des projets</h3>
+
+            </div>
+
+            <div class="container-galery py-5">
+
+                <div class="row">
+
+                    <?php
+
+                    $AllGalery = getAllGalery();
+
+                    foreach ($AllGalery as $galery){ ?>
+
+                        <div class="col-4-galery"><div class="galery" style="background-image: url(assets/upload/galery/<?php echo $galery['picture'] ?> );"><?php if ($galery['text'] != null){ echo "<span>" . $galery['text'] ."</span>"; } ?></div></div>
+
+                    <?php } ?>
+
+                </div>
+
+                <style>
+
+                    .col-4-galery{
+                        flex: 0 0 33.333333%;
+                        max-width: 33.333333%;
+                        position: relative;
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+
+                    .container-galery{
+                        max-width: 870px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    @media (max-width: 1052px) {
+                        .col-4-galery{
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                        }
+                        .container-galery{
+                            max-width: 630px;
+                        }
+                    }
+
+                    @media (max-width: 661px) {
+                        .col-4-galery{
+                            flex: unset;
+                            max-width: unset;
+                        }
+                        .container-galery{
+                            max-width: unset;
+                        }
+                    }
+
+                    .galery{
+
+
+                        background-position:0px 0px;
+                        background-size: 200px 200px;
+                        background-color: #ffffff;
+
+                        width: 200px;
+                        height: 200px;
+                        margin: 0 auto;
+                        border: 5px solid #ffffff;
+                        background-color: #ffffff;
+                        box-shadow: 1px 1px 3px rgb(0 0 0 / 40%);
+                        -webkit-transition: all .4s ease-in;
+                        margin-bottom: 55px;
+                    }
+
+                    .galery span{
+                        opacity: 0;
+                        color:#ffffff;
+
+                        background-color: rgba(0,0,0,.3);
+                        font-size: 9pt;
+                        line-height: 354px;
+                        padding:5px;
+                        margin-bottom: 10px;
+                    }
+
+                    .galery:hover{
+
+                        -webkit-transform: scale(1.5);
+                    }
+
+                    .galery:hover span{
+                        opacity:1;
+                    }
+
+                </style>
+
+            </div>
+
+        </section>
+
+    <?php } ?>
 
 </main>
-
-
 
 <?php footer($page); ?></body> </html>
