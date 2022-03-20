@@ -60,7 +60,26 @@
                                     <h5 class="name"><?php echo $article['title'] ?></h5>
                                     <p class="job"><?php echo $dateTime->format('H:i d/m/y'); ?></p>
                                     <p class="text">
-                                        <?php echo substr($article['content'], 0, 100) . "..."; ?>
+                                        <?php
+
+                                        $content = $article['content'];
+
+                                        $content = str_replace("</p><j>", " ", $content);
+                                        $content = str_replace("</j><p>", " ", $content);
+
+
+                                        $content = str_replace("</p><l>", " ", $content);
+                                        $content = str_replace("</l><p>", " ", $content);
+
+
+                                        $content = str_replace("</l><p>", " ", $content);
+
+
+                                        $content = str_replace("<br><img src=", "<!-- ", $content);
+                                        $content = str_replace('class="articleImageInterne"><br>', " -->", $content);
+
+
+                                        echo substr($content, 0, 100) . "..."; ?>
                                     </p>
                                     <div class="social-icones">
                                         <a href="article.php?n=<?php echo $article['id'] ?>" >Voir plus</a>
@@ -72,212 +91,6 @@
                     <?php } } ?>
 
 
-
-
-
-
-
-                    <!--membre 1-->
-                    <!--<div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Est-ce que la vie est belle ?</h5>
-                            <p class="job">6 min ago</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="membre">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="  job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="membre">
-                        <img src="https://media.istockphoto.com/photos/abstract-grunge-black-texture-background-picture-id1131428317?k=20&m=1131428317&s=612x612&w=0&h=h5EkD1RYdMcGl121MLaX8jj3n1ttYSEbkOB5wUduD54=" alt="" >
-
-                        <div class="info to-top">
-                            <h5 class="name">Coucou</h5>
-                            <p class="job">Coucou</p>
-                        </div>
-
-                        <div class="overly bottom">
-                            <div class="middle">
-                                <h5 class="name">Coucou</h5>
-                                <p class="job">Coucou</p>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellat nobis perspiciatis molestiae tempora quasi. Nulla.
-                                </p>
-
-                                <div class="social-icones">
-                                    <a href="#" >Voir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
 
                 </div>
 

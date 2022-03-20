@@ -55,7 +55,11 @@
                 <strong>Petit Rappel</strong><br>
                 - Sous ligner : <j>&lt;u&gt;&lt;/u&gt;</j><br>
                 - Text Gras : <j>&lt;b&gt;&lt;/b&gt;</j><br>
-                - Italique : <j>&lt;i&gt;&lt;/i&gt;</j>
+                - Italique : <j>&lt;i&gt;&lt;/i&gt;</j><br>
+                - Titre : <j>&lt;j&gt;&lt;/j&gt;</j><br>
+                - Sous-titre : <j>&lt;l&gt;&lt;/l&gt;</j>
+
+
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -66,8 +70,10 @@
                 <textarea class="form-control" rows="10" name="content" required></textarea>
             </div>
 
-
-<!--            <button class="btn btn-outline-success" >Plus</button>-->
+            <div class="plus">
+                <input class='baInput' type='hidden' name='nbImage' value='0'>
+                <a class="btn btn-outline-success ba1" href="javascript:img(1)">Plus</a>
+            </div>
 
 
 
@@ -86,11 +92,6 @@
 
         <hr>
 
-
-
-
-
-
     </div>
     <br>
 
@@ -102,12 +103,42 @@
 
     <script>
 
+        let divPlus = document.querySelector('div.plus');
+
+
+        function img(nb){
+
+            let btnSupp = document.querySelector('a.ba' + nb);
+            let btnInfo = document.querySelector('input.baInput');
+
+            divPlus.removeChild(btnSupp);
+            divPlus.removeChild(btnInfo)
+
+            let NewImg = '<div class="form-group"><label>Image</label> <input type="file" name="image'+ nb +'" class="form-control-file" accept="image/png, image/jpeg" required> </div>';
+
+            let NextContenu = '<div class="form-group"> <label>Suite de votre article</label><textarea class="form-control" rows="10" name="content'+ nb +'" required></textarea> </div>'
+
+            let inputInfo = "<input class='baInput' type='hidden' name='nbImage' value='"+ nb +"'>";
+
+            console.log("Nb " + nb)
+
+            nb = nb + 1;
+
+            let btn = '<a class="btn btn-outline-success ba'+ nb +'" href="javascript:img('+ nb +')">Plus</a>'
+
+            divPlus.innerHTML = divPlus.innerHTML + NewImg + NextContenu + inputInfo + btn
+
+
+
+
+
+        }
+
 
 
 
 
     </script>
-
 
 </main>
 

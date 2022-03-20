@@ -102,6 +102,14 @@ function createBlog($title, $content, $picture){
     $content = str_replace("'", "&#039", $content);
     $picture = str_replace("'", "&#039", $picture);
 
+
+    $content = str_replace("<j>", "</p><j>", $content);
+    $content = str_replace("</j>", "</j><p>", $content);
+
+
+    $content = str_replace("<l>", "</p><l>", $content);
+    $content = str_replace("</l>", "</l><p>", $content);
+
     $requestCreateBlog = "INSERT INTO blog(title, picture, content) VALUES ('$title', '$picture', '$content')";
 
     mysqli_query($ConnectDB, $requestCreateBlog);

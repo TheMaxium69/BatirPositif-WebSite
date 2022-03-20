@@ -18,18 +18,16 @@
 
         $title = $_POST['title'];
         $content = $_POST['content'];
+        $nbImage = $_POST['nbImage'];
+        $verif = 0;
+
+//        var_dump($_POST);
 
 
         if ($_GET['create'] == true){
 
-
 //            var_dump($_FILES);
 //            var_dump(exif_imagetype($_FILES['picture']['tmp_name']));
-
-
-
-//            createBlog($title, $content);
-
 
             if (exif_imagetype($_FILES['picture']['tmp_name']) == 2 || exif_imagetype($_FILES['picture']['tmp_name']) == 3){
 
@@ -37,13 +35,48 @@
 
                 move_uploaded_file($_FILES['picture']['tmp_name'], $path);
 
-                createBlog($title, $content, $_FILES['picture']['name']);
+//                createBlog($title, $content, $_FILES['picture']['name']);
+
+                $verif = 1;
 
             }
 
 
+            if ($nbImage != 0){
 
-//            header("location: blog.php");
+                for ($i = 1; $i <= $nbImage; $i++) {
+
+                    $imageI = "image" . $i;
+                    $contentI = "content" . $i;
+
+                        if (exif_imagetype($_FILES[$imageI]['tmp_name']) == 2 || exif_imagetype($_FILES[$imageI]['tmp_name']) == 3){
+
+                            $path = '../assets/upload/galery/'. $_FILES[$imageI]['name'];
+
+                            move_uploaded_file($_FILES[$imageI]['tmp_name'], $path);
+                        } else {
+                            $verif = 0;
+                        }
+
+                    $htmlImageI = '<br><img src="assets/upload/galery/' . $_FILES[$imageI]['name']  .'" class="articleImageInterne"><br>';
+
+                    $content = $content . $htmlImageI . $_POST[$contentI];
+
+                }
+
+
+
+            }
+
+            if ($verif == 1){
+
+                createBlog($title, $content, $_FILES['picture']['name']);
+            }
+
+
+
+
+
         }
 
     }
@@ -79,10 +112,16 @@
             ?>
             <tr>
                 <td><?php echo $article['title'] ?></td>
-                <td><?php echo substr($article['content'], 0, 100) . " <a class='td' href='../article.php?n=" . $article['id'] . "'>[...]</a>"; ?></td>
+                <td><?php
+                    $content = $article['content'];
+
+                    $content = str_replace("<br><img src=", "<!-- ", $content);
+                    $content = str_replace('class="articleImageInterne"><br>', " -->", $content);
+
+                    echo substr($content, 0, 100) . " <a class='td' href='../article.php?n=" . $article['id'] . "'>[...]</a>"; ?></td>
                 <td><a class="td" href="../assets/upload/<?php echo $article['picture'] ?>"><?php echo $article['picture'] ?></a></td>
                 <td><?php echo $article['date']; ?></td>
-                <td><a href="?del=<?php echo $article['id']; ?>"><i class="fas fa-trash"></i></a><a href="formBlog.php?mode=edit&id=<?php echo $article['id'] ?>"><i class="fas fa-edit"></i></a></td>
+                <td><a href="?del=<?php echo $article['id']; ?>"><i class="fas fa-trash"></i></a><!--<a href="formBlog.php?mode=edit&id=<?php /*echo $article['id'] */?>"><i class="fas fa-edit"></i></a>--></td>
             </tr>
 
             <?php
@@ -99,7 +138,6 @@
     </table>
 
     <br>
-
 
 
 

@@ -52,16 +52,30 @@ foreach ($blogs as $blog){
 
     </section>
 
+    <br><br><br><br>
+
     <style>
         #art-img{
             background: center / 80% no-repeat url("assets/upload/<?php echo $article['picture']; ?>"),
             content-box radial-gradient(#ffffff, #d4d3d3);
         }
-        j[size="1"] {
-            font-size: 2em;
+
+        l{
+            font-size: 23px;
+            margin: 0 130px;
         }
-        j[size="2"] {
-            font-size: 1em;
+
+        j{
+            font-size: 2em;
+            margin: 0 130px;
+        }
+
+        u{
+            text-decoration: underline;
+        }
+
+        p{
+            font-size: 1.6rem;
         }
 
     </style>

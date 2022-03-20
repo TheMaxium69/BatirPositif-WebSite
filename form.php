@@ -172,4 +172,4 @@
 <script src="javascript/contact.js"></script>
 
 <?php
-require "db/function.php"; footer($page); ?></body> </html>
+require "db/function.php";  footer($page); ?></body> </html>
