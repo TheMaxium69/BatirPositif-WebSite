@@ -15,14 +15,35 @@
         if ($_GET['mode'] == "create"){
             $mode = 1;
         }
-        if ($_GET['mode'] == "edit"){
+        if ($_GET['mode'] == "edit" && !empty($_GET['idblog'])){
             $mode = 2;
+            $blogId = $_GET['idblog'];
+        } else {
+            $mode = 1;
         }
     }
     ?>
 
-
     <div class="container py-5">
+
+        <?php
+        if ($mode == 2){
+
+        $OneBlog = getOneBlog($blogId);
+
+//        var_dump($OneBlog);
+
+            if ($OneBlog['status'] == 1){
+                ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Alerte!</strong> Vous editer un article qui est publier. Il est recommander de le mettre en brouillons pour l'editer
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <?php
+            }
+        } ?>
 
         <h2>
         <?php
@@ -40,7 +61,7 @@
 
             <div class="form-group">
                 <label>Titre de l'article</label>
-                <input type="text" class="form-control" name="title" required>
+                <input type="text" class="form-control" name="title" required <?php if ($mode == 2){ echo "value='". $OneBlog['title'] ."'"; } ?>>
             </div>
 
 
@@ -67,7 +88,7 @@
 
             <div class="form-group">
                 <label>Contenue de votre article</label>
-                <textarea class="form-control" rows="10" name="content" required></textarea>
+                <textarea class="form-control" rows="10" name="content" required><?php if ($mode == 2){ echo $OneBlog['content']; } ?></textarea>
             </div>
 
             <div class="plus">

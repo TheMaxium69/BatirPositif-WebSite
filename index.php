@@ -233,28 +233,32 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
 
                 $blogs = getAllBlog();
 
+                $verif = verifBlogOnline();
+
                 $articles = $blogs;
 
-                if ($articles->num_rows == 0) {
+
+
+                if ($articles->num_rows == 0 || $verif->num_rows == 0) {
 
                     echo "<p style='text-align: center'>Il n'y a pas d'article disponible</p>";
                 } else {
                 ?>
 
                 <ol class="carousel-indicators">
-                    <?php if ($articles->num_rows >= 4) { ?>
+                    <?php if ($verif->num_rows >= 4) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
                         <li data-target="#carousel-Blog" data-slide-to="2"></li>
                         <li data-target="#carousel-Blog" data-slide-to="3"></li>
-                    <?php } else if ($articles->num_rows == 3) { ?>
+                    <?php } else if ($verif->num_rows == 3) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
                         <li data-target="#carousel-Blog" data-slide-to="2"></li>
-                    <?php } else if ($articles->num_rows == 2) { ?>
+                    <?php } else if ($verif->num_rows == 2) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-Blog" data-slide-to="1"></li>
-                    <?php } else if ($articles->num_rows == 1) { ?>
+                    <?php } else if ($verif->num_rows == 1) { ?>
                         <li data-target="#carousel-Blog" data-slide-to="0" class="active"></li>
                     <?php } }?>
                 </ol>
@@ -262,28 +266,29 @@ margin-bottom: 33px;">Effectuez une demande de devis gratuitement
                     <?php
 
                     $i = 0;
+                    $j = 0;
 
 
                     foreach ($articles as $article) {
 
                         $i = $i + 1;
 
-
                         if ($i >= 5){ ?>
 
                             <!--On Affiche pas-->
 
-                        <?php } else {
+                        <?php } else if ($article['status'] != 0) {
 
+                            $j = $j + 1;
 
                         $dateSrc = $article['date'];
                         $dateTime = new DateTime($dateSrc); ?>
 
-                        <div class="carousel-item <?php if ($i == 1){ echo "active"; } ?> ">
+                        <div class="carousel-item <?php if ($j == 1){ echo "active"; } ?> ">
                             <img src="assets/upload/<?php echo $article['picture'] ?>" class="d-block" style="
-    width: 400px;
-    margin: 0 auto;
-    height: 400px;" alt="...">
+                                width: 400px;
+                                margin: 0 auto;
+                                height: 400px;" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <p><?php echo $article['title']?></p>
                                 <h5><?php echo $dateTime->format('d/m/y'); ?></h5>

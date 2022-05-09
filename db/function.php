@@ -94,6 +94,51 @@ function getAllBlog(){
 
 }
 
+function getOneBlog($id){
+
+    require "db.php";
+
+    $requestNews = "SELECT * FROM blog WHERE id = '$id'";
+
+    $Blog = mysqli_query($ConnectDB, $requestNews);
+
+    foreach ($Blog as $BlogInc)
+
+    return $BlogInc;
+
+}
+
+function verifBlogOnline(){
+
+    require "db.php";
+
+    $requestVerif = "SELECT * FROM blog WHERE status = 1";
+
+    $verif = mysqli_query($ConnectDB, $requestVerif);
+
+    return $verif;
+
+}
+
+function draftsBlog($id, $mode){
+
+    require "db.php";
+
+    if ($mode == 1){
+
+        $requestDrafts = "UPDATE blog SET status = '1' WHERE id = '$id'";
+
+    } else if ($mode == 2){
+
+        $requestDrafts = "UPDATE blog SET status = '0' WHERE id = '$id'";
+
+    }
+
+    mysqli_query($ConnectDB, $requestDrafts);
+
+
+}
+
 function createBlog($title, $content, $picture){
 
     require "db.php";

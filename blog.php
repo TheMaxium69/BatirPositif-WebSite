@@ -33,14 +33,19 @@
 
                     $blogs = getAllBlog();
 
+
+                    $verif = verifBlogOnline();
+
                     $articles = $blogs;
 
-                    if ($articles->num_rows == 0) {
+                    if ($articles->num_rows == 0 || $verif->num_rows == 0) {
 
                         echo "<p style='text-align: center; color: black'>Il n'y a pas d'article disponible</p>";
                     } else {
 
                     foreach ($articles as $article) {
+
+                        if ($article['status'] == 1){
 
                         $dateSrc = $article['date'];
                         $dateTime = new DateTime($dateSrc);
@@ -88,7 +93,7 @@
                             </div>
                         </div>
 
-                    <?php } } ?>
+                    <?php } } } ?>
 
 
 

@@ -9,6 +9,17 @@
         header("location: index.php");
     }
 
+    if (!empty($_GET['send'])){
+        $idBlog = $_GET['send'];
+        draftsBlog($idBlog, 1);
+    }
+
+    if (!empty($_GET['unSend'])){
+        $idBlog = $_GET['unSend'];
+        draftsBlog($idBlog, 2);
+    }
+
+
     if (!empty($_GET['del'])){
         $idBlog = $_GET['del'];
         delBlog($idBlog);
@@ -100,6 +111,7 @@
             <th scope="col">Contenu</th>
             <th scope="col">Image</th>
             <th scope="col">Date</th>
+            <th scope="col">Status</th>
             <th scope="col"></th>
         </tr>
 
@@ -121,7 +133,8 @@
                     echo substr($content, 0, 100) . " <a class='td' href='../article.php?n=" . $article['id'] . "'>[...]</a>"; ?></td>
                 <td><a class="td" href="../assets/upload/<?php echo $article['picture'] ?>"><?php echo $article['picture'] ?></a></td>
                 <td><?php echo $article['date']; ?></td>
-                <td><a href="?del=<?php echo $article['id']; ?>"><i class="fas fa-trash"></i></a><!--<a href="formBlog.php?mode=edit&id=<?php /*echo $article['id'] */?>"><i class="fas fa-edit"></i></a>--></td>
+                <td><?php if ($article['status'] == 0){echo "En Brouillons 🔴"; }else{ echo "Publier 🟢"; } ?></td>
+                <td><a href="?del=<?php echo $article['id']; ?>"><i class="fas fa-trash"></i></a><a href="formBlog.php?mode=edit&idblog=<?php echo $article['id'] ?>"><i class="fas fa-edit"></i></a><?php if ($article['status'] == 0){ ?><a href="?send=<?php echo $article['id'] ?>"><i class="fas fa-paper-plane"></i></a><?php } else { ?><a href="?unSend=<?php echo $article['id'] ?>"><i class="fas fa-eraser"></i></a><?php } ?></td>
             </tr>
 
             <?php
