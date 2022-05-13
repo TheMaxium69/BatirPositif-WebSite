@@ -286,21 +286,21 @@
         <div class="about__section">
 
                 <a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>1.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new1.png');"></div>
                     <div class="about__info">
                         <h4 class="name">Habib BOUBIA</h4>
                         <h5 class="title">Fondateur, directeur</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>2.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new2.png');"></div>
                     <div class="about__info">
                         <h4 class="name">Quentin <j class="uppercase"> Claudel</j></h4>
                         <h5 class="title">Chargé d’affaire Economie de la construction</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>3.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new3.png');"></div>
 
                     <div class="about__info">
                         <h4 class="name">Youcef <j class="uppercase">Messalti</j></h4>
@@ -309,13 +309,31 @@
 
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>4.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new4.png');"></div>
                     <div class="about__info">
                         <h4 class="name">Elisabeth <j class="uppercase">Merenna</j></h4>
                         <h5 class="title">Responsable communication</h5>
                     </div>
 
+                </div></a><a><div class="about__slot about__slotNULL">
+
+                </div></a><a><div class="about__slot">
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new6.png');"></div>
+                    <div class="about__info">
+                        <h4 class="name">Céline <j class="uppercase">GUEUNET MANDARON</j></h4>
+                        <h5 class="title">Cheffe de projets management commercial & développement </h5>
+                    </div>
+
+                </div></a><a><div class="about__slot">
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new5.png');"></div>
+                    <div class="about__info">
+                        <h4 class="name">Ludovic <j class="uppercase">Mathieu</j></h4>
+                        <h5 class="title">Chargé de projets ingénierie durable</h5>
+                    </div>
+
                 </div></a>
+
+
 
 
         </div>
@@ -420,7 +438,7 @@
 
                         background-color: rgba(0,0,0,.3);
                         font-size: 9pt;
-                        line-height: 354px;
+                        line-height: 27px;
                         padding:5px;
                         margin-bottom: 10px;
                     }
