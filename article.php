@@ -56,7 +56,7 @@ foreach ($blogs as $blog){
 
     <style>
         #art-img{
-            background: center / 80% no-repeat url("assets/upload/<?php echo $article['picture']; ?>"),
+            background: center / 80% no-repeat url("assets/upload/<?php echo $article['pictureBack']; ?>"),
             content-box radial-gradient(#ffffff, #d4d3d3);
         }
 

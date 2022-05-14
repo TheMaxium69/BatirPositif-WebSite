@@ -139,13 +139,15 @@ function draftsBlog($id, $mode){
 
 }
 
-function createBlog($title, $content, $picture){
+function createBlog($title, $content, $picture, $pictureBack){
 
     require "db.php";
 
     $title = str_replace("'", "&#039", $title);
     $content = str_replace("'", "&#039", $content);
     $picture = str_replace("'", "&#039", $picture);
+    $pictureBack = str_replace("'", "&#039", $pictureBack);
+
 
 
     $content = str_replace("<j>", "</p><j>", $content);
@@ -155,11 +157,56 @@ function createBlog($title, $content, $picture){
     $content = str_replace("<l>", "</p><l>", $content);
     $content = str_replace("</l>", "</l><p>", $content);
 
-    $requestCreateBlog = "INSERT INTO blog(title, picture, content) VALUES ('$title', '$picture', '$content')";
+    $requestCreateBlog = "INSERT INTO blog(title, picture, pictureBack, content) VALUES ('$title', '$picture', '$pictureBack', '$content')";
 
     mysqli_query($ConnectDB, $requestCreateBlog);
 
 
+}
+
+function updateBlog($id, $title, $content, $picture, $pictureBack){
+
+    require "db.php";
+
+    $valide1 = 0;
+    $valide2 = 0;
+
+    $title = str_replace("'", "&#039", $title);
+    $content = str_replace("'", "&#039", $content);
+    $picture = str_replace("'", "&#039", $picture);
+    $pictureBack = str_replace("'", "&#039", $pictureBack);
+
+
+
+    $content = str_replace("<j>", "</p><j>", $content);
+    $content = str_replace("</j>", "</j><p>", $content);
+
+
+    $content = str_replace("<l>", "</p><l>", $content);
+    $content = str_replace("</l>", "</l><p>", $content);
+
+    if ($picture == ''){
+        $valide1 = 1;
+    }
+
+    if ($pictureBack == ''){
+        $valide2 = 1;
+    }
+
+    if ($valide1 == 1 && $valide2 == 0){
+        $requestUpdateBlog = "UPDATE blog SET title='$title', pictureBack='$pictureBack', content='$content' WHERE id = '$id';";
+    }
+    if ($valide1 == 0 && $valide2 == 1){
+        $requestUpdateBlog = "UPDATE blog SET title='$title', picture='$picture', content='$content' WHERE id = '$id';";
+    }
+    if ($valide1 == 1 && $valide2 == 1){
+        $requestUpdateBlog = "UPDATE blog SET title='$title', content='$content' WHERE id = '$id';";
+    }
+    if ($valide1 == 0 && $valide2 == 0){
+        $requestUpdateBlog = "UPDATE blog SET title='$title', picture='$picture', pictureBack='$pictureBack', content='$content' WHERE id = '$id';";
+    }
+
+    mysqli_query($ConnectDB, $requestUpdateBlog);
 }
 
 function delBlog($idBlog){

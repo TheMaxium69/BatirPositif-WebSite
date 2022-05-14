@@ -57,7 +57,9 @@
         </h2>
 
         <br>
-        <form method="POST" action="blog.php?create=true" enctype="multipart/form-data">
+        <form method="POST" action="blog.php?<?php if ($mode == 1){ echo "create=true"; } else { echo "edit=true"; } ?>" enctype="multipart/form-data">
+
+            <?php if ($mode == 2){ echo "<input type='hidden' name='id' value='". $OneBlog['id'] ."'>"; } ?>
 
             <div class="form-group">
                 <label>Titre de l'article</label>
@@ -66,8 +68,23 @@
 
 
             <div class="form-group">
-                <label>Miniature de l'article</label>
-                <input type="file" name="picture" class="form-control-file" accept="image/png, image/jpeg" required>
+                <label>Miniature de l'article (Format 1:1)</label>
+                <?php if ($mode == 2){
+                    echo "<p style='margin-bottom: 0;'>Actuellement poster :</p>" .
+                         "<a href='../assets/upload/". $OneBlog['picture']  ."'><img style='width: 90px; margin-bottom: 10px' src='../assets/upload/". $OneBlog['picture']  ."'></a>" .
+                         "<br>";
+                } ?>
+                <input type="file" name="picture" class="form-control-file" accept="image/png, image/jpeg" <?php if ($mode == 1){ echo "required"; } ?>>
+            </div>
+
+            <div class="form-group">
+                <label>Fond de l'article (Format 22:9)</label>
+                <?php if ($mode == 2){
+                    echo "<p style='margin-bottom: 0;'>Actuellement poster :</p>" .
+                        "<a href='../assets/upload/". $OneBlog['pictureBack']  ."'><img style='width: 100px; margin-bottom: 10px' src='../assets/upload/". $OneBlog['pictureBack']  ."'></a>" .
+                        "<br>";
+                } ?>
+                <input type="file" name="pictureBack" class="form-control-file" accept="image/png, image/jpeg" <?php if ($mode == 1){ echo "required"; } ?>>
             </div>
 
             <hr>
