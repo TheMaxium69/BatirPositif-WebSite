@@ -49,6 +49,7 @@
             }
 
             /*IMG-CONTENT UP*/
+            $arrayIMG = array();
             if ($nbImage != 0){
                 for ($i = 1; $i <= $nbImage; $i++) {
                     $imageI = "image" . $i;
@@ -61,12 +62,13 @@
                         }
                     $htmlImageI = '<br><img src="assets/upload/galery/' . $_FILES[$imageI]['name']  .'" class="articleImageInterne"><br>';
                     $content = $content . $htmlImageI . $_POST[$contentI];
+                    array_push($arrayIMG, $_FILES[$imageI]['name']);
                 }
             }
 
             /*VERIF*/
             if ($verif == 1){
-                createBlog($title, $content, $_FILES['picture']['name'], $_FILES['pictureBack']['name']);
+                createBlog($title, $content, $_FILES['picture']['name'], $_FILES['pictureBack']['name'], $arrayIMG);
             }
         }
 
@@ -112,7 +114,7 @@
                 }
             }
 
-            updateBlog($id, $title, $content, $_FILES['picture']['name'], $_FILES['pictureBack']['name']);
+//            updateBlog($id, $title, $content, $_FILES['picture']['name'], $_FILES['pictureBack']['name']);
 
         }
 
@@ -157,7 +159,7 @@
                     $content = str_replace("<br><img src=", "<!-- ", $content);
                     $content = str_replace('class="articleImageInterne"><br>', " -->", $content);
 
-                    echo substr($content, 0, 100) . " <a class='td' href='../article.php?n=" . $article['id'] . "'>[...]</a>"; ?></td>
+                    echo substr($content, 0, 100) . " <!-- EN CAS ERREUR --> <a class='td' href='../article.php?n=" . $article['id'] . "'>[...]</a>"; ?></td>
                 <td><a class="td" href="../assets/upload/<?php echo $article['picture'] ?>"><?php echo $article['picture'] ?></a></td>
                 <td><a class="td" href="../assets/upload/<?php echo $article['pictureBack'] ?>"><?php echo $article['pictureBack'] ?></a></td>
                 <td><?php echo $article['date']; ?></td>

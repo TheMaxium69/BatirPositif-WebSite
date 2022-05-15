@@ -139,7 +139,7 @@ function draftsBlog($id, $mode){
 
 }
 
-function createBlog($title, $content, $picture, $pictureBack){
+function createBlog($title, $content, $picture, $pictureBack, $arrayIMG){
 
     require "db.php";
 
@@ -157,7 +157,10 @@ function createBlog($title, $content, $picture, $pictureBack){
     $content = str_replace("<l>", "</p><l>", $content);
     $content = str_replace("</l>", "</l><p>", $content);
 
-    $requestCreateBlog = "INSERT INTO blog(title, picture, pictureBack, content) VALUES ('$title', '$picture', '$pictureBack', '$content')";
+
+    $arrayIMG = json_encode($arrayIMG);
+
+    $requestCreateBlog = "INSERT INTO blog(title, picture, pictureBack, content, json) VALUES ('$title', '$picture', '$pictureBack', '$content', '$arrayIMG')";
 
     mysqli_query($ConnectDB, $requestCreateBlog);
 
@@ -368,5 +371,67 @@ function delGalery($idGalery){
         mysqli_query($ConnectDB, $requestDelete);
 
     }
+
+}
+
+function uncodeContentBlog($content, $json){
+
+    /*
+     *
+     * @size = 35
+     * <br><img src="assets/upload/galery/
+     *
+     * @size = 34
+     * " class="articleImageInterne"><br>
+     *
+     * */
+
+
+    $next = "tyrolium1234";
+    $arrayMSG = array();
+    for ($i = 0; $i <= count($json)-1; $i++) {
+
+    //    var_dump($next);
+
+        if ($next == "tyrolium1234"){
+            $pos = strpos($content, $json[$i]);
+        } else {
+            $pos = strpos($next, $json[$i]);
+        }
+
+        if ($pos != false) {
+
+            $temp1 = $pos-35;
+
+            /*TEXT AVANT IMAGE*/
+            if ($next == "tyrolium1234"){
+                array_push($arrayMSG, substr($content, 0, $temp1));
+            } else{
+                array_push($arrayMSG, substr($next, 0, $temp1));
+            }
+
+            $jsontemp = strlen($json[$i]);
+
+            $temp1 = $pos+$jsontemp+34;
+
+            /*SUITE*/
+            if ($next == "tyrolium1234"){
+                $next = substr($content, $temp1);
+            } else{
+                $next = substr($next, $temp1);
+            }
+
+        }
+    }
+
+    //var_dump($next);
+    if (!empty($next) && $next != "tyrolium1234"){
+        array_push($arrayMSG, $next);
+    } else {
+        array_push($arrayMSG, $content);
+    }
+
+    return $arrayMSG;
+
 
 }

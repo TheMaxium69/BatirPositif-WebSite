@@ -30,8 +30,8 @@
         if ($mode == 2){
 
         $OneBlog = getOneBlog($blogId);
-
-//        var_dump($OneBlog);
+        $arrayImg = json_decode($OneBlog['json']);
+        $arrayMsg = uncodeContentBlog($OneBlog['content'], $arrayImg);
 
             if ($OneBlog['status'] == 1){
                 ?>
@@ -103,6 +103,7 @@
                 </button>
             </div>
 
+            <?php if ($mode == 1){ ?>
             <div class="form-group">
                 <label>Contenue de votre article</label>
                 <textarea class="form-control" rows="10" name="content" required><?php if ($mode == 2){ echo $OneBlog['content']; } ?></textarea>
@@ -113,6 +114,49 @@
                 <a class="btn btn-outline-success ba1" href="javascript:img(1)">Plus</a>
             </div>
 
+            <?php } else if ($mode == 2){
+
+                var_dump($arrayMsg);
+                var_dump($arrayImg);
+
+                for ($i = 0; $i <= count($arrayImg)-1; $i++){
+
+                    ?>
+
+                    <div class="form-group">
+                        <label>Contenue de votre article</label>
+                        <textarea class="form-control" rows="10" name="content<?php if ($i != 0){ echo $i; } ?>" required><?= $arrayMsg[$i] ?></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <p style='margin-bottom: 0;'>Actuellement poster :</p>
+                        <a href='../assets/upload/<?= $arrayImg[$i] ?>'><img style='width: 100px; margin-bottom: 10px' src='../assets/upload/<?= $arrayImg[$i] ?>'></a>
+                        <br>
+                        <input type="file" name="image<?= $i+1 ?>" class="form-control-file" accept="image/png, image/jpeg">
+                    </div>
+
+                    <?php
+                }
+                if (!empty($arrayMsg[$i])){
+                    ?>
+
+                    <div class="form-group">
+                        <label>Contenue de votre article</label>
+                        <textarea class="form-control" rows="10" name="content<?php if ($i != 0){ echo $i; } ?>" required><?= $arrayMsg[$i] ?></textarea>
+                    </div>
+
+                    <?php
+                }
+
+                ?>
+
+                <div class="plus">
+                    <input class='baInput' type='hidden' name='nbImage' value='0'>
+                    <a class="btn btn-outline-success ba<?= $i+1 ?>" href="javascript:img(<?= $i+1 ?>)">Plus</a>
+                </div>
+
+                <?php
+            } ?>
 
 
             <hr>
@@ -123,8 +167,12 @@
                 <label class="form-check-label">Je confirme publier ça sur le site web</label>
             </div>
 
+            <?php if ($mode == 1) {?>
             <button type="submit" class="btn btn-success">Envoyé</button>
-
+            <?php } else if ($mode == 2) {?>
+            <button type="submit" class="btn btn-success">Sauvegarder la modifications</button>
+            <a href="blog.php" class="btn btn-danger">Annuler</a>
+            <?php } ?>
 
         </form>
 
