@@ -158,7 +158,7 @@ function createBlog($title, $content, $picture, $pictureBack, $arrayIMG){
     $content = str_replace("</l>", "</l><p>", $content);
 
 
-    $arrayIMG = json_encode($arrayIMG);
+    $arrayIMG = json_encode($arrayIMG, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
     $requestCreateBlog = "INSERT INTO blog(title, picture, pictureBack, content, json) VALUES ('$title', '$picture', '$pictureBack', '$content', '$arrayIMG')";
 
@@ -167,12 +167,9 @@ function createBlog($title, $content, $picture, $pictureBack, $arrayIMG){
 
 }
 
-function updateBlog($id, $title, $content, $picture, $pictureBack){
+function updateBlog($id, $title, $content, $picture, $pictureBack, $arrayIMG){
 
     require "db.php";
-
-    $valide1 = 0;
-    $valide2 = 0;
 
     $title = str_replace("'", "&#039", $title);
     $content = str_replace("'", "&#039", $content);
@@ -180,34 +177,15 @@ function updateBlog($id, $title, $content, $picture, $pictureBack){
     $pictureBack = str_replace("'", "&#039", $pictureBack);
 
 
-
     $content = str_replace("<j>", "</p><j>", $content);
     $content = str_replace("</j>", "</j><p>", $content);
-
 
     $content = str_replace("<l>", "</p><l>", $content);
     $content = str_replace("</l>", "</l><p>", $content);
 
-    if ($picture == ''){
-        $valide1 = 1;
-    }
+    $arrayIMG = json_encode($arrayIMG, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
-    if ($pictureBack == ''){
-        $valide2 = 1;
-    }
-
-    if ($valide1 == 1 && $valide2 == 0){
-        $requestUpdateBlog = "UPDATE blog SET title='$title', pictureBack='$pictureBack', content='$content' WHERE id = '$id';";
-    }
-    if ($valide1 == 0 && $valide2 == 1){
-        $requestUpdateBlog = "UPDATE blog SET title='$title', picture='$picture', content='$content' WHERE id = '$id';";
-    }
-    if ($valide1 == 1 && $valide2 == 1){
-        $requestUpdateBlog = "UPDATE blog SET title='$title', content='$content' WHERE id = '$id';";
-    }
-    if ($valide1 == 0 && $valide2 == 0){
-        $requestUpdateBlog = "UPDATE blog SET title='$title', picture='$picture', pictureBack='$pictureBack', content='$content' WHERE id = '$id';";
-    }
+    $requestUpdateBlog = "UPDATE blog SET title='$title', picture='$picture', pictureBack='$pictureBack', content='$content', json='$arrayIMG' WHERE id = '$id';";
 
     mysqli_query($ConnectDB, $requestUpdateBlog);
 }
@@ -381,10 +359,15 @@ function uncodeContentBlog($content, $json){
      * @size = 35
      * <br><img src="assets/upload/galery/
      *
+     * @size = 28
+     * <br><img src="assets/upload/
+     *
      * @size = 34
      * " class="articleImageInterne"><br>
      *
      * */
+
+
 
 
     $next = "tyrolium1234";
@@ -401,7 +384,7 @@ function uncodeContentBlog($content, $json){
 
         if ($pos != false) {
 
-            $temp1 = $pos-35;
+            $temp1 = $pos-28;
 
             /*TEXT AVANT IMAGE*/
             if ($next == "tyrolium1234"){

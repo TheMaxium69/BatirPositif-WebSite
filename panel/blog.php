@@ -55,12 +55,12 @@
                     $imageI = "image" . $i;
                     $contentI = "content" . $i;
                         if (exif_imagetype($_FILES[$imageI]['tmp_name']) == 2 || exif_imagetype($_FILES[$imageI]['tmp_name']) == 3){
-                            $path = '../assets/upload/galery/'. $_FILES[$imageI]['name'];
+                            $path = '../assets/upload/'. $_FILES[$imageI]['name'];
                             move_uploaded_file($_FILES[$imageI]['tmp_name'], $path);
                         } else {
                             $verif = 0;
                         }
-                    $htmlImageI = '<br><img src="assets/upload/galery/' . $_FILES[$imageI]['name']  .'" class="articleImageInterne"><br>';
+                    $htmlImageI = '<br><img src="assets/upload/' . $_FILES[$imageI]['name']  .'" class="articleImageInterne"><br>';
                     $content = $content . $htmlImageI . $_POST[$contentI];
                     array_push($arrayIMG, $_FILES[$imageI]['name']);
                 }
@@ -80,6 +80,15 @@
         $title = $_POST['title'];
         $content = $_POST['content'];
         $nbImage = $_POST['nbImage'];
+        $arrayIMG = array();
+
+        $noEditBlog = getOneBlog($id);
+        $arrayJson = $noEditBlog['json'];
+        $oldArray = json_decode($arrayJson);
+
+        /*var_dump($_POST);
+        var_dump($_FILES);
+        var_dump($oldArray);*/
 
         if ($_GET['edit'] == true){
 
@@ -89,6 +98,9 @@
                     $path = '../assets/upload/'. $_FILES['picture']['name'];
                     move_uploaded_file($_FILES['picture']['tmp_name'], $path);
                 }
+                $picture = $_FILES['picture']['name'];
+            } else {
+                $picture = $noEditBlog['picture'];
             }
             /*PICTUREBACK UP*/
             if ($_FILES['pictureBack']['size'] > 0) {
@@ -96,25 +108,76 @@
                     $path = '../assets/upload/' . $_FILES['pictureBack']['name'];
                     move_uploaded_file($_FILES['pictureBack']['tmp_name'], $path);
                 }
+                $pictureBack = $_FILES['pictureBack']['name'];
+            } else {
+                $pictureBack = $noEditBlog['pictureBack'];
             }
+
+
+
 
             /*IMG-CONTENT UP*/
             if ($nbImage != 0){
-                for ($i = 1; $i <= $nbImage; $i++) {
+
+                $oldImgnb = count($oldArray);
+
+                $newImagenb = $nbImage - $oldImgnb;
+
+                /*OLD IMG VERIF*/
+                for ($i = 1; $i <= $nbImage-$newImagenb; $i++) {
+
+                    $imgName = "";
+
                     $imageI = "image" . $i;
                     $contentI = "content" . $i;
+
+                    if ($_FILES[$imageI]['size'] > 0){
+                        /*PUSH*/
+                        if (exif_imagetype($_FILES[$imageI]['tmp_name']) == 2 || exif_imagetype($_FILES[$imageI]['tmp_name']) == 3){
+                            $path = '../assets/upload/'. $_FILES[$imageI]['name'];
+                            move_uploaded_file($_FILES[$imageI]['tmp_name'], $path);
+                        } else {
+                            $verif = 0;
+                        }
+                        $imgName = $_FILES[$imageI]['name'];
+                    } else {
+                        $imgName = $oldArray[$i-1];
+                    }
+
+                    /*ENCODE*/
+                    $htmlImageI = '<br><img src="assets/upload/' . $imgName  .'" class="articleImageInterne"><br>';
+                    $content = $content . $htmlImageI . $_POST[$contentI];
+                    array_push($arrayIMG, $imgName);
+
+                }
+
+                /*NEW IMG*/
+
+                for ($i = 1; $i <= $nbImage-$oldImgnb; $i++) {
+
+                    $j = $i + $oldImgnb;
+                    $imageI = "image" . $j;
+                    $contentI = "content" . $j;
+
+                    /*PUSH*/
                     if (exif_imagetype($_FILES[$imageI]['tmp_name']) == 2 || exif_imagetype($_FILES[$imageI]['tmp_name']) == 3){
-                        $path = '../assets/upload/galery/'. $_FILES[$imageI]['name'];
+                        $path = '../assets/upload/'. $_FILES[$imageI]['name'];
                         move_uploaded_file($_FILES[$imageI]['tmp_name'], $path);
                     } else {
                         $verif = 0;
                     }
-                    $htmlImageI = '<br><img src="assets/upload/galery/' . $_FILES[$imageI]['name']  .'" class="articleImageInterne"><br>';
+
+                    /*ENCODE*/
+                    $htmlImageI = '<br><img src="assets/upload/' .  $_FILES[$imageI]['name'] .'" class="articleImageInterne"><br>';
                     $content = $content . $htmlImageI . $_POST[$contentI];
+                    array_push($arrayIMG, $_FILES[$imageI]['name']);
                 }
+
             }
 
-//            updateBlog($id, $title, $content, $_FILES['picture']['name'], $_FILES['pictureBack']['name']);
+            /*$testArray = array($id, $title, $content, $picture, $pictureBack, $arrayIMG);
+            var_dump($testArray);*/
+            updateBlog($id, $title, $content, $picture, $pictureBack, $arrayIMG);
 
         }
 

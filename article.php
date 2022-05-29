@@ -78,6 +78,10 @@ foreach ($blogs as $blog){
             font-size: 1.6rem;
         }
 
+        .articleImageInterne{
+            max-width: 100%;
+        }
+
     </style>
 
 </main>

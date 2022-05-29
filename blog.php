@@ -84,7 +84,7 @@
                                         $content = str_replace('class="articleImageInterne"><br>', " -->", $content);
 
 
-                                        echo substr($content, 0, 100) . "..."; ?>
+                                        echo substr($content, 0, 100) . "<!-- EN CAS ERREUR --> ..."; ?>
                                     </p>
                                     <div class="social-icones">
                                         <a href="article.php?n=<?php echo $article['id'] ?>" >Voir plus</a>

@@ -33,6 +33,10 @@
         $arrayImg = json_decode($OneBlog['json']);
         $arrayMsg = uncodeContentBlog($OneBlog['content'], $arrayImg);
 
+        /*var_dump($OneBlog);
+        var_dump($arrayMsg);*/
+
+
             if ($OneBlog['status'] == 1){
                 ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -116,8 +120,8 @@
 
             <?php } else if ($mode == 2){
 
-                var_dump($arrayMsg);
-                var_dump($arrayImg);
+                /*var_dump($arrayMsg);
+                var_dump($arrayImg);*/
 
                 for ($i = 0; $i <= count($arrayImg)-1; $i++){
 
@@ -151,7 +155,7 @@
                 ?>
 
                 <div class="plus">
-                    <input class='baInput' type='hidden' name='nbImage' value='0'>
+                    <input class='baInput' type='hidden' name='nbImage' value='<?= $i ?>'>
                     <a class="btn btn-outline-success ba<?= $i+1 ?>" href="javascript:img(<?= $i+1 ?>)">Plus</a>
                 </div>
 
