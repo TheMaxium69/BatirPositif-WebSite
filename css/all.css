@@ -2,6 +2,14 @@
        CLASS GLOBAL
  *************************/
 
+:root {
+    --colorall-green-1: #4F8C4E;
+    --colorall-green-2: #DAEED9;
+    --colorall-green-3: #5D865D;
+    --colorall-gray-1: #5E5E5E;
+    --colorall-gray-2: #9B9B9B;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     color: #000000;

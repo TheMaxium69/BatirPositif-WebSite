@@ -30,27 +30,45 @@
 
                 if (1 == $off){ ?>
 
+                        <ul>
+                            <li class="onglet " style="width: 32%">
+                                <i class="fas fa-home"></i> CONSTRUCTION</li>
+                            <li class="onglet actif" style="width: 33.333333%">
+                                <i class="fas fa-tools"></i> RÉNOVATION</li>
+                            <li class="onglet" style="width: 33.333333%">
+                                <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                        </ul>
+
+                <?php } else if (2 == $off){ ?>
+
                     <ul>
-                        <li class="onglet" style=""><i class="fas fa-home"></i> CONSTRUCTION</li>
-                        <li class="onglet actif" style="">
+                        <li class="onglet " style="width: 32%">
+                            <i class="fas fa-home"></i> CONSTRUCTION</li>
+                        <li class="onglet" style="width: 33.333333%">
                             <i class="fas fa-tools"></i> RÉNOVATION</li>
+                        <li class="onglet actif" style="width: 33.333333%">
+                            <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
                     </ul>
 
                 <?php } else { ?>
-                    <ul>
-                        <li class="onglet actif" style="">
-                            <i class="fas fa-home"></i> CONSTRUCTION</li>
-                        <li class="onglet" style="">
-                            <i class="fas fa-tools"></i> RÉNOVATION</li>
-                    </ul>
+                        <ul>
+                            <li class="onglet actif" style="width: 32%">
+                                <i class="fas fa-home"></i> CONSTRUCTION</li>
+                            <li class="onglet" style="width: 33.333333%">
+                                <i class="fas fa-tools"></i> RÉNOVATION</li>
+                            <li class="onglet" style="width: 33.333333%">
+                                <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                        </ul>
 
                     <?php }
             } else { ?>
                 <ul>
-                    <li class="onglet actif" style="">
+                    <li class="onglet actif" style="width: 32%">
                         <i class="fas fa-home"></i> CONSTRUCTION</li>
-                    <li class="onglet" style="">
+                    <li class="onglet" style="width: 33.333333%">
                         <i class="fas fa-tools"></i> RÉNOVATION</li>
+                    <li class="onglet" style="width: 33.333333%">
+                        <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
                 </ul>
             <?php } ?>
         </nav>
@@ -58,7 +76,7 @@
     <div class="divGlobal">
         <div  class="container containerstop">
         <!-- Les contenus -->
-        <article class="contenu <?php if ($off != 1){
+        <article class="contenu <?php if ($off != 1 && $off != 2){
             echo "actif";
         } ?>">
             <div class="container containerstop">
@@ -487,10 +505,67 @@
             </div>
 
         </article>
+
+
+        <article class="contenu <?php if ($off == 2){
+            echo "actif";
+        } ?>">
+            <div class="container containerstop">
+
+
+                <div class="titlediv">
+                    <h1 class="titleoffre uppercase" style="text-align: center">COUCOU</h1>
+                </div>
+
+        </article>
         </div>
     </div>
         </div>
     </section>
+
+    <section id="offre-part">
+
+        <div class="container">
+
+            <h2>PARTENAIRES</h2>
+
+            <h4>AGENCES DE L'ÉTAT & REGLEMENTATION</h4>
+
+            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556727695380551/unknown.png">
+
+            <h4>RÉSEAUX D'EXPERTS ET FACILITATEURS</h4>
+
+            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556747723186318/unknown.png">
+
+            <h4>NOS AUTRES PARTENAIRES</h4>
+
+            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556765985181806/unknown.png">
+
+        </div>
+
+    </section>
+
+
+    <style>
+
+        #offre-part{
+            padding: 30px;
+        }
+
+        #offre-part h2{
+            font-weight: bold;
+            color: var(--colorall-gray-1);
+            margin: 25px 0px;
+        }
+
+        #offre-part h4{
+            font-weight: bold;
+            color: var(--colorall-green-1);
+            margin: 22px 0px;
+        }
+
+
+    </style>
 
     <script src="javascript/offre.js"></script>
 

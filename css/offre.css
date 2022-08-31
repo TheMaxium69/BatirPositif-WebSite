@@ -345,7 +345,7 @@ div.rowblock div.col-6{
 .divGlobal{
     /*background-color: #DAEED9;*/
     background-color: white;
-    border: solid #28A745;
+    border: solid #4F8C4E;
     border-radius: 20px;
 }
 
@@ -490,7 +490,7 @@ border-bottom: 1px solid #f1eaea;
 font-size: 33px;
 font-weight: normal;
 text-align: center;
-color: #28A745;
+color: #4F8C4E;
 }
 
 .titleoffre:after {
@@ -502,7 +502,7 @@ height:     5px;
 left:       50%;
 bottom:     -3px;
 margin:     0 -24px;
-background: #28A745;
+background: #4F8C4E;
 }
 
 
