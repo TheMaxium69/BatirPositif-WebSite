@@ -274,13 +274,9 @@ div#shema:before {
 }
 
 #offre-onglet .onglet:first-child{
-    width: 49%;
+    
+    width: 32%;
 }
-
-#offre-onglet .onglet:last-child{
-    width: 50%;
-}
-
 
 #offre-onglet .onglet{
     /* definition des onglet 'normaux' */
@@ -294,7 +290,33 @@ div#shema:before {
     cursor:pointer;
     color: white;
     text-align: center;
+    width: 33.3333%;
 }
+
+@media (max-width: 767px) {
+
+    #offre-onglet .onglet:first-child{
+        width: 100%;
+        border-radius : 4px 4px 0 0;
+    }
+    
+    #offre-onglet .onglet{
+        /* definition des onglet 'normaux' */
+        display : inline-block;
+        padding : 1em 2em;
+        /* background: #28a745; */
+        background: #4F8C4E;
+        border-radius : 0;
+        opacity: .8;
+        font-weight: bold;
+        cursor:pointer;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    
+
+}    
 
 #offre-onglet .onglet.actif{
     /* ce qui change quand l'onglet est actif */
@@ -466,11 +488,6 @@ div.containerstop{
 }
 
 @media (max-width: 433px){
-
-
-#offre-onglet .onglet:last-child {
-    width: 49%;
-}
 
 #offre-onglet .onglet{
     padding: 15px 10px;

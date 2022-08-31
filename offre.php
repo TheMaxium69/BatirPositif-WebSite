@@ -31,44 +31,44 @@
                 if (1 == $off){ ?>
 
                         <ul>
-                            <li class="onglet " style="width: 32%">
+                            <li class="onglet">
                                 <i class="fas fa-home"></i> CONSTRUCTION</li>
-                            <li class="onglet actif" style="width: 33.333333%">
+                            <li class="onglet actif">
                                 <i class="fas fa-tools"></i> RÉNOVATION</li>
-                            <li class="onglet" style="width: 33.333333%">
-                                <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                            <li class="onglet">
+                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
                         </ul>
 
                 <?php } else if (2 == $off){ ?>
 
                     <ul>
-                        <li class="onglet " style="width: 32%">
+                        <li class="onglet">
                             <i class="fas fa-home"></i> CONSTRUCTION</li>
-                        <li class="onglet" style="width: 33.333333%">
+                        <li class="onglet">
                             <i class="fas fa-tools"></i> RÉNOVATION</li>
-                        <li class="onglet actif" style="width: 33.333333%">
-                            <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                        <li class="onglet actif">
+                            <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
                     </ul>
 
                 <?php } else { ?>
                         <ul>
-                            <li class="onglet actif" style="width: 32%">
+                            <li class="onglet actif">
                                 <i class="fas fa-home"></i> CONSTRUCTION</li>
-                            <li class="onglet" style="width: 33.333333%">
+                            <li class="onglet">
                                 <i class="fas fa-tools"></i> RÉNOVATION</li>
-                            <li class="onglet" style="width: 33.333333%">
-                                <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                            <li class="onglet">
+                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
                         </ul>
 
                     <?php }
             } else { ?>
                 <ul>
-                    <li class="onglet actif" style="width: 32%">
+                    <li class="onglet actif">
                         <i class="fas fa-home"></i> CONSTRUCTION</li>
-                    <li class="onglet" style="width: 33.333333%">
+                    <li class="onglet">
                         <i class="fas fa-tools"></i> RÉNOVATION</li>
-                    <li class="onglet" style="width: 33.333333%">
-                        <i class="fas fa-tools"></i> DÉCRET TERTIAIRE</li>
+                    <li class="onglet">
+                        <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
                 </ul>
             <?php } ?>
         </nav>
@@ -207,13 +207,13 @@
                 <div class="row rowblock">
 
                     <div class="col-6">
-                        <div class="divOne" style="min-height: 639px;">
+                        <div class="divOne" style="min-height: 490px;">
 
                             <div class="divTwo">
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "ac" ){ ?>
-                                <div class="bold otitle" id="c1" style="    border-radius: 6px; margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
+                                <div class="bold otitle" id="c1" style="    border-radius: 6px; margin-bottom: unset; background: var(--colorall-green-1);">
                             <?php } else {?>
                                 <div class="bold otitle" id="c1" style="margin-bottom: unset">
                             <?php } ?>
@@ -227,19 +227,15 @@
                                         margin-bottom: 20px;
                                         margin-top: 10px;">
 
-                                        La conception d’un projet immobilier est LE moment le plus intéressant pour réfléchir de
-                                        manière global. Nous vous accompagnons pour poser sur la feuille blanche votre rêve de
-                                        manière éveillé.
-                                        <br><br>
-                                        Choix des matériaux, positions des ouvertures, emplacements des équipements, systèmes
-                                        énergétiques... sont autant de points à soigner par une connaissance total des impacts.
-                                        Notre expertise vous permettra d’avoir une sérénité total lors de ces réflexions pour garantir
-                                        à votre projet :<br><br>
-                                        - un cout maitriser à la construction, et pendant son exploitation (consommations)<br>
-                                        - un confort d’utilisation et une qualité de l’air maximum<br>
-                                        - un impact environnemental réduit par l’orientation des choix les plus vertueux<br><b id="etMobile"></b>
-                                        <br>
-                                        Si vous ne le faite pas maintenant...
+                                        La conception d’un projet immobilier est un moment important pour poser vos envies et
+                                        besoins en fonction de votre mode de vie, et aussi les contraintes économiques, techniques,
+                                        réglementaires, etc. Nous vous accompagnons pour cadrer le projet, le suivre à vos côtés,
+                                        afin de passer de l'idée à la réalité, de manière sereine. Notre pratique vous permet de vous
+                                        projeter à chaque étape pour prendre les meilleures décisions (programmation, maîtrise des
+                                        usages, planification, budgétisation, dépôt de plan, terrassement...) cette expertise garantira
+                                        à votre projet : un coût maîtrisé, un meilleur confort de vie & un impact environnemental
+                                        positif.<b id="etMobile"></b>
+
                                     </p>
 
 
@@ -247,34 +243,28 @@
                     </div>
                     <div class="col-6">
 
-                        <div class="divOne" style="min-height: 639px;">
+                        <div class="divOne">
 
                             <div class="divTwo">
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "et" ){ ?>
-                                <div class="bold otitle" id="c2" style="    border-radius: 6px; margin-bottom: unset; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);">
+                                <div class="bold otitle" id="c2" style="    border-radius: 6px; margin-bottom: unset; background: var(--colorall-green-1);">
                             <?php } else {?>
                                 <div class="bold otitle" id="c2" style="margin-bottom: unset">
                             <?php } ?>
                                     <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Étude énergétique RE2020 </div>
 
 
-                                    <p class="divP" style="
-                                        text-align: center;
-                                        margin-bottom: 20px;
-                                        margin-top: 8%;">
+                                    <p class="divP" style=" margin-bottom: 10px;">
 
-                                        Depuis le 01/01/2022, l’ensemble des logements neufs est soumis à une nouvelle
-                                        règlementation thermique et environnementale. La RE2020 pousse le Maitre d’ouvrage à
-                                        analyser de manière règlementaire :<br>
-                                        <br>
-                                        - Le cycle de vie du projet (choix de matériaux plus vertueux)<br>
-                                        - L’isolation thermique amélioré<br>
-                                        - Le confort d’été (risque de surchauffe dans le logement) est pris en compte<br>
-                                        <br><b id="downOne"></b><b id="amoMobile"></b>
-                                        Nous vous aidons à trouver les compositions les plus judicieuses pour répondre à cette
-                                        exigence et faciliter l’obtention de votre permis de construire.
+                                        Depuis le 1er janvier 2022, l’ensemble des logements neufs est soumis à une nouvelle
+                                        réglementation thermique et environnementale. La RE 2020 pousse le maître d’ouvrage à
+                                        analyser de manière réglementaire : <b class="bold">le cycle de vie du projet</b> (choix de matériaux plus
+                                        vertueux), ou encore <b class="bold">l’isolation thermique améliorée</b> ou encore <b class="bold">le confort d’été</b>. Notre
+                                        maîtrise<b id="downOne"></b><b id="amoMobile"></b> de la réglementation vous permettra de vous lancer de manière sereine dans un
+                                        projet conforme et efficace. (facilité du permis de construire, respect du PLU, RE 2020
+                                        intégré...)
                                     </p>
 
 
@@ -289,14 +279,14 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "amo1" ){ ?>
-                                <div class="bold otitle" id="c3" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                                <div class="bold otitle" id="c3" style="    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                             <?php } else {?>
                                 <div class="bold otitle" id="c3" >
                             <?php } ?>
 
 
                                     <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
-                            <p class="divP"> il s’agit d’une mission de
+                            <p class="divP" style="margin-top: 42px;margin-bottom: 42px;"> il s’agit d’une mission de
                             <b class="bold">conseil</b> et de proposition vis-à-vis du maître d’ouvrage (vous, le client!) Notre objectif
                             vous donner les outils pour anticiper de manière méthodique votre projet. <b id="moeMobile"></b> Et in fine, assurer un meilleur déroulement du
                                 chantier ! Attention, l’AMO ne fait que conseiller. vous restez pilote de votre projet, mais avec un
@@ -313,17 +303,18 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "moe1" ){ ?>
-                            <div class="bold otitle" id="c4" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="c4" style="    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="c4" >
                                     <?php } ?>
 
 
                                     <i class="fas my"><img class="reno" src="assets/picto/renovation2.png"></i> <br> MOE <br> Maîtrise d'œuvre d'exécution </div>
-                            <p class="divP" style="margin-top: 9%"> Cette mission concerne la coordination de la
-                                mise en place des travaux. Ici nous <b class="bold">concevons</b> le projet. Par la suite, notre oeil
-                                expert suivra le bon déroulement du chantier de A à Z. Vous pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre
-                                chantier. </p>
+                            <p class="divP" style="margin-top: 0; margin-bottom: 0;">Cette mission concerne la coordination de la mise en place des travaux. Ici nous concevons
+le projet. Par la suite, notre oeil expert suivra la bonne réalisation du chantier de A à Z et la
+réception de votre habitation dans les temps tout en préservant la qualité des relations. Vous
+pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre chantier.
+(définition des objectifs, planification, budgétisation, formation, etc)</p>
                         </div>
                     </div>
                 </div>
@@ -428,7 +419,7 @@
                             <div class="divTwo">
                             </div>
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "dt" ){ ?>
-                            <div class="bold otitle" id="r1" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="r1" style="    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="r1" >
                                     <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> DDT <br> Diagnostic technique </div>
@@ -446,7 +437,7 @@
                             <div class="divTwo">
                             </div>
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "ae" ){ ?>
-                            <div class="bold otitle" id="r2" style=" padding: 32px 20px;    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="r2" style=" padding: 32px 20px;    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="r2" style="  padding: 32px 20px;">
                                     <?php } ?><i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <br> Audit énergétique </div>
@@ -465,7 +456,7 @@
                             <div class="divTwo">
                             </div>
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "amo2" ){ ?>
-                            <div class="bold otitle" id="r3" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="r3" style="    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="r3" >
                                     <?php } ?> <i class="fas my"><img src="assets/picto/lanalyse-des-donnees.png"></i> <i class="fas my"><img src="assets/picto/idee.png"></i> <i class="fas my"> <img class="reno" src="assets/picto/renovation2.png"></i> <br> AMO <br> Assistance maîtrise d’ouvrage responsable </div>
@@ -486,7 +477,7 @@
                             </div>
 
                             <?php if (!empty($_GET['name'])  && $_GET['name'] == "moe2" ){ ?>
-                            <div class="bold otitle" id="r4" style="    border-radius: 6px; background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);border-top-left-radius: 7px; border-top-right-radius: 7px;">
+                            <div class="bold otitle" id="r4" style="    border-radius: 6px; background: var(--colorall-green-1);border-top-left-radius: 7px; border-top-right-radius: 7px;">
                                 <?php } else {?>
                                 <div class="bold otitle" id="r4" >
                                     <?php } ?>
@@ -514,7 +505,7 @@
 
 
                 <div class="titlediv">
-                    <h1 class="titleoffre uppercase" style="text-align: center">COUCOU</h1>
+                    <h1 class="titleoffre uppercase" style="text-align: center">DÉCRET TERTIAIRE</h1>
                 </div>
 
         </article>
@@ -531,16 +522,22 @@
 
             <h4>AGENCES DE L'ÉTAT & REGLEMENTATION</h4>
 
-            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556727695380551/unknown.png">
+            <img src="assets/part/a1.png" alt="a1">
+            <img src="assets/part/a2.png" alt="a2">
+            <img src="assets/part/a3.png" alt="a3">
+            <img src="assets/part/a4.png" alt="a4">
+            <img src="assets/part/a5.png" alt="a5">
 
             <h4>RÉSEAUX D'EXPERTS ET FACILITATEURS</h4>
 
-            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556747723186318/unknown.png">
+            <img src="assets/part/b1.png" alt="b1">
+            <img src="assets/part/b2.png" alt="b2">
+            <img src="assets/part/b3.png" alt="b3">
+            <img src="assets/part/b4.png" alt="b4">
 
             <h4>NOS AUTRES PARTENAIRES</h4>
 
-            <img src="https://media.discordapp.net/attachments/772173322896539668/1014556765985181806/unknown.png">
-
+            <img src="assets/part/c1.png" alt="c1">
         </div>
 
     </section>
