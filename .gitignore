@@ -11,3 +11,5 @@ db.php
 env_db.php
 
 # Other files and folders
+
+upload/

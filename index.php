@@ -10,7 +10,7 @@
                     CONSTRUCTION - rénovation
                 </h1>
                 <p class="uppercase" style="border-radius: 6px;">
-                    Spécialisés dans l’accompagnement de vos projets
+                accompagner la réussite de vos projets à impact positif
                 </p>
             </div>
         </div>
@@ -23,14 +23,19 @@
         <div class="container row">
 
             <div class="col-6">
-            <h2>Bienvenue chez Bâtir positif</h2>
+            <h2>Bienvenue chez Bâtir Positif</h2>
 
-                <p>Bureau d’études spécialisé dans l’accompagnement et l’optimisation de vos projets.
-                    Vous voulez construire, ou rénover de manière <b class="bold underline">responsable</b> ? Notre expertise pourra vous
-                    simplifier/faciliter ! particuliers ou professionnels, nous sommes opérationnels.</p><p>
-                    Spécialisés dans les bâtiments à faible consommation énergétique et avec un impact
-                    environnemental positif, nous intervenons à différentes étapes de votre projet.<br> <b class="bold">Travaillons
-                    ensemble pour trouver les solutions efficaces pour votre budget, la santé et l’environnement.</b></p>
+                <p>Bureau d'études engagé dans l’accompagnement de vos projets responsables.
+Spécialisés dans les bâtiments à faible consommation énergétique et à impact
+environnemental positif, nous intervenons auprès des propriétaires de bâtiments, qu’ils
+soient particuliers ou professionnels <br><br>
+Vous êtes conscients des enjeux environnementaux et vous voulez contribuer à une
+transition écologique et solidaire et de qualité de vie ?
+Vous voulez faire évoluer, rénover ou construire votre habitation,
+maison individuelle ou appartement ?<br>
+Vous avez prévu d’optimiser l’usage de l'énergie de vos bâtiments tertiaires<br><br>
+Alors, travaillons ensemble pour trouver et mettre en œuvre des solutions efficientes pour
+votre budget, la santé et l’environnement !</p>
 
             <?php custombtn("about.php", "Voir plus", "white", "#4d8d4c"); ?>
             </div>
