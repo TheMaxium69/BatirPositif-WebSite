@@ -158,7 +158,9 @@ div.l1{
     margin-right: unset;
     margin-left: unset;
 
-    background: linear-gradient(90deg, #28A745 0%, #36dc24 100%);
+    /* background: linear-gradient(90deg, #28A745 0%, #36dc24 100%); */
+    
+    background: #4F8C4E;
 }
 
 div.borderB{
@@ -284,7 +286,8 @@ div#shema:before {
     /* definition des onglet 'normaux' */
     display : inline-block;
     padding : 1em 2em;
-    background: #28a745;
+    /* background: #28a745; */
+    background: #4F8C4E;
     opacity: .8;
     font-weight: bold;
     border-radius : 4px 4px 0 0;
