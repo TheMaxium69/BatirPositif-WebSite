@@ -508,6 +508,48 @@ pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre 
                     <h1 class="titleoffre uppercase" style="text-align: center">DÉCRET TERTIAIRE</h1>
                 </div>
 
+                <div class="dt-head row">
+
+                    <div class="col">
+                        <img src="assets/dt.png">
+                    </div>
+
+                    <div class="col">
+                        <h3>BÂTIR POSITIF ACCOMPAGNE LES PROJETS DE BÂTIMENT TERTIAIRE</h3>
+                        <p>
+
+                        Le secteur du bâtiment représente 43 % des consommations énergétiques annuelles
+                        françaises et il génère 23 % des émissions de gaz à effet de serre français .
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="dt-ico row">
+
+                    <div class="col-2">
+                        <img src="assets/dt.png">
+                        
+                        <img src="assets/dt.png">
+                    </div>
+
+                    <div class="col-8">
+                        <p>
+                            
+                        
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+
+
+
         </article>
         </div>
     </div>
