@@ -35,8 +35,8 @@
                                 <i class="fas fa-home"></i> CONSTRUCTION</li>
                             <li class="onglet actif">
                                 <i class="fas fa-tools"></i> RÉNOVATION</li>
-                            <li class="onglet">
-                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
+                            <!-- <li class="onglet">
+                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li> -->
                         </ul>
 
                 <?php } else if (2 == $off){ ?>
@@ -46,8 +46,8 @@
                             <i class="fas fa-home"></i> CONSTRUCTION</li>
                         <li class="onglet">
                             <i class="fas fa-tools"></i> RÉNOVATION</li>
-                        <li class="onglet actif">
-                            <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
+                        <!-- <li class="onglet actif">
+                            <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li> -->
                     </ul>
 
                 <?php } else { ?>
@@ -56,8 +56,8 @@
                                 <i class="fas fa-home"></i> CONSTRUCTION</li>
                             <li class="onglet">
                                 <i class="fas fa-tools"></i> RÉNOVATION</li>
-                            <li class="onglet">
-                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
+                            <!-- <li class="onglet">
+                                <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li> -->
                         </ul>
 
                     <?php }
@@ -67,8 +67,8 @@
                         <i class="fas fa-home"></i> CONSTRUCTION</li>
                     <li class="onglet">
                         <i class="fas fa-tools"></i> RÉNOVATION</li>
-                    <li class="onglet">
-                        <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li>
+                    <!-- <li class="onglet">
+                        <i class="fas fa-scroll"></i> DÉCRET TERTIAIRE</li> -->
                 </ul>
             <?php } ?>
         </nav>
@@ -556,7 +556,7 @@ pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre 
         </div>
     </section>
 
-    <section id="offre-part">
+    <!-- <section id="offre-part">
 
         <div class="container">
 
@@ -604,7 +604,7 @@ pourrez vous appuyer sur nous pour gérer l’ensemble du déroulement de votre 
         }
 
 
-    </style>
+    </style> -->
 
     <script src="javascript/offre.js"></script>
 

@@ -86,7 +86,7 @@ function getAllBlog(){
 
     require "db.php";
 
-    $requestNews = "SELECT * FROM blog";
+    $requestNews = "SELECT * FROM blog ORDER BY id DESC ";
 
     $allBlog = mysqli_query($ConnectDB, $requestNews);
 

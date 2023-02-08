@@ -30,7 +30,7 @@
         <div id="info" class="container" style="text-align: center;">
             <div>
                 <h2 style="text-align: center; margin-bottom: 20px; color: #32b618"><i class="fas fa-scroll"></i> Administratif de l'entreprise</h2>
-                <p>Copyright © Bâtir Positif. 2022<br> © 2022 Bâtir Positif<br>All Right Reserved © Bâtir Positif</p>
+                <p>Copyright © Bâtir Positif. 2023<br> © 2023 Bâtir Positif<br>All Right Reserved © Bâtir Positif</p>
                 <p>Fondateur, directeur : Habib Boubia</p>
                 <p>Siège Social : <br> <?php echo $SectionAdresse['content'] ?></p>
                 <p>Contact : <br> <?php echo $SectionMail['content'] ?> <br> <?php echo $SectionNum['content'] ?></p>
@@ -40,9 +40,9 @@
                 <div class="col-6 textmore">
                     <h3 style="margin-bottom: 12px; margin-top: 20px; color: #32b618">Sources</h3>
                     <p class="no-p">Développement</p>
-                    <small>- Tyrolium (© 2022 Tyrolium, Ent.)</small><br>
+                    <small>- Tyrolium (© 2017-2023 Tyrolium, Ent.)</small><br>
                     <p class="no-p">Hébergement</p>
-                    <small>- OvhCloud (© Copyright 1999-2022 OVHcloud)</small><br>
+                    <small>- OvhCloud (© Copyright 1999-2023 OVHcloud)</small><br>
                     <p class="no-p">Icone Analyse - Page Offre (<a class="link" href="assets/picto/lanalyse-des-donnees.png">Voir</a>)</p>
                     <small>- Kornkum </small><br>
                     <p class="no-p">Icone Conception - Page Offre (<a class="link" href="assets/picto/idee.png">Voir</a>)</p>
@@ -82,7 +82,7 @@
             <h2 style="margin-top: 20px;text-align: center; margin-bottom: 10px; color: #32b618"><i class="fas fa-balance-scale"></i> Droits</h2>
             <div style="text-align: center">
                 <p class="no-p bold">L'intégralité du site et de ses contenus postés sur les serveurs, les contenus mis en ligne qui sont rendus publics, les images, les textes et tout les écrits, le design, le code-source, les logos, les visuels, les photos ainsi que les produits, appartiennent entièrement à Bâtir Positif.
-                    <br>Cela grâce au copyright (© 2022 Bâtir Positif)
+                    <br>Cela grâce au copyright (© 2023 Bâtir Positif)
                     <br>Et à l'article L111-1 du code de la propriété intellectuelle française.</p>
             </div>
             <br>
@@ -94,8 +94,8 @@
                 </div>
                 <div class="col-6 textmore">
                     <p class="no-p" style="margin-bottom: 10px">- Tous les logos utilisés appartiennent à leur créateur.</p>
-                    <small>© 2022 Meta</small><br>
-                    <small>© LinkedIn Corporation 2022</small><br>
+                    <small>© 2023 Meta</small><br>
+                    <small>© LinkedIn Corporation 2023</small><br>
                 </div>
             </div>
             <div style="text-align: center">

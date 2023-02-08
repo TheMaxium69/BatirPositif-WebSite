@@ -275,7 +275,8 @@ div#shema:before {
 
 #offre-onglet .onglet:first-child{
     
-    width: 32%;
+    /* width: 32%; */
+    width: 49%;
 }
 
 #offre-onglet .onglet{
@@ -290,7 +291,8 @@ div#shema:before {
     cursor:pointer;
     color: white;
     text-align: center;
-    width: 33.3333%;
+    /* width: 33.3333%; */
+    width: 50%;
 }
 
 @media (max-width: 767px) {

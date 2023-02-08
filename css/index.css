@@ -67,16 +67,16 @@
     margin: 0px 30px;
 }
 
-#page1-headimg div#img div#center p:hover{
+/* #page1-headimg div#img div#center p:hover{
 
     border-radius: 10px;
 
-    -webkit-transform:scale(1.05); /* Safari et Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* Internet Explorer 9 */
-    -o-transform:scale(1.25); /* Opera */
+    -webkit-transform:scale(1.05); 
+    -moz-transform:scale(1.25); 
+    -ms-transform:scale(1.25); 
+    -o-transform:scale(1.25); 
     transform:scale(1.05);
-}
+} */
 
 @media (max-width: 991px) {
     #page1-headimg div#img div#center{

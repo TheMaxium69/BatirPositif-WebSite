@@ -141,6 +141,12 @@
                     </div>
 
                     <style>
+
+                        div .middle{
+                            font-family: 'Poppins', sans-serif;
+                            color: #fff;
+                        }
+
                         #news p,
                         #news h2,
                         #news{
