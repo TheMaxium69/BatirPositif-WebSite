@@ -7,3 +7,4 @@ require_once $env_urlFile . "FontAwesome.phtml";
 require_once $env_urlFile . "GoogleFront.phtml";
 require_once $env_urlFile . "iziToast.phtml";
 require_once $env_urlFile . "Link.phtml";
+require_once $env_urlFile . "GoogleReCAPTCHA.phtml";

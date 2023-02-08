@@ -1,8 +1,21 @@
 <?php
 
 //PROD or DEV
-$APP_ENV = "PROD";
+$APP_ENV = "DEV";
 
+if ($APP_ENV == "PROD"){
+    include "/var/www/reCAPTCHA-bt.php";
+    
+    $env_captcha_clientid = $BatirPositif_ClientID;
+    $env_captcha_servid = $BatirPositif_ServID;
+
+} else if ($APP_ENV == "DEV"){
+    include "E:/LocalHost/reCAPTCHA-bt.php";
+    
+    $env_captcha_clientid = $Localhost_ClientID;
+    $env_captcha_servid = $Localhost_ServID;
+
+}
 
 //Variable Share
 

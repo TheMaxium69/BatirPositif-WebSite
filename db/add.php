@@ -1,16 +1,28 @@
 <?php
 
-if (!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['email']) && !empty($_GET['content'])){
+require "../app/env.php";
+require "../recaptcha-php-lib-1.2.4/autoload.php";
 
-    require "contact.php";
+if (!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['email']) && !empty($_GET['content']) && !empty($_GET['g-recaptcha-response'])){
 
-    $sendObject = null;
-    $sendObject = new contact();
+    $recaptcha = new \ReCaptcha\ReCaptcha($env_captcha_servid);
+    $resp = $recaptcha->verify($_GET['g-recaptcha-response']);
+    if ($resp->isSuccess()) {
 
-    $sendObjectExtract = extracted($sendObject);
+        require "contact.php";
 
-    $sendObjectProtect = protect($sendObjectExtract);
-    insert($sendObjectProtect);
+        $sendObject = null;
+        $sendObject = new contact();
+
+        $sendObjectExtract = extracted($sendObject);
+
+        $sendObjectProtect = protect($sendObjectExtract);
+        insert($sendObjectProtect);
+
+    } else {
+        $errors = $resp->getErrorCodes();
+        erreur("T606");
+    }
 
 } else {
     erreur("T901");

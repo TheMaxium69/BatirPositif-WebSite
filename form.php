@@ -131,6 +131,19 @@
                 </div>
             </div>
             <div class="col-sm-12">
+                            
+                <div class="single-input text-center">               
+                    <div class="g-recaptcha" data-theme="white" data-sitekey="<?= $env_captcha_clientid ?>"></div>
+                </div>
+                <style>
+                    div.g-recaptcha {
+                        margin: 0 auto;
+                        width: 304px;
+                        margin-bottom: 20px;
+                    }
+                </style>
+            </div>
+            <div class="col-sm-12">
                 <input class="square-button" type="submit" value="Envoyé">
             </div>
         </form>
