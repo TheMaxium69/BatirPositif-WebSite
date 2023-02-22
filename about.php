@@ -293,10 +293,10 @@
                     </div>
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new4.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>Marion.png');"></div>
                     <div class="about__info">
-                        <h4 class="name">Elisabeth <j class="uppercase">Merenna</j></h4>
-                        <h5 class="title">Responsable communication</h5>
+                        <h4 class="name">Marion <j class="uppercase">CHEVALEYRE</j></h4>
+                        <h5 class="title">Ingénieure d'étude thermique et performance énergétique</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
@@ -307,27 +307,27 @@
                     </div>
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new2.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>Charlotte.png');"></div>
                     <div class="about__info">
-                        <h4 class="name">Quentin <j class="uppercase"> Claudel</j></h4>
-                        <h5 class="title">Chargé d’affaire Economie de la construction</h5>
+                        <h4 class="name">Charlotte <j class="uppercase">SASSELLA</j></h4>
+                        <h5 class="title">Chargée d'étude</h5>
                     </div>
 
                 </div></a><!--<a><div class="about__slot about__slotNULL">
 
                 </div></a>--><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new6.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>Gaelle.png');"></div>
                     <div class="about__info">
-                        <h4 class="name">Céline <j class="uppercase">GUEUNET MANDARON</j></h4>
-                        <h5 class="title">Cheffe de projets management commercial & développement </h5>
+                        <h4 class="name">Gaëlle <j class="uppercase">DALMAS</j></h4>
+                        <h5 class="title">Chargée d'affaires Economie de la construction (Alternance)</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
-                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>new3.png');"></div>
+                    <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>NyHasina.png');"></div>
 
                     <div class="about__info">
-                        <h4 class="name">Youcef <j class="uppercase">Messalti</j></h4>
-                        <h5 class="title">Chargé d’affaires-Optimisation énergétique</h5>
+                        <h4 class="name">Ny Hasina <j class="uppercase">RAVAHINIRINA</j></h4>
+                        <h5 class="title">Chargée de Marketing et Communication <br>(Alternance)</h5>
                     </div>
 
 
