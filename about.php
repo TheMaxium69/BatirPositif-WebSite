@@ -296,7 +296,7 @@
                     <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>Marion.png');"></div>
                     <div class="about__info">
                         <h4 class="name">Marion <j class="uppercase">CHEVALEYRE</j></h4>
-                        <h5 class="title">Ingénieure d'étude thermique et performance énergétique</h5>
+                        <h5 class="title">Ingénieure d'étude thermique <br> et performance énergétique</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
@@ -319,7 +319,7 @@
                     <div class="headshot" style="background-image:url('<?php echo $env_assets . "staff/" ?>Gaelle.png');"></div>
                     <div class="about__info">
                         <h4 class="name">Gaëlle <j class="uppercase">DALMAS</j></h4>
-                        <h5 class="title">Chargée d'affaires Economie de la construction (Alternance)</h5>
+                        <h5 class="title">Chargée d'affaires Economie de la construction <br> (Alternance)</h5>
                     </div>
 
                 </div></a><a><div class="about__slot">
